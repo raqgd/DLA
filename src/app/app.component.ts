@@ -10,4 +10,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'PC2_DLA';
+  nombre="Raquel";
+  cambiarTexto(){
+    this.nombre="raquelVariable";
+  }
 }
