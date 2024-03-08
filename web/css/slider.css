@@ -72,7 +72,7 @@ nav ul li a{
                     lo que permite organizar los elementos hijos (en este caso, las columnas) 
                     en una fila o columna */
     overflow: hidden; /* Oculta cualquier contenido que desborde del contenedor .slider */
-    position: absolute;
+    position: relative;
     right: 0; /* Posicionar el slider al lado derecho */
     top: 0; /* Posicionar el slider en la parte superior */
     /*height: 100vh; Ajustar la altura al 100% del viewport */
@@ -134,8 +134,8 @@ nav ul li a{
 
 /*Loader*/
 
-.loader {
-    /*position: fixed;*/
+/* .loader {
+    /*position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -144,12 +144,12 @@ nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Asegura que esté por encima de otros elementos */
-}
+    z-index: 9999; /* Asegura que esté por encima de otros elementos 
+}*/
 
 .loader img {
     width: 200px; /* Ajusta el tamaño del logo según sea necesario */
-}
+} */
 
 /* Animación de desaparición de la pantalla de carga */
 @keyframes fadeOut {
