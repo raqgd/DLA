@@ -1,0 +1,47 @@
+body {
+    background-color: #a8a8a8; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh;
+}
+.menu{
+    margin: 50px 0px 50px 0px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    width: 40%;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333; /* Color del texto */
+    padding: 10px;
+    margin: 0;
+    background-color: #fff; /* Color de fondo del enlace */
+    border-radius: 5px; /* Ajusta el radio de las esquinas del enlace */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.menu ul li a:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+.player_row{
+    display: flex;
+    align-items: center;
+}
+.imagen {
+    width: 10%; /* Tamaño de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el nombre */
+}
+.nombre {
+    flex: 1; /* Toma el espacio restante */
+}

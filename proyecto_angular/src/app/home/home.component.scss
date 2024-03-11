@@ -1,0 +1,20 @@
+.gap{
+    height: 90vh;
+    background-image: url('../../assets/img/cesped_fondo.jpg'); /* Ajusta la ruta según la ubicación real de tu imagen */
+    background-size: cover;
+    background-position: center;
+    width: 200vh;
+}
+* {
+    position: absolute;
+}
+.center {
+    top: 40%;
+    left: 40%;
+    background-color: aliceblue;
+    width: 15%;
+    height: 15%;
+    display: flex;
+    justify-content: center; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+}

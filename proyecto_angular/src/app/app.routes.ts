@@ -12,7 +12,7 @@ import { NgModule } from '@angular/core';
 })*/
 export const routes: Routes = [
     {path: '', component:HomeComponent},
-    {path: 'a', component:JugadoresComponent},
-    {path: 'b', component:MercadoComponent},
-    {path: 'c', component:NosotrosComponent}
+    {path: 'Jugadores', component:JugadoresComponent},
+    {path: 'Mercado', component:MercadoComponent},
+    {path: 'Acerca', component:NosotrosComponent}
 ];
