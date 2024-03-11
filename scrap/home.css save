@@ -1,0 +1,145 @@
+
+/* Estilos por defecto */
+/* body {
+    background-color: white;
+    color: black;
+} */
+
+/* Estilos para modo oscuro */
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222; /* Cambia el fondo a un color oscuro 
+        color: white; /*Cambia el color del texto a blanco
+    } */
+
+    
+
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+    html{
+        background-image: url(../../assets/img/cesped_fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slider {
+        display: flex; /* Establece el contenedor .slider como un contenedor de tipo flexbox, 
+                        lo que permite organizar los elementos hijos (en este caso, las columnas) 
+                        en una fila o columna */
+        overflow: hidden; /* Oculta cualquier contenido que desborde del contenedor .slider */
+        position: absolute;
+        right: 0; /* Posicionar el slider al lado derecho */
+        top: 0; /* Posicionar el slider en la parte superior */
+        /*height: 100vh; Ajustar la altura al 100% del viewport */
+        height: calc(50h); /* La mitad de la pantalla */
+    }
+    
+    .column {
+        display: flex; /* Establece los elementos con clase .column como contenedores flexibles, 
+                        lo que permite organizar los elementos hijos (en este caso, las imágenes) en una columna */
+        flex-direction: column; /* Establece la dirección principal del contenedor .column como columna, 
+                                    lo que significa que los elementos hijos se apilan verticalmente en lugar 
+                                    de horizontalmente */
+    }
+
+    @keyframes slideUp {
+        0% {
+            transform: translateY(0);
+        }
+        10% {
+            transform: translateY(-100px); 
+        }
+        20% {
+            transform: translateY(0px); 
+        }
+        30% {
+            transform: translateY(0px); 
+        }
+        40% {
+            transform: translateY(0px); 
+        }
+        50% {
+            transform: translateY(0px); 
+        }
+        60% {
+            transform: translateY(0px); 
+        }
+        70% {
+            transform: translateY(0px); 
+        }
+        80% {
+            transform: translateY(0px); 
+        }
+        90% {
+            transform: translateY(0px); 
+        }
+        100% {
+            transform: translateY(0px); 
+        }
+    }
+    
+    .slider img {
+        max-width: 70%;
+        height: auto;
+        margin-bottom: 100px;
+        animation-duration: 1s; /* Ajusta la duración de la animación a 1 segundo */
+        opacity: .6;
+    }
+   
+
+    .loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; /* Asegura que esté por encima de otros elementos */
+    }
+    
+    .loader img {
+        width: 200px; /* Ajusta el tamaño del logo según sea necesario */
+    }
+    
+    /* Animación de desaparición de la pantalla de carga */
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    .image-container {
+        position: relative;
+        width: 400px; /* Ajusta según el tamaño de tu imagen */
+        height: 300px; /* Ajusta según el tamaño de tu imagen */
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+      }  
+      
+      #fadeImage {
+        position: absolute;
+        opacity: 0; /* Inicialmente la imagen está oculta */
+        animation: fadeIn .75s forwards; /* Animación de fadeIn al cargar la página */
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /*@keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+    }*/               

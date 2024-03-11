@@ -1,0 +1,28 @@
+header{
+    background-color: black;
+    color: green;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo h1{
+    color: aliceblue;
+}
+header h2{
+    font-size: 25px;
+}
+.navbar_nav{
+    margin: 20px;
+}
+.navbar_nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar_nav ul li a{
+    color: antiquewhite;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+}
