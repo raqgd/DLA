@@ -131,55 +131,6 @@ for i, link in enumerate(links_jugadores):
         numero_posicion = posicion_numero.split(' ')[0].split('-')[1]
         posicion = posiciones.get(numero_posicion, "Desconocido")
 
-         caja_jornadas = driver.find_element(By.CLASS_NAME, 'box-scores').find_elements(By.CLASS_NAME, 'btn-player-gw')
+        caja_jornadas = driver.find_element(By.CLASS_NAME, 'box-scores').find_elements(By.CLASS_NAME, 'btn-player-gw')
         jornadas = [c.find_element(By.CLASS_NAME, 'gw').text.strip() for c in reversed(caja_jornadas)] 
 
-        for c in reversed(caja_jornadas):
-            numero_jornada = c.find_element(By.CLASS_NAME, 'gw').text.strip()
-
-            try:
-                score = c.find_element(By.CLASS_NAME, 'score').text.strip()
-                print(score)
-
-            except:
-                score = None
-
-            #Hacemos un try para comprobar si ha jugado en esa jornada; sino, pasa
-            try:
-                #Pulsamos en la jornada para ver "Mas Estadisticas"
-                c.click()
-                time.sleep(.7)
-                # #Encontrar score de cada jornada
-                # score = c.find_element(By.CLASS_NAME, 'right').text.strip()
-                # jugador_data['Puntos'] = score
-                # time.sleep(.7)
-
-                boton_verMas = driver.find_element(By.CLASS_NAME, 'popup-navigate')
-                boton_cerrar = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="popup"]/button')))
-                boton_verMas.click()
-                time.sleep(.7)
-                caja_estadisticas = driver.find_element(By.XPATH, '//*[@id="popup-content"]/div[2]/table/tbody')
-
-                for tr_element in caja_estadisticas.find_elements(By.TAG_NAME, 'tr'):
-                    # Encuentra todos los elementos con la clase "td-action" dentro del tr actual
-                    td_action_element = tr_element.find_element(By.CLASS_NAME, 'td-action')
-                    td_qty_element = tr_element.find_element(By.CLASS_NAME, 'td-qty')
-
-                    texto_accion = td_action_element.text.strip()
-                    valor_qty = td_qty_element.text.strip()
-                    jugador_data[texto_accion] = valor_qty
-
-                boton_cerrar.click()
-            except:
-                pass
-            jugador_data = {'ID': id, 'Nombre': player_name, 'Equipo': team, 'Posición': posicion, 'Jornada': numero_jornada, 'Puntos': score}
-            # Añadimos el diccionario del jugador a la lista de jugadores
-            jugadores_info.append(jugador_data)
-
-# Escribir la información en un archivo CSV
-csv_file_path = 'jugadores_dataset.csv'
-with open(csv_file_path, 'a', newline='', encoding='utf-8') as csv_file:
-    writer = csv.DictWriter(csv_file, fieldnames=csv_columns)
-    #writer.writeheader()
-    for jugador_info in jugadores_info:
-        writer.writerow(jugador_info)
