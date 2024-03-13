@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../../service/shared.service';
+
 
 @Component({
   selector: 'app-mercado',
@@ -7,6 +9,11 @@ import { Component } from '@angular/core';
   templateUrl: './mercado.component.html',
   styleUrl: './mercado.component.scss'
 })
-export class MercadoComponent {
 
+export class MercadoComponent implements OnInit {
+  constructor(private sharedService: SharedService) {}
+
+  ngOnInit() {
+    this.sharedService.mostrarDiv = false;
+  }
 }
