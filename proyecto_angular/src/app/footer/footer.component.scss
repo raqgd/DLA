@@ -18,12 +18,18 @@ footer {
     margin-top: auto; */
 }
 
-.links ul li a.text-body {
-    color: white !important;
+.text-uppercase {
     text-decoration:none;
 }
 
-.text-uppercase {
+.links ul li a.text-body {
+    color: white !important;
+    text-decoration:none;
+    transition: .4s;
+}
+
+.links ul li a.text-body:hover {
+    color: #b88639 !important;
     text-decoration:none;
 }
 
@@ -34,5 +40,5 @@ footer {
 }
 
 .btn-floating:hover .fab {
-    color: #007bff; /* Cambia el color a azul cuando pasas el ratón por encima */
+    color: #b88639; /* Cambia el color a azul cuando pasas el ratón por encima */
 }

@@ -13,10 +13,10 @@
     color: white;
  }
 
- .container img {
-    max-width: 10%;
-    height: auto;
- }
+.container img {
+//     max-width: 10%;
+//     height: auto;
+}
 
  .navbar::after {
     content: "";
@@ -27,4 +27,11 @@
     height: 10px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.1), transparent);
     backdrop-filter: blur(10px);
+}
+
+
+.logo {
+   cursor: pointer;
+   width: 100px;
+   height:auto;
 }
