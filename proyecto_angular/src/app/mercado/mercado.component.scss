@@ -1,5 +1,5 @@
 body {
-    background-color: #a8a8a8; /* Fondo gris claro */
+    background-color: #444444; /* Fondo gris claro */
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,15 +7,26 @@ body {
     align-items: center; /* Centra el contenido verticalmente */
     height: 100%;
 }
+.todo{
+    background-color: #7c7c7c;
+    box-shadow: 0px 1px 20px #7c7c7c;
+    width: 100%;
+    min-height: 100vh;
+    margin: 4cm 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
 .menu{
     margin: 50px 0px 50px 0px;
-    background-color: antiquewhite;
-    border-radius: 5px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
     width: 40%;
 }
 .menu ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     width: 100%;
     text-align: center; /* Centra el texto horizontalmente */
 }
@@ -24,10 +35,8 @@ body {
     display: block;
     text-decoration: none;
     color: #333; /* Color del texto */
-    padding: 10px;
     margin: 0;
-    background-color: #fff; /* Color de fondo del enlace */
-    border-radius: 5px; /* Ajusta el radio de las esquinas del enlace */
+    background-color: #d3d3d3; /* Color de fondo del enlace */
     transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
@@ -37,7 +46,9 @@ body {
 .player_row{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #444444;
 }
+
 .imagen {
     width: 10%; /* Tamaño de la imagen */
     height: 10%;
@@ -45,6 +56,9 @@ body {
 }
 .nombre {
     flex: 1; /* Toma el espacio restante */
+}
+.nombre p{
+    margin: 0;
 }
 .izquierda {
     margin: 5px;
@@ -58,3 +72,38 @@ body {
     width: 100%;
     height: 100%;
 }
+.valor{
+    color: white;
+    font-size: 16px;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.valorItem{
+    border: 2px solid #126102;
+    border-radius: 50%;
+    margin: 0px 2px 0px 2px;
+    width: 30px;
+    height: 30px;
+}
+.valor p{
+    color:black
+}
+.boton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .boton:hover {
+    background-color: #45a049;
+  }
