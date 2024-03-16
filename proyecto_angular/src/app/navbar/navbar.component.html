@@ -23,17 +23,19 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" [routerLink]="['/']">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mercado</a>
+            <a class="nav-link" [routerLink]="['/Mercado']">Mercado</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Plantilla</a>
+            <a class="nav-link" [routerLink]="['/Plantilla']">Plantilla</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre Nosotros</a>
+            <a class="nav-link" [routerLink]="['/Nosotros']">Sobre Nosotros</a>
           </li>
+        </ul>
+      </div>      
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
