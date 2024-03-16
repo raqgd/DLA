@@ -18,15 +18,17 @@
                                 <p>Nombre: {{jugador.nombre}}</p>
                                 <p>Valor actual: {{jugador.valorActual}} | Valor Futuro: {{jugador.valorFuturo}}</p>
                                 <div class="valor">
-                                    <div class="valorItem">{{jugador.puntos}}</div>
-                                    <p>-></p>
-                                    <div class="valorItem">{{jugador.puntos}}</div>
-                                    <p>-></p>
-                                    <div class="valorItem">{{jugador.puntos}}</div>
-                                    <p>-></p>
-                                    <div class="valorItem">{{jugador.puntos}}</div>
+                                    <div *ngFor="let valor of valores">
+                                        <div [ngSwitch]="true">
+                                            <div class="valorItem" *ngSwitchCase="valor <= 5" style="background-color: rgb(219, 201, 12);">{{ valor }}</div>
+                                            <div class="valorItem" *ngSwitchCase="valor >= 6 && valor <= 9" style="background-color: green;">{{ valor }}</div>
+                                            <div class="valorItem" *ngSwitchCase="valor >= 10" style="background-color: blue;">{{ valor }}</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p>Información adicional</p>
+                                <button class="boton" (click)="cambiarEstadoJugador(jugador.id)">
+                                    {{ jugador.estado ? 'Comprado' : 'Comprar' }}
+                                  </button>
                             </div>
                         </div>
                     </a>

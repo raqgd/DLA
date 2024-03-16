@@ -82,11 +82,7 @@ body {
 }
 .valorItem{
     border: 2px solid #126102;
-    background-color: #1a9a01;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0px 2px 0px 2px;
     width: 30px;
     height: 30px;
@@ -94,3 +90,20 @@ body {
 .valor p{
     color:black
 }
+.boton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .boton:hover {
+    background-color: #45a049;
+  }
