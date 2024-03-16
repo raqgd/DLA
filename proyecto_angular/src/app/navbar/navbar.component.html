@@ -8,7 +8,7 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
   <div class="container">
     <!--Logo--->
-    <a href="https://localhost::4200"><img src="..\..\..\assets\img\logo.png" class= "logo" style="width:140px;height:140px;"></a>
+    <a [routerLink]="['/']" ><img src="..\..\..\assets\img\logo.png" class= "logo" style="width:100px;height:100px;"></a>  
     <!--<img src="..\..\..\assets\img\logo.png" class="logo" alt="Logo DLA">--->
     <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,32 +29,14 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
             <a class="nav-link" [routerLink]="['/Mercado']">Mercado</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/Plantilla']">Plantilla</a>
+            <a class="nav-link">Plantilla</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/Nosotros']">Sobre Nosotros</a>
+            <a class="nav-link">Sobre Nosotros</a>
           </li>
         </ul>
       </div>      
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li> -->
-        </ul>
-        <!-- <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
     </div>
   </div>
 </nav>
+<!---->
