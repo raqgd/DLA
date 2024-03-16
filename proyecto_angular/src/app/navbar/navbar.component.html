@@ -8,7 +8,7 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
   <div class="container">
     <!--Logo--->
-    <a href="https://localhost::4200"><img src="..\..\..\assets\img\logo.png" class= "logo" style="width:140px;height:140px;"></a>
+    <a href="/"><img src="..\..\..\assets\img\logo.png" class= "logo" style="width:140px;height:140px;"></a>
     <!--<img src="..\..\..\assets\img\logo.png" class="logo" alt="Logo DLA">--->
     <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,10 +26,10 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mercado</a>
+            <a class="nav-link" [routerLink]="['/Mercado']">Mercado</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Plantilla</a>
+            <a class="nav-link" [routerLink]="['/Jugadores']">Plantilla</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sobre Nosotros</a>
