@@ -10,9 +10,12 @@ import { Component, NgModule } from '@angular/core';
 })
 export class MercadoComponent {
 
+  jugadorComprado: boolean = false;
+
   cambiarEstadoJugador(id: number) {
     const boton = this.jugadors.find(b => b.id === id);
     if (boton) {
+      this.jugadorComprado = !this.jugadorComprado;
       boton.estado = !boton.estado;
     }
   }

@@ -25,7 +25,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="boton" (click)="cambiarEstadoJugador(jugador.id)">
+                                <button class="boton" [ngStyle]="{'background-color': jugadorComprado ? '#00913F' : '#77DD77'}" (click)="cambiarEstadoJugador(jugador.id)">
                                     {{ jugador.estado ? 'Comprado' : 'Comprar' }}
                                 </button>
                             </div>

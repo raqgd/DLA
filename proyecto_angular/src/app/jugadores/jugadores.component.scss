@@ -11,7 +11,7 @@ body {
 }
 .menu{
     margin: 150px 0px 50px 0px;
-    background-color: #d3d3d3;
+    background-color: #c3ffa2;
     border-radius: 10px;
     padding: 10px 0px 10px 0px;
     width: 500px; /* Ancho del contenedor */
@@ -21,10 +21,8 @@ body {
     
 }
 .box {
-    border: 1px solid black;
     width: 75px; /* Ancho de la caja */
     height: 75px; /* Altura de la caja */
-    background-color: rgba(18, 250, 18, 0.9); /* Color de fondo de la caja */
     transform: translateX(-50%); /* Centra horizontalmente la caja */
 }
 .uno{ position: absolute; top: 12.5%; left: 40%; }
@@ -61,7 +59,7 @@ body {
 }  
 .item {
     margin: 200px 50px 100px 50px;
-    background-color: #d3d3d3;
+    background-color: #bcc3c6;
     border-radius: 10px;
     border: 1px solid black;
 }
