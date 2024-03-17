@@ -1,135 +1,39 @@
 <body>
-    <div class="menu">
-        <ul>
-            <li><a>
-                <div class="player_row">
-                    <div class="izquierda">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                    </div>
-                    <img src="../../assets/img/Alaves.png" alt="Imagen" class="imagen">
-                    <div class="nombre">
-                        <p>Info 1</p>
-                        <p>Info 2</p>
-                        <p>Info 3</p>
-                        <p>Info 4</p>
-                    </div>
-                </div>
-            </a></li>
-            <li><a>
-                <div class="player_row">
-                    <div class="izquierda">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                    </div>
-                    <img src="../../assets/img/Alaves.png" alt="Imagen" class="imagen">
-                    <div class="nombre">
-                        <p>Info 1</p>
-                        <p>Info 2</p>
-                        <p>Info 3</p>
-                        <p>Info 4</p>
-                    </div>
-                </div>
-            </a></li>
-            <li><a>
-                <div class="player_row">
-                    <div class="izquierda">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                    </div>
-                    <img src="../../assets/img/Alaves.png" alt="Imagen" class="imagen">
-                    <div class="nombre">
-                        <p>Info 1</p>
-                        <p>Info 2</p>
-                        <p>Info 3</p>
-                        <p>Info 4</p>
-                    </div>
-                </div>
-            </a></li>
-            <li><a>
-                <div class="player_row">
-                    <div class="izquierda">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                    </div>
-                    <img src="../../assets/img/Alaves.png" alt="Imagen" class="imagen">
-                    <div class="nombre">
-                        <p>Info 1</p>
-                        <p>Info 2</p>
-                        <p>Info 3</p>
-                        <p>Info 4</p>
-                    </div>
-                </div>
-            </a></li>
-            <li><a>
-                <div class="player_row">
-                    <div class="izquierda">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                    </div>
-                    <img src="../../assets/img/Alaves.png" alt="Imagen" class="imagen">
-                    <div class="nombre">
-                        <p>Info 1</p>
-                        <p>Info 2</p>
-                        <p>Info 3</p>
-                        <p>Info 4</p>
-                    </div>
-                </div>
-            </a></li>
-            <li><a>
-                <div class="player_row">
-                    <div class="izquierda">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                    </div>
-                    <img src="../../assets/img/Alaves.png" alt="Imagen" class="imagen">
-                    <div class="nombre">
-                        <p>Info 1</p>
-                        <p>Info 2</p>
-                        <p>Info 3</p>
-                        <p>Info 4</p>
-                    </div>
-                </div>
-            </a></li>
-            <li><a>
-                <div class="player_row">
-                    <div class="izquierda">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                    </div>
-                    <img src="../../assets/img/Alaves.png" alt="Imagen" class="imagen">
-                    <div class="nombre">
-                        <p>Info 1</p>
-                        <p>Info 2</p>
-                        <p>Info 3</p>
-                        <p>Info 4</p>
-                    </div>
-                </div>
-            </a></li>
-            <li><a>
-                <div class="player_row">
-                    <div class="izquierda">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                        <img src="../../assets/img/Almeria.png" alt="Imagen" class="imagen">
-                    </div>
-                    <img src="../../assets/img/Alaves.png" alt="Imagen" class="imagen">
-                    <div class="nombre">
-                        <p>Info 1</p>
-                        <p>Info 2</p>
-                        <p>Info 3</p>
-                        <p>Info 4</p>
-                    </div>
-                </div>
-            </a></li>
-            
-        </ul>
+    <div class="todo">
+        <div class="menu">
+            <ul>
+                <div class="col-12" *ngIf="jugadors.length === 0">
+                    <p>No hay jugadores para mostrar.</p>
+                  </div>
+                <li *ngFor="let jugador of jugadors">
+                    <a>
+                        <div class="player_row">
+                            <div class="izquierda">
+                                <img src="../../assets/img/{{jugador.icono}}.png" alt="Imagen" class="imagen">
+                                <img src="../../assets/img/{{jugador.icono}}.png" alt="Imagen" class="imagen">
+                                <img src="../../assets/img/{{jugador.icono}}.png" alt="Imagen" class="imagen">
+                            </div>
+                            <img src="../../assets/img/{{jugador.equipo}}.png" alt="Imagen" class="imagen">
+                            <div class="nombre">
+                                <p>Nombre: {{jugador.nombre}}</p>
+                                <p>Valor actual: {{jugador.valorActual}} | Valor Futuro: {{jugador.valorFuturo}}</p>
+                                <div class="valor">
+                                    <div *ngFor="let valor of valores">
+                                        <div [ngSwitch]="true">
+                                            <div class="valorItem" *ngSwitchCase="valor <= 5" style="background-color: rgb(219, 201, 12);">{{ valor }}</div>
+                                            <div class="valorItem" *ngSwitchCase="valor >= 6 && valor <= 9" style="background-color: green;">{{ valor }}</div>
+                                            <div class="valorItem" *ngSwitchCase="valor >= 10" style="background-color: blue;">{{ valor }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="boton" (click)="cambiarEstadoJugador(jugador.id)">
+                                    {{ jugador.estado ? 'Comprado' : 'Comprar' }}
+                                  </button>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
