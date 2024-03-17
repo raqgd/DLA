@@ -1,36 +1,37 @@
 .navbar {
-   position: absolute;
-   width: 100%;
+   position: fixed;
    top: 0;
-   background-color: blue;
-  }
-  
-  .sidebar {
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-  }
-
- .btn-close:hover{
-    color: white;
+   z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
  }
 
-.container img {
-//     max-width: 10%;
-//     height: auto;
-}
-
- .navbar::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 80%;
-    height: 10px;
-}
-
+//  .navbar::after {
+//     content: "";
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 80%;
+//     height: 10px;
+// }
 
 .logo {
    cursor: pointer;
    width: 100px;
    height:auto;
+}
+
+.btn-success {
+   margin-top: 17px;
+   margin-left: 25px;
+   height: 60px;
+   width: 200px;
+   font-size: 23px;
+}
+
+.nav-link {
+   margin-right: 25px;
+   margin-top: 30px;
 }

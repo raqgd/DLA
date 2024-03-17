@@ -8,18 +8,18 @@ import { PrivacidadComponent } from './privacidad/privacidad.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
-
-import { LoaderGuard } from './loader.guard';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent, canActivate: [LoaderGuard] },
+    { path: '', component: HomeComponent},
     { path: 'Jugadores', component: JugadoresComponent },
     { path: 'Mercado', component: MercadoComponent },
     { path: 'Acerca', component: NosotrosComponent },
     { path: 'Contacto', component: ContactoComponent },
     { path: 'FAQ', component: FaqComponent },
     { path: 'Privacidad', component: PrivacidadComponent },
-    { path: 'Tec', component: TecComponent }
+    { path: 'Tec', component: TecComponent },
+    { path: 'Login', component: LoginComponent }
 ];
 
 @NgModule({

@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app.routes';
 import { routes } from './app.routes'; 
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LoaderComponent } from './loader/loader.component';
+import {LoginComponent} from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { LoaderComponent } from './loader/loader.component';
     NosotrosComponent,
     FooterComponent,
     NavbarComponent,
-    LoaderComponent
+    LoginComponent
   ],
   imports: [
     AppRoutingModule,
