@@ -3,13 +3,23 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { JugadoresComponent } from './jugadores/jugadores.component';
 import { MercadoComponent } from './mercado/mercado.component';
+import { TecComponent } from './tec/tec.component';
+import { PrivacidadComponent } from './privacidad/privacidad.component';
+import { FaqComponent } from './faq/faq.component';
+import { ContactoComponent } from './contacto/contacto.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 
+import { LoaderGuard } from './loader.guard';
+
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', component: HomeComponent, canActivate: [LoaderGuard] },
     { path: 'Jugadores', component: JugadoresComponent },
     { path: 'Mercado', component: MercadoComponent },
-    { path: 'Acerca', component: NosotrosComponent }
+    { path: 'Acerca', component: NosotrosComponent },
+    { path: 'Contacto', component: ContactoComponent },
+    { path: 'FAQ', component: FaqComponent },
+    { path: 'Privacidad', component: PrivacidadComponent },
+    { path: 'Tec', component: TecComponent }
 ];
 
 @NgModule({

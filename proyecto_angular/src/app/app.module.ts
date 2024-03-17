@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app.routes';
 import { routes } from './app.routes'; 
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     MercadoComponent,
     NosotrosComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoaderComponent
   ],
   imports: [
     AppRoutingModule,
