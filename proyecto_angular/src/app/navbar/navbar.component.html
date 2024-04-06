@@ -4,44 +4,48 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script> -->
 
-<!--Nav Bar-->
+<!-- Nav Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
   <div class="container">
-    <!--Logo--->
-    <a [routerLink]="['/']" ><img src="..\..\..\assets\img\logo.png" class= "logo" style="width:100px;height:100px;"></a>  
-    <!--<img src="..\..\..\assets\img\logo.png" class="logo" alt="Logo DLA">--->
-    <!--Toggle button-->
+    <!-- Logo -->
+    <a [routerLink]="['/']" ><img src="..\..\..\assets\img\logo.png" class="logo" style="width:100px;height:100px;"></a>  
+    <!-- Toggle button -->
     <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-<!-- Side Bar-->
+    <!-- Side Bar -->
     <div class="sidebar offcanvas offcanvas-start text-white border-bottom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-<!--SideBar Header-->
+      <!-- SideBar Header -->
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dream League Assistant</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-<!--SideBar Body-->
+      <!-- SideBar Body -->
       <div class="offcanvas-body d-flex flex-column p-4">
         <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
           <li class="nav-item mx-2" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-            <a class="nav-link" [routerLink]="['/']">Inicio</a>
+            <!-- Agregar el evento click para cerrar el sidebar -->
+            <a class="nav-link" [routerLink]="['/']" data-bs-dismiss="offcanvas">Inicio</a>
           </li>
           <li class="nav-item mx-2" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['/Mercado']">Mercado</a>
+            <!-- Agregar el evento click para cerrar el sidebar -->
+            <a class="nav-link" [routerLink]="['/Mercado']" data-bs-dismiss="offcanvas">Mercado</a>
           </li>
           <li class="nav-item mx-2" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['/Jugadores']">Plantilla</a>
+            <!-- Agregar el evento click para cerrar el sidebar -->
+            <a class="nav-link" [routerLink]="['/Jugadores']" data-bs-dismiss="offcanvas">Plantilla</a>
           </li>
           <li class="nav-item mx-2" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['/Acerca']">Sobre Nosotros</a>
+            <!-- Agregar el evento click para cerrar el sidebar -->
+            <a class="nav-link" [routerLink]="['/Acerca']" data-bs-dismiss="offcanvas">Sobre Nosotros</a>
           </li>
-        <!--Login-->
+          <!-- Login -->
           <div class="loginbutton">
-            <a class="btn btn-success" [routerLink]="['/Login']">Inicia sesión</a>
-          </div>      
-        </ul>                  
-      </div>      
+            <!-- Agregar el evento click para cerrar el sidebar -->
+            <a class="btn btn-success" [routerLink]="['/Login']" data-bs-dismiss="offcanvas">Inicia sesión</a>
+          </div>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
