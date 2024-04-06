@@ -19,8 +19,7 @@ export const routes: Routes = [
     { path: 'FAQ', component: FaqComponent },
     { path: 'Privacidad', component: PrivacidadComponent },
     { path: 'Tec', component: TecComponent },
-    { path: 'Login', component: LoginComponent },
-
+    { path: 'Login', component: LoginComponent }
 ];
 
 @NgModule({
