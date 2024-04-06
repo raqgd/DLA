@@ -1,38 +1,43 @@
 .navbar {
-   position: fixed;
-   top: 0;
-   z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
+   position: fixed;  //Para que esté dentro de la vista
    width: 100%;
    display: flex;
    align-items: center;
    justify-content: space-around;
- }
+   z-index: 20000;
+}
 
 .container {
-   backdrop-filter: blur(5px) brightness(0.84);
-   border-radius: 20px;
-   font-size: larger;
-   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15),  
-                1px -1px 0 rgba(0, 0, 0, 0.15),
-               -1px 1px 0 rgba(0, 0, 0, 0.15),
-                1px 1px 0 rgba(0, 0, 0, 0.15);
+   display: flex;
+   align-items: center;
 }
 
-.logo {
-   cursor: pointer;
-   width: 100px;
-   height:auto;
-}
+@media(max-width:991px){
+   .sidebar{
+      background-color: #020322d5;
+      backdrop-filter: blur(10px);
+      z-index: 20000;
+   }
 
-.btn-success {
-   margin-top: 17px;
-   margin-left: 25px;
-   height: 60px;
-   width: 200px;
-   font-size: 23px;
-}
+   .offcanvas-body{
+      background-color: #020322;
+   }
+   .offcanvas-header{
+      background-color: #020322;
+   }
 
-.nav-link {
-   margin-right: 25px;
-   margin-top: 30px;
+   .loginbutton{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+   }
+
+   .navbar{
+      display: flex;
+      justify-content: center;
+   }
+   .navbar-nav .nav-item {
+      margin-bottom: 15px; 
+    }
 }

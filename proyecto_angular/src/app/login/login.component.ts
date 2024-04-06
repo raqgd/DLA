@@ -1,6 +1,4 @@
-// login.component.ts
-
-import { Component } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +6,48 @@ import { Component } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent {
-  email: string = ''; // Inicializa la propiedad email
-  password: string = ''; // Inicializa la propiedad password
+export class LoginComponent implements OnInit {
 
-  onSubmit() {
-    // Aquí puedes manejar la lógica de inicio de sesión, por ejemplo, enviar los datos al servidor
-    console.log('Email:', this.email);
-    console.log('Password:', this.password);
-  }
+  constructor() { }
+
+  ngOnInit(): void {
+    const container = document.getElementById('container');
+    const registerBtn = document.getElementById('register');
+    const loginBtn = document.getElementById('login');
+
+    if (container && registerBtn && loginBtn) {
+      registerBtn.addEventListener('click', () => {
+        container.classList.add("active");
+      });
+
+      loginBtn.addEventListener('click', () => {
+        container.classList.remove("active");
+      });
+    } else {
+      console.error("One or more elements not found.");
+    }
+
+  // email: string = ''; // Inicializa la propiedad email
+  // password: string = ''; // Inicializa la propiedad password
+
+  // onSubmit() {
+  //   // Aquí puedes manejar la lógica de inicio de sesión, por ejemplo, enviar los datos al servidor
+  //   console.log('Email:', this.email);
+  //   console.log('Password:', this.password);
+  //   }
 }
+}
+
+
+//CODIGO A PASAR A TYPESCRIPT PARA EL SLIDE
+// const container = document.queryElementById('container');
+// const registerBtn = document.queryElementById('register');
+// const loginBtn = document.queryElementById('login');
+
+// registerBtn.addEventListener('click', () => {
+//   container.classList.add("active");
+// });
+
+// loginBtn.addEventListener('click', () => {
+//   container.classList.remove("active");
+// });

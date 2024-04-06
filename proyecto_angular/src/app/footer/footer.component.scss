@@ -1,7 +1,13 @@
+// :root {
+//     --color1: #{color1};
+//     --color2: #{color2};
+//     --color2semit: #{color2semit};
+//     --color3: #{color3};
+//   }
 
 footer {
     color: white; 
-    background-image: linear-gradient(rgba(11,17,29,0.9), rgba(11,17,29,0.9)), url('../../../src/assets/img/fondof2.jpg');
+    background-image: linear-gradient(#020322d5, #020322d5), url('../../../src/assets/img/fondof2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Raleway', sans-serif;
@@ -39,6 +45,7 @@ footer {
     transition: .4s;
 }
 
+/* Estilo para hacer que los iconos cambien de color con hover */
 .btn-floating:hover .fab {
-    color: #b88639; /* Cambia el color a azul cuando pasas el ratón por encima */
+    color: var(--color3);
 }
