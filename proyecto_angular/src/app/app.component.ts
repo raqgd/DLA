@@ -11,5 +11,22 @@ import { FooterComponent } from './footer/footer.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Dream League Assitant';
+  title = 'Dream League Assistant';
+  //constructor(private authService: AuthService) {}
+
+  // constructor (private JugadoresService: JugadoresService) {}
+
+  // ngOnInit (): void{
+  //   this.JugadoresService.getJugador(1).subscribe(  //el profe tieen jugadoresService REVISAR MINUSCULA
+  //     next: (data) => {
+
+  //     },
+  //     error: (error) => {
+  //     }
+  //   );
+  // }
+
+  // isLoggedIn(): boolean {
+  //   return this.authService.isLoggedInUser();
+  // }
 }
