@@ -1,13 +1,12 @@
 body {
-    background: linear-gradient(to right, #6b7593, rgba(11,14,50,255));
+    background-color: #25252d;
     box-shadow: 0px 1px 20px #7c7c7c;
     display: flex;
     justify-content: center;
 }
 .menu{
     margin: 150px 0px 50px 0px;
-    background-color: #d3d3d3;
-    border-radius: 10px;
+    background-color: #25252d;
     padding: 10px 0px 10px 0px;
     width: 40%;
     
@@ -19,6 +18,7 @@ body {
     width: 100%;
     text-align: center; /* Centra el texto horizontalmente */
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .menu ul li a {
@@ -26,26 +26,33 @@ body {
     text-decoration: none;
     color: #333; /* Color del texto */
     margin: 0;
-    background-color: #d3d3d3; /* Color de fondo del enlace */
+    //background-color: #d3d3d3; /* Color de fondo del enlace */
     transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
 .menu ul li a:hover {
-    background-color: #ddd; /* Cambia el color de fondo al pasar el ratón por encima */
+    //background-color: #ddd; /* Cambia el color de fondo al pasar el ratón por encima */
 }
 .player_row{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #444444;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-bottom: 1px solid #2e2e36;
+    background-color: #2e2e36;
 }
 
 .imagen {
     width: 10%; /* Tamaño de la imagen */
     height: 10%;
     align-items: center;
+    
 }
 .nombre {
     flex: 1; /* Toma el espacio restante */
+    color: white;
+    margin-top:10px;
+    font-family:sans-serif;
 }
 .nombre p{
     margin: 0;
