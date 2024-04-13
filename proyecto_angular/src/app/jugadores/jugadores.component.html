@@ -1,4 +1,17 @@
 <body>
+    <div class="item menu">
+        <div class="col-12" *ngIf="jugadors.length === 0">
+            <p>No hay jugadores para mostrar.</p>
+        </div>
+        <div *ngFor="let jugador of jugadors">
+            <a>
+                <div class="box {{jugador.class}}">
+                    <img src="../../assets/img/{{jugador.icono}}.png" class="imagen" >
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
     <div class="item lista">
         <div class="col-12" *ngIf="jugadors.length === 0">
             <p>No hay jugadores para mostrar.</p>
@@ -12,21 +25,10 @@
             </div>
         </div>
     </div>
-    <div class="item menu">
-        <div class="col-12" *ngIf="jugadors.length === 0">
-            <p>No hay jugadores para mostrar.</p>
-        </div>
-        <div *ngFor="let jugador of jugadors">
-            <a>
-                <div class="box {{jugador.class}}">
-                    <img src="../../assets/img/{{jugador.icono}}.png" class="imagen" >
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="item alineaciones">
+</footer>
+    <!-- <div class="item alineaciones">
         <button (click)="aplicarReglas1()">Alineacion: 4-4-2</button>  
         <button (click)="aplicarReglas2()">Alineacion: 4-3-3</button>
         <button (click)="aplicarReglas3()">Alineacion: 3-4-3</button>
-    </div>
+    </div> -->
 </body>

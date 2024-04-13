@@ -10,31 +10,19 @@ body {
     background-color: #25252d;
 }
 .menu{
-    // margin: 150px 0px 50px 0px;
     background-image: url('/assets/img/image-removebg-preview.png');
-    // border-radius: 10px;
-    width: 45%; /* Ancho del contenedor */
-    height: 50%; /* Altura del contenedor */
+    width: 45%;
+    height: 50%;
     position: relative; /* Para posicionar la caja absolutamente en relación con el contenedor */
-    // align-self: center;
-    // width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
-    // height: 0; /* Inicialmente establece la altura en 0 */
     padding-top: 50%; /* Establece el alto en función del ancho (aspect ratio 1:2) */
-    background-size: contain; /* Cubre completamente el contenedor con la imagen */
-    background-position: center; /* Centra la imagen dentro del contenedor */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .box {
-    // width: 75px; /* Ancho de la caja */
-    // height: 75px; /* Altura de la caja */
-    // transform: translateX(-50%); /* Centra horizontalmente la caja */
-
-    width: 10%; /* Modifica el tamaño de los iconos */
+    width: 10%;
     height: auto; /* Para mantener la relación de aspecto */
     position: absolute;
-    // top: calc(50% - 3.75%); /* Alinea verticalmente en el centro del contenedor */
-    // left: calc(50% - 3.75%);
-    // transform: translateX(-50%, -50%);
 }
 
 //Posicion de los iconos dentro de la imagen
@@ -50,12 +38,6 @@ body {
 .die{ position: absolute; top: 52.5%; left: 75%; }
 .onc{ position: absolute; top: 78%; left: 45%; }
 
-@media (max-width: 1140px) {
-    .menu {
-        height: auto; /* Desactiva la altura fija */
-        max-height: 500px; /* Establece una altura máxima */
-    }
-}
 
 .imagen{
     width: 100%;
@@ -65,11 +47,8 @@ body {
     width: 25px;height: 25px;
     margin-right: 5px;
 }
-.jugador p {
-    margin: 0;
-}
 .jugador{
-    margin: 15px;
+    margin-bottom: 15px;
     display: flex;
     text-decoration: none; /* Quita el subrayado */
     color: inherit; /* Hereda el color del texto de su contenedor */
@@ -78,12 +57,6 @@ body {
     background-color: rgba(0, 0, 255, 0.1); /* Cambia el color de fondo al pasar el ratón por encima */
     cursor: pointer;
 }  
-// .item {
-//    // margin: 200px 50px 100px 50px;
-//     // background-color: #bcc3c6;
-//     border-radius: 10px;
-   
-// }
 .alineaciones{
     margin: 100px;
     padding: 20px 20px 10px 20px;
@@ -93,7 +66,6 @@ body {
     align-items: center;
 }
 .alineaciones button {
-    // border: 1px solid black; /* Añade bordes para visualización */
     background-color: #2e2e36;
     display: flex;
     justify-content: center;
@@ -101,5 +73,31 @@ body {
 }
 
 .item.lista{
+    background-color: #25252d;
+    margin-left: 60px;
+}
+
+.nombre{
+    border-radius: 10px;
     background-color: #2e2e36;
+}
+
+p{
+    color:white;
+}
+
+@media (max-width: 1140px) {
+    .menu {
+        height: auto; /* Desactiva la altura fija */
+        max-height: 500px; /* Establece una altura máxima */
+    }
+
+    .lista{
+        height: auto; /* Desactiva la altura fija */
+        max-height: 500px; /* Establece una altura máxima */
+    }
+
+    p{
+        font-size: 10px;
+    }
 }
