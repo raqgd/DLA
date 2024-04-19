@@ -50,8 +50,12 @@ body{
     margin: 15px 0 10px;
 }
 
-.container button{
+.iniciosesion:enabled{
     background-color: #bd9a53;
+}
+
+.container button{
+    background-color: grey;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -61,12 +65,16 @@ body{
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-top: 10px;
-    cursor: pointer;
     opacity: .7;
     transition: .3s ease-in-out;
 }
 
-.container button:hover{
+.iniciosesion:disabled{
+    background-color: grey;
+    cursor:default;
+}
+
+.iniciosesion:active:hover{
     opacity: .95;
 }
 

@@ -1,3 +1,4 @@
+@import url(../../styles.scss);
 .navbar {
    position: fixed;  //Para que esté dentro de la vista
    width: 100%;
@@ -6,6 +7,7 @@
    justify-content: space-around;
    z-index: 20000;
    backdrop-filter: blur(5px);
+   background-color: -var(primary-color);
 }
 
 .container {
@@ -21,10 +23,10 @@
    }
 
    .offcanvas-body{
-      background-color: #020322;
+      background-color: -var(primary-color);
    }
    .offcanvas-header{
-      background-color: #020322;
+      background-color: -var(primary-color);
    }
 
    .loginbutton{
@@ -40,5 +42,6 @@
    }
    .navbar-nav .nav-item {
       margin-bottom: 15px; 
+
     }
 }
