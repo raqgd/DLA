@@ -5,7 +5,7 @@
    display: flex;
    align-items: center;
    justify-content: space-around;
-   z-index: 20000;
+   z-index: 20000;  
    
 }
 .custom-text-color {
@@ -28,6 +28,7 @@
 
    .offcanvas-body{
       background-color: -var(fondo-oscuro);
+      
    }
    .offcanvas-header{
       background-color: -var(fondo-oscuro);
