@@ -55,7 +55,6 @@ body{
 }
 
 .container button{
-    background-color: grey;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -69,12 +68,12 @@ body{
     transition: .3s ease-in-out;
 }
 
-.iniciosesion:disabled{
-    background-color: grey;
+.iniciosesion{
+    background-color: #bd9a53;
     cursor:default;
 }
 
-.iniciosesion:active:hover{
+.iniciosesion{
     opacity: .95;
 }
 
