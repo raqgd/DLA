@@ -5,7 +5,7 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
 </script> -->
 
 <!-- Nav Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<nav class="navbar navbar-expand-lg navbar-dark bg-custom">
   <div class="container">
     <!-- Logo -->
     <a [routerLink]="['/']" ><img src="..\..\..\assets\img\logo.png" class="logo" style="width:100px;height:100px;"></a>  
@@ -25,20 +25,20 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
         <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
           <li class="nav-item mx-2" routerLinkActive="active">
             <!-- Agregar el evento click para cerrar el sidebar -->
-            <a class="nav-link" [routerLink]="['/Mercado']" data-bs-dismiss="offcanvas">Mercado</a>
+            <a class="nav-link custom-text-color" [routerLink]="['/Mercado']" data-bs-dismiss="offcanvas">Mercado</a>
           </li>
           <li class="nav-item mx-2" routerLinkActive="active">
             <!-- Agregar el evento click para cerrar el sidebar -->
-            <a class="nav-link" [routerLink]="['/Jugadores']" data-bs-dismiss="offcanvas">Plantilla</a>
+            <a class="nav-link custom-text-color" [routerLink]="['/Jugadores']" data-bs-dismiss="offcanvas">Plantilla</a>
           </li>
           <li class="nav-item mx-2" routerLinkActive="active">
             <!-- Agregar el evento click para cerrar el sidebar -->
-            <a class="nav-link" [routerLink]="['/Acerca']" data-bs-dismiss="offcanvas">Sobre Nosotros</a>
+            <a class="nav-link custom-text-color" [routerLink]="['/Acerca']" data-bs-dismiss="offcanvas">Sobre Nosotros</a>
           </li>
           <!-- Login -->
           <div class="loginbutton">
             <!-- Agregar el evento click para cerrar el sidebar -->
-            <a class="btn btn-success" [routerLink]="['/Login']" data-bs-dismiss="offcanvas">Inicia sesión</a>
+            <a class="btn btn-outline-light" [routerLink]="['/Login']" data-bs-dismiss="offcanvas">Inicia sesión</a>
           </div>
         </ul>
       </div>

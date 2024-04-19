@@ -6,10 +6,14 @@
    align-items: center;
    justify-content: space-around;
    z-index: 20000;
-   backdrop-filter: blur(5px);
-   background-color: -var(primary-color);
+   
 }
-
+.custom-text-color {
+   color: white; /* Cambia 'red' al color que desees */
+ }
+.bg-custom{
+   background-color: #25252d;
+}
 .container {
    display: flex;
    align-items: center;
@@ -17,16 +21,16 @@
 
 @media(max-width:991px){
    .sidebar{
-      background-color: #020322d5;
+      background-color: white;
       backdrop-filter: blur(10px);
       z-index: 20000;
    }
 
    .offcanvas-body{
-      background-color: -var(primary-color);
+      background-color: -var(fondo-oscuro);
    }
    .offcanvas-header{
-      background-color: -var(primary-color);
+      background-color: -var(fondo-oscuro);
    }
 
    .loginbutton{
@@ -42,6 +46,7 @@
    }
    .navbar-nav .nav-item {
       margin-bottom: 15px; 
+      
 
     }
 }
