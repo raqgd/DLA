@@ -84,7 +84,6 @@
    left: 0;
  }
 
-
 @media(max-width:991px){
    .sidebar{
       background-color: white;
@@ -94,18 +93,20 @@
 
    .offcanvas-body{
       background-color: black;
+      display: flex;
+      justify-content: center;
       
    }
    .offcanvas-header{
       background-color: black;
    }
 
-   .loginbutton{
-      position: relative;
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-   }
+   // .loginbutton{
+   //    position: relative;
+   //    display: flex;
+   //    justify-content: center;
+   //    margin-top: 30px;
+   // }
 
    .navbar{
       display: flex;
