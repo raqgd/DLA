@@ -1,11 +1,92 @@
 body {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding-top: 125px;
+}
+
+#introduccion{
     background-image: url('/assets/img/cesped3_out.jpg');
     background-size: cover;
     background-repeat: no-repeat;  
     display: flex;
     justify-content: center;
     align-items: center; 
-    padding-top: 200px;
+}
+
+#info{
+    background-color:#020614;
+}
+
+#imgSocios{
+    background-color: #0b1024cf;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+// .logoWrapper {
+//     position: relative;
+// }
+
+.sombra {
+    position: absolute;
+    margin-top: 70px;
+    left: 50%;
+    opacity: .90;
+    transform: translateX(-50%);
+    width: 100px; /* Ajusta el ancho de la sombra según sea necesario */
+    height: auto; /* Ajusta la altura de la sombra según sea necesario */
+    /* Otros estilos de la sombra */
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2, h3, p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3, p{
+    color: rgb(141, 135, 135);
+}
+
+// .logo1::before {
+//     content: '';
+//     position: absolute;
+//     bottom: -10;
+//     left: 0;
+//     width: 100%;
+//     height: 170px;
+//     background-color: rgba(4, 9, 30, 0.5); /* Color de fondo con transparencia */
+//     z-index: 2; /* Asegura que la capa esté sobre la imagen */
+// }
+
+// .mf {
+//     position: relative;
+//     z-index: 1; /* Asegura que la imagen esté sobre el fondo */
+// }
+    
+
+#info h1{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+}
+
+#descripcion{
+    background-color: antiquewhite;
+}
+
+img{
+    // width: 50%;
+    height: 100px;
 }
