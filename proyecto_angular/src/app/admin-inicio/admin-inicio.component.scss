@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    padding-top: 150px;
+    background-color: #25252d;
+}
+.list-group-item{
+    height: 7vh;
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+   
+    
+}
+.btn{
+    margin-left: 10px;
+}
+.col-12{
+    display: flex;
+    justify-content: center;
+}
+.list-group-item-custom {
+    background-color: #212529;
+    color:white;
+    border: #212529;
+    
+    
+}
+.separator {
+    border-bottom: 1px solid #ccc; /* Añade un borde inferior de 1px sólido de color gris */
+    margin-top: 10px;
+    margin-bottom: 7px; /* Ajusta el espacio entre los elementos */
+    list-style: none; 
+  }
+.col-3 {
+    display: flex;
+    width: 100%;
+    padding-left: 100px;
+}
+.img-item{
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    display: flex; 
+    justify-content:flex-start;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 10px;
+}
+h1{
+    color: white;
+    margin-left: 300px ;
+    
+}

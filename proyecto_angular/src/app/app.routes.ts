@@ -9,6 +9,7 @@ import { FaqComponent } from './faq/faq.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { LoginComponent } from './login/login.component';
+import { AdminInicioComponent } from './admin-inicio/admin-inicio.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent},
@@ -19,7 +20,8 @@ export const routes: Routes = [
     { path: 'FAQ', component: FaqComponent },
     { path: 'Privacidad', component: PrivacidadComponent },
     { path: 'Tec', component: TecComponent },
-    { path: 'Login', component: LoginComponent }
+    { path: 'Login', component: LoginComponent },
+    { path: 'Administrador', component: AdminInicioComponent}
 ];
 
 @NgModule({

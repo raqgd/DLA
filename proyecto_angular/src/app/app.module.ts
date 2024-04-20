@@ -14,6 +14,7 @@ import { routes } from './app.routes';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {LoginComponent} from './login/login.component';
+import { AdminInicioComponent } from './admin-inicio/admin-inicio.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {LoginComponent} from './login/login.component';
     NosotrosComponent,
     FooterComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    AdminInicioComponent
   ],
   imports: [
     AppRoutingModule,
