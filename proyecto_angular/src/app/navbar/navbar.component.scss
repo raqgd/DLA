@@ -12,12 +12,46 @@
    color: white; /* Cambia 'red' al color que desees */
  }
 .bg-custom{
-   background-color: #25252d;
+   background-color: #020614;
 }
 .container {
    display: flex;
    align-items: center;
 }
+
+.nav-link:hover {
+   color: #fff; /* Color de texto para el elemento activo */
+ }
+
+/* Estilos para el elemento de navegación activo */
+// .nav-link {
+//    position: relative; /* Posición relativa para el elemento de navegación */
+//    color: #ffc107; /* Color de texto para el elemento activo */
+//  }
+ 
+/* Estilos para el elemento de navegación activo */
+.nav-item.active .nav-link {
+   position: relative; /* Posición relativa para el elemento de navegación */
+   // color: #ffc107; /* Color de texto para el elemento activo */
+ }
+ 
+ .nav-item.active .nav-link::after {
+   content: ''; /* Pseudo-elemento para el indicador */
+   position: absolute;
+   bottom: -2px; /* Posición inicial del indicador */
+   left: 0;
+   width: 0; /* Ancho inicial del indicador */
+   height: 2px; /* Altura del indicador */
+   background-color: #ffc107; /* Color del indicador */
+   transition: width 0.3s ease; /* Transición suave para el ancho */
+ }
+
+  /* Aplicar el ancho completo y la posición cuando el enlace está activo */
+  .nav-item.active .nav-link::after {
+   width: 100%;
+   left: 0;
+ }
+
 
 @media(max-width:991px){
    .sidebar{
@@ -27,11 +61,11 @@
    }
 
    .offcanvas-body{
-      background-color: -var(fondo-oscuro);
+      background-color: black;
       
    }
    .offcanvas-header{
-      background-color: -var(fondo-oscuro);
+      background-color: black;
    }
 
    .loginbutton{
