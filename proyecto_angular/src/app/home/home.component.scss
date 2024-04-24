@@ -3,6 +3,9 @@ body {
     height: auto;
     padding-top: 125px;
 }
+.section{
+    height: auto;
+}
 
 #introduccion{
     background-image: url('/assets/img/cesped3_out.jpg');
@@ -14,7 +17,9 @@ body {
 }
 
 #info{
-    background-color:#020614;
+    background-color:#0b1024cf;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
 }
 
 #imgSocios{
@@ -55,6 +60,29 @@ h2, h3, p{
 h3, p{
     color: rgb(141, 135, 135);
 }
+.col{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    position: relative;
+
+}
+#pronostico{
+ margin-left: 4vw;
+}
+
+.img-columna{
+    width: 30%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+    background-color: white;
+    
+}
+.logo1, .logo2{
+    margin-top: 5vh;
+}
 
 // .logo1::before {
 //     content: '';
@@ -81,9 +109,18 @@ h3, p{
 h1{
     color: white;
 }
+.section {
+    margin-bottom: 0; /* Puedes ajustar este valor según tus necesidades */
+}
+
+#contact {
+    margin-top: 0; /* Elimina el margen superior para evitar la línea blanca */
+}
 
 #descripcion{
-    background-color: antiquewhite;
+    background-color: #25252d;
+    margin-bottom: 0;
+    color: white;
 }
 
 img{
