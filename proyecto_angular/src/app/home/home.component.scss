@@ -5,6 +5,7 @@ body {
 }
 .section{
     height: auto;
+    width: 100%;
 }
 
 #introduccion{
@@ -18,8 +19,6 @@ body {
 
 #info{
     background-color:#0b1024cf;
-    margin-top: 2vh;
-    margin-bottom: 1vh;
 }
 
 #imgSocios{
@@ -55,6 +54,11 @@ h2, h3, p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+p{
+    margin-bottom: 0px;
+    padding-bottom: 10px;
 }
 
 h3, p{
