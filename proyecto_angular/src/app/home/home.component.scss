@@ -1,3 +1,4 @@
+//elementos generales
 body {
     width: 100%;
     height: auto;
@@ -6,8 +7,30 @@ body {
 .section{
     height: auto;
     width: 100%;
+    margin-bottom: 0;
+}
+h1{
+    color: white;
+}
+img{
+    // width: 50%;
+    height: 100px;
+}
+h2, h3, p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin-bottom: 0px;
+    padding-bottom: 10px;
 }
 
+h3, p{
+    color: rgb(141, 135, 135);
+}
+
+//sección de ientroducción
 #introduccion{
     background-image: url('/assets/img/cesped3_out.jpg');
     background-size: cover;
@@ -17,21 +40,72 @@ body {
     align-items: center; 
 }
 
+
+//sección de introducción
 #info{
-    background-color:#0b1024cf;
+    background-color:#25252d;
+}
+#info h1{
+    display: flex;
+    justify-content: center;
 }
 
+//sección de descripción
+#descripcion{
+    background-color: #D8BD44;
+    margin-bottom: 0;
+    color: white;
+}
+#pronostico{
+    margin-left: 4vw;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    position: relative;
+
+}
+.img-columna{
+    width: 30%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+   
+    
+}
+
+//sección de contact
+#contact {
+    margin-top: 0; /* Elimina el margen superior para evitar la línea blanca */
+    background-color: #25252d;
+}
+p #contact{
+    margin-left: 5vw;
+}
+
+//sección de socios
 #imgSocios{
-    background-color: #0b1024cf;
+    background-color: #837B55;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 70px;
 }
+.logo1, .logo2{
+    margin-top: 5vh;
+}
 
-// .logoWrapper {
-//     position: relative;
-// }
+
+
+
+
 
 .sombra {
     position: absolute;
@@ -44,49 +118,8 @@ body {
     /* Otros estilos de la sombra */
 }
 
-.row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-h2, h3, p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-p{
-    margin-bottom: 0px;
-    padding-bottom: 10px;
-}
-
-h3, p{
-    color: rgb(141, 135, 135);
-}
-.col{
-    margin-left: 5vw;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    position: relative;
-
-}
-#pronostico{
- margin-left: 4vw;
-}
-
-.img-columna{
-    width: 30%;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    margin-left: 1vw;
-   
-    
-}
-.logo1, .logo2{
-    margin-top: 5vh;
-}
 
 // .logo1::before {
 //     content: '';
@@ -103,33 +136,7 @@ h3, p{
 //     position: relative;
 //     z-index: 1; /* Asegura que la imagen esté sobre el fondo */
 // }
-    
-
-#info h1{
-    display: flex;
-    justify-content: center;
-}
-
-h1{
-    color: white;
-}
-.section {
-    margin-bottom: 0; /* Puedes ajustar este valor según tus necesidades */
-}
-
-#contact {
-    margin-top: 0; /* Elimina el margen superior para evitar la línea blanca */
-}
-
-#descripcion{
-    background-color: #25252d;
-    margin-bottom: 0;
-    color: white;
-}
-
-img{
-    // width: 50%;
-    height: 100px;
-}
-
+// .logoWrapper {
+//     position: relative;
+// }
 
