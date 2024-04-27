@@ -30,7 +30,7 @@ h3, p{
     color: rgb(141, 135, 135);
 }
 
-//sección de ientroducción
+//sección de introducción
 #introduccion{
     background-image: url('/assets/img/cesped3_out.jpg');
     background-size: cover;
@@ -38,26 +38,44 @@ h3, p{
     display: flex;
     justify-content: center;
     align-items: center; 
+    padding-bottom: 5vh;
 }
 
 
 //sección de introducción
 #info{
     background-color:#25252d;
+    display: block;
+    
+    padding-top: 2vh;
+    
 }
 #info h1{
     display: flex;
     justify-content: center;
+    margin-bottom: 5vh;
 }
+.card{
+    background-color: #25252d;
+    border-color: white;
+}
+.card-title{
+    color: white;
+}
+
 
 //sección de descripción
 #descripcion{
-    background-color: #D8BD44;
+    background-color: #B8AB93;
     margin-bottom: 0;
     color: white;
+    padding-top: 2vh;
+}
+h2 #descripcion{
+    padding-bottom: 10vh;
 }
 #pronostico{
-    margin-left: 4vw;
+   
 }
 .row{
     display: flex;
@@ -65,15 +83,20 @@ h3, p{
     align-items: center;
 }
 .col{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
     margin-left: 5vw;
     display: flex;
     flex-direction: column;
     justify-self: center;
     position: relative;
+    
 
 }
+
+
 .img-columna{
-    width: 30%;
+    width: 40%;
     margin-top: 2vh;
     margin-bottom: 2vh;
     margin-left: 1vw;
@@ -85,14 +108,25 @@ h3, p{
 #contact {
     margin-top: 0; /* Elimina el margen superior para evitar la línea blanca */
     background-color: #25252d;
+    padding-top: 5vh;
+    padding-bottom: 5vh
 }
 p #contact{
     margin-left: 5vw;
 }
+.color-izquierda {
+    background-color: blue; /* Color para la mitad izquierda */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+.color-derecha {
+    background-color: red; /* Color para la mitad derecha */
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
+}
 
 //sección de socios
 #imgSocios{
-    background-color: #837B55;
+    background-color: #B8AB93;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -102,21 +136,16 @@ p #contact{
     margin-top: 5vh;
 }
 
-
-
-
-
-
-.sombra {
+/*.sombra {
     position: absolute;
     margin-top: 70px;
     left: 50%;
     opacity: .90;
     transform: translateX(-50%);
     width: 100px; /* Ajusta el ancho de la sombra según sea necesario */
-    height: auto; /* Ajusta la altura de la sombra según sea necesario */
+    /*height: auto; /* Ajusta la altura de la sombra según sea necesario */
     /* Otros estilos de la sombra */
-}
+
 
 
 
