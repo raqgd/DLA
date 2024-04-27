@@ -3,6 +3,7 @@ body {
     width: 100%;
     height: auto;
     padding-top: 125px;
+    background-color: black ;
 }
 .section{
     height: auto;
@@ -12,6 +13,10 @@ body {
 h1{
     color: white;
 }
+#equipos img{
+    height: 50px;
+}
+
 img{
     // width: 50%;
     height: 100px;
@@ -60,24 +65,33 @@ h3, p{
     margin-bottom: 5vh;
 }
 .card{
-    background-color: #25252d;
-    border-color: white;
+    background-color: transparent;
+    border-color: transparent;
 }
 .card-title{
     color: white;
 }
 
+h5{
+    word-wrap: keep-all; /* Permite que las palabras se dividan si no caben en el contenedor */
+}
+
+// h5, p {
+//     word-break: break-all;
+// }
 
 //sección de descripción
 #descripcion{
     background-color: #B8AB93;
     margin-bottom: 0;
     color: white;
-    padding-top: 2vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
-h2 #descripcion{
-    padding-bottom: 10vh;
-}
+// h2 #descripcion{
+//     padding-bottom: 10vh;
+// }
+
 #pronostico{
    
 }
@@ -87,9 +101,9 @@ h2 #descripcion{
     align-items: center;
 }
 .col{
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-    margin-left: 5vw;
+    // margin-top: 5vh;
+    // margin-bottom: 2vh;
+    // margin-left: 5vw;
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -110,7 +124,7 @@ h2 #descripcion{
 
 //sección de contact
 #contact {
-    margin-top: 0; /* Elimina el margen superior para evitar la línea blanca */
+    margin-top: 0; // Elimina el margen superior para evitar la línea blanca
     background-color: #25252d;
     padding-top: 5vh;
     padding-bottom: 5vh
@@ -140,6 +154,74 @@ p #contact{
     margin-top: 5vh;
 }
 
+#equipos{
+background-color: black;
+display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
+
+.row {
+    margin: none; /* Ajusta el margen izquierdo */
+}
+
+.col {
+    padding: none; /* Ajusta el relleno izquierdo */
+}
+
+@media (max-width: 1030px ) {
+    #imgSocios {
+      flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+      align-items: center; /* Centrar los elementos en el eje horizontal */
+    }
+
+    #equipos {
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
+        justify-content: space-around; /* Distribuir los elementos uniformemente en el contenedor */
+        margin-bottom: 30px;
+      }
+      #equipos img {
+        max-width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
+        margin-right: 10px; /* Agregar un espacio entre las imágenes */
+        margin-bottom: 10px; /* Agregar un espacio entre las filas */
+        height: auto;
+      }
+}
+
+@media (max-width: 660px ) {
+    #imgSocios {
+      flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+      align-items: center; /* Centrar los elementos en el eje horizontal */
+    }
+
+    #equipos {
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
+        justify-content: space-around; /* Distribuir los elementos uniformemente en el contenedor */
+        margin-bottom: 40px;
+      }
+      #equipos img {
+        width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
+        margin-right: 10px; /* Agregar un espacio entre las imágenes */
+        margin-bottom: 10px; /* Agregar un espacio entre las filas */
+        height: auto;
+      }
+}
+
+@media (max-width: 370px) {
+    #equipos {
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
+        justify-content: space-between; /* Distribuir los elementos uniformemente en el contenedor */
+        margin-bottom: 150px;
+      }
+      #equipos img {
+        width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
+        margin-right: 10px; /* Agregar un espacio entre las imágenes */
+        margin-bottom: 10px; /* Agregar un espacio entre las filas */
+        height: auto;
+      }
+}
 /*.sombra {
     position: absolute;
     margin-top: 70px;
