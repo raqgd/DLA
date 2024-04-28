@@ -22,10 +22,12 @@ h1{
     height: 50px;
 }
 
-img{
-    // width: 50%;
-    height: 100px;
+.carousel-item img {
+    max-width: 40%;
+    height: auto;
+    
 }
+
 h2, h3, p{
     display: flex;
     justify-content: center;
@@ -64,13 +66,32 @@ h3, p{
     font-weight: bolder;
 }
 
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
 #info h1{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
+    font-size: 45px;
+    font-style: italic;
 }
 
 h5{
     font-family: 'Barlow Condensed', sans-serif;
+}
+
+#contact {
+    height: 430px;
+}
+
+#contact h2{
+    padding-top: 15px;
+    padding-bottom: 40px;
 }
 
 p{
@@ -85,7 +106,7 @@ p{
 
 //sección de introducción
 #info{
-    background-color:#161c21;
+    background: linear-gradient(to bottom, #161c21, #000203);
     display: block;
     
     padding-top: 2vh;
@@ -114,7 +135,7 @@ h5{
 
 //sección de descripción
 #descripcion{
-    background-image:  url('/assets/img/cesped.webp');
+    background-image:  url('/assets/img/humo.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 0;
@@ -163,6 +184,10 @@ h5{
     background-color: #25252d;
 }
 
+#contact .img {
+    height: auto;
+}
+
 p #contact{
     margin-left: 5vw;
 }
@@ -184,7 +209,8 @@ p #contact{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
+    height: 120px;
 }
 .logo1, .logo2{
     margin-top: 5vh;
