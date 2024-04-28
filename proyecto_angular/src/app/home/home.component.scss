@@ -19,7 +19,15 @@ h1{
     color: white;
 }
 #equipos img{
-    height: 50px;
+    max-width: 50px;
+    height: auto;
+}
+
+#equipos .equipos-container {
+    display: flex;
+    flex-wrap: nowrap; /* Evitar que las imágenes se envuelvan en varias líneas */
+    overflow-x: auto;
+    justify-content: space-between;
 }
 
 .carousel-item img {
@@ -46,6 +54,7 @@ h3, p{
 #introduccion{
     background-image: url('/assets/img/fondofutbol.webp');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;  
     display: flex;
     justify-content: center;
@@ -137,7 +146,8 @@ h5{
 #descripcion{
     background-image:  url('/assets/img/humo.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;  
     margin-bottom: 0;
     color: white;
     padding-top: 6vh;
@@ -149,6 +159,10 @@ h5{
 
 #descripcion img:hover{
     transform: scale(1);
+}
+
+.logo2{
+    transform: scale(.8);
 }
 #pronostico{
    
@@ -201,35 +215,31 @@ p #contact{
     clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
 }
 
+img.hpe{
+    margin-left: -1px;
+}
+
 //sección de socios
 #imgSocios{
     background-image: url('/assets/img/fondofoco.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;  
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 30px;
-    height: 120px;
+    height: auto;
 }
 .logo1, .logo2{
     margin-top: 5vh;
 }
 
 .logo2{
-    // width: 100px;
-    // height: auto;
-    // padding-left: -0px;
+    width: 80px;
+    height: auto;
+    padding-left: -0px;
 }
-
-#equipos{
-background-color: black;
-display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
-}
-
 
 .row {
     margin: none; /* Ajusta el margen izquierdo */
@@ -245,50 +255,70 @@ display: flex;
       align-items: center; /* Centrar los elementos en el eje horizontal */
     }
 
-    #equipos {
-        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
-        justify-content: space-around; /* Distribuir los elementos uniformemente en el contenedor */
-        margin-bottom: 30px;
-      }
-      #equipos img {
-        max-width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
-        margin-right: 10px; /* Agregar un espacio entre las imágenes */
-        margin-bottom: 10px; /* Agregar un espacio entre las filas */
+    // #equipos {
+    //     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
+    //     justify-content: space-around; /* Distribuir los elementos uniformemente en el contenedor */
+    //     margin-bottom: 30px;
+    //   }
+    //   #equipos img {
+    //     max-width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
+    //     margin-right: 10px; /* Agregar un espacio entre las imágenes */
+    //     margin-bottom: 10px; /* Agregar un espacio entre las filas */
+    //     height: auto;
+    //   }
+}
+
+@media (max-width: 970px ) {
+    #equipos .equipos-container img {
+        max-width: 40px;
         height: auto;
       }
+}
+
+@media (max-width: 775px ) {
+    #equipos .equipos-container img {
+        max-width: 25px;
+        height: auto;
+      }
+}
+
+@media (max-width: 520px ) {
+    #equipos .equipos-container {
+        flex-wrap: wrap; /* Evitar que las imágenes se envuelvan en varias líneas */
+    }
 }
 
 @media (max-width: 660px ) {
-    #imgSocios {
-      flex-direction: column; /* Cambiar la dirección del flexbox a columna */
-      align-items: center; /* Centrar los elementos en el eje horizontal */
-    }
+    // #imgSocios {
+    //   flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+    //   align-items: center; /* Centrar los elementos en el eje horizontal */
+    // }
 
-    #equipos {
-        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
-        justify-content: space-around; /* Distribuir los elementos uniformemente en el contenedor */
-        margin-bottom: 40px;
-      }
-      #equipos img {
-        width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
-        margin-right: 10px; /* Agregar un espacio entre las imágenes */
-        margin-bottom: 10px; /* Agregar un espacio entre las filas */
-        height: auto;
-      }
+    // #equipos {
+    //     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
+    //     justify-content: space-around; /* Distribuir los elementos uniformemente en el contenedor */
+    //     margin-bottom: 40px;
+    //   }
+    //   #equipos img {
+    //     width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
+    //     margin-right: 10px; /* Agregar un espacio entre las imágenes */
+    //     margin-bottom: 10px; /* Agregar un espacio entre las filas */
+    //     height: auto;
+    //   }
 }
 
 @media (max-width: 370px) {
-    #equipos {
-        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
-        justify-content: space-between; /* Distribuir los elementos uniformemente en el contenedor */
-        margin-bottom: 150px;
-      }
-      #equipos img {
-        width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
-        margin-right: 10px; /* Agregar un espacio entre las imágenes */
-        margin-bottom: 10px; /* Agregar un espacio entre las filas */
-        height: auto;
-      }
+    // #equipos {
+    //     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
+    //     justify-content: space-between; /* Distribuir los elementos uniformemente en el contenedor */
+    //     margin-bottom: 150px;
+    //   }
+    //   #equipos img {
+    //     width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
+    //     margin-right: 10px; /* Agregar un espacio entre las imágenes */
+    //     margin-bottom: 10px; /* Agregar un espacio entre las filas */
+    //     height: auto;
+    //   }
 }
 
 img {
