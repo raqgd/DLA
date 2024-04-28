@@ -26,7 +26,7 @@ h1{
 #equipos .equipos-container {
     display: flex;
     flex-wrap: nowrap; /* Evitar que las imágenes se envuelvan en varias líneas */
-    overflow-x: auto;
+    // overflow-x: auto;
     justify-content: space-between;
 }
 
@@ -218,6 +218,17 @@ p #contact{
 img.hpe{
     margin-left: -100px;
 }
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+//   .carousel-item {
+//     text-align: center; /* Asegura que el contenido dentro de cada item esté centrado horizontalmente */
+//   }
+  
 
 //sección de socios
 #imgSocios{
