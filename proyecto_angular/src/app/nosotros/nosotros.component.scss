@@ -7,18 +7,58 @@ body {
 .componentes-grid{
   background: linear-gradient(to bottom, #989fa7, #575c60);
   padding-top: 3vh;
+  padding-left: 2vw;
+  padding-right:2vw;
 }
 #rrss{
   margin:0px;
+  background-color: #BD9A63;
+}
+.titulo{
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-image:  url('/assets/img/humo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+
+  
+}
+#text{
+  text-align: center;
+}
+.mision{
+  background-color:#25252d;
+  color: white;
+  margin: 0px;
+  padding-left: 2vw;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  padding-right: 2vw;
+  display: flex;
+  flex: 1;
+}
+#textMision{
+  margin-right: 1vw;
+  font-size: x-large;
 }
 #intro{
   background-color:#25252d;
   color: white;
+
+  
 }
+.textoFotos{
+  padding-top: 2vh;
+  text-align: left;
+}
+
 #info {
   background-color: #25252d;
   margin: 0px;
-  padding-left:3vw;
+  padding-left:1vw;
   padding-bottom: 3vh;
   padding-top:2vh ;
   
