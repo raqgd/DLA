@@ -6,14 +6,27 @@ body {
 
 .componentes-grid{
   background: linear-gradient(to bottom, #989fa7, #575c60);
+  padding-top: 3vh;
 }
-
+#rrss{
+  margin:0px;
+}
+#intro{
+  background-color:#25252d;
+  color: white;
+}
 #info {
-  background-color: #232323;
+  background-color: #25252d;
+  margin: 0px;
+  padding-left:3vw;
+  padding-bottom: 3vh;
+  padding-top:2vh ;
+  
 }
 
 .mb-4{
   background-color: #BD9A63;
+  margin:0px;
 }
 
 h2{

@@ -34,6 +34,7 @@ import { AdminInicioComponent } from './admin-inicio/admin-inicio.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
