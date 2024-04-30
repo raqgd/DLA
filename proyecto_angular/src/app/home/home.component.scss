@@ -197,6 +197,7 @@ h5{
     background: linear-gradient(to bottom, #161c21, #000203);
     margin-top: 0; // Elimina el margen superior para evitar la línea blanca
     background-color: #25252d;
+    height:70vh;
 }
 
 #contact .img {
@@ -215,7 +216,14 @@ p #contact{
     background-color: red; /* Color para la mitad derecha */
     clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
 }
-
+.carousel-item img {
+    display: block;
+    margin-right:55vw ;
+}
+.carousel-item {
+   
+   
+}
 img.hpe{
     margin-left: -100px;
 }
