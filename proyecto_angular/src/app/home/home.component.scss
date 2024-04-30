@@ -30,11 +30,11 @@ h1{
     justify-content: space-between;
 }
 
-.carousel-item img {
-    max-width: 40%;
-    height: auto;
+// .carousel-item img {
+//     max-width: 40%;
+//     height: auto;
     
-}
+// }
 
 h2, h3, p{
     display: flex;
@@ -220,19 +220,19 @@ p #contact{
     display: block;
     margin-right:55vw ;
 }
-.carousel-item {
+// .carousel-item {
    
    
-}
+// }
 img.hpe{
     margin-left: -100px;
 }
-
-.carousel-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+//ESTE ES EL QUE DESCOLOCA EL CAROUSEL, NO TOCAR!!
+// .carousel-inner {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
   
 //   .carousel-item {
 //     text-align: center; /* Asegura que el contenido dentro de cada item esté centrado horizontalmente */
@@ -339,6 +339,15 @@ img.hpe{
     //     margin-bottom: 10px; /* Agregar un espacio entre las filas */
     //     height: auto;
     //   }
+}
+
+// .carousel-item {
+//     display: flex;
+//     justify-content: center; /* Centra horizontalmente el contenido */
+// }
+
+.carousel-item .d-block {
+    margin: 0 auto; /* Centra horizontalmente el elemento */
 }
 
 img {

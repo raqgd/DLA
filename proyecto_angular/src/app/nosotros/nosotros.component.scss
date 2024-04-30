@@ -4,12 +4,19 @@ body {
   padding-top: 125px;
 }
 
-#fotos{
+#fotos {
   background: linear-gradient(to bottom, #989fa7, #575c60);
+  height: 100px;
 }
 
 .col-sm-12{
   background-color: #25252d;
+}
+
+.row-inicial{
+  display: flex;
+  justify-content:space-evenly;
+
 }
 
 .col-sm-12 p{
@@ -40,9 +47,8 @@ justify-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;  
-
-  
 }
+
 #text{
   text-align: center;
 }
@@ -61,6 +67,7 @@ justify-content: center;
   margin-right: 1vw;
   font-size: x-large;
 }
+
 #intro{
   background-color:#25252d;
   color: white;
@@ -91,6 +98,13 @@ h2{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: medium;
 }
+
+// @media screen and (max-width: 900px) {
+//    #imgInicio{
+//     width: 50px;
+//     height: auto;
+//    }
+// }
 
 // body {
 //   width: 100%;
