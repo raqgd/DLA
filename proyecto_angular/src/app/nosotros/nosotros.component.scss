@@ -4,6 +4,23 @@ body {
   padding-top: 125px;
 }
 
+#fotos{
+  background: linear-gradient(to bottom, #989fa7, #575c60);
+}
+
+.col-sm-12{
+  background-color: #25252d;
+}
+
+.col-sm-12 p{
+  color: white;
+}
+
+.col-sm-3{
+display: flex;
+justify-content: center;
+}
+
 .componentes-grid{
   background: linear-gradient(to bottom, #989fa7, #575c60);
   padding-top: 3vh;
