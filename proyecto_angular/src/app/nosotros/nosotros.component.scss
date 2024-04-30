@@ -4,6 +4,71 @@ body {
   padding-top: 125px;
 }
 
+.btn-rrss {
+  font-size: 2.5rem; /* Ajusta el tamaño del texto */
+  padding: 20px 25px; /* Ajusta el relleno del botón */
+}
+
+h1{
+  left: 0;
+  color: #25252d;
+  // padding-left: 150px;
+  // padding-bottom: 500px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  font-style: oblique;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+.col-sm-3 h1{
+  font-style: normal;
+}
+
+.col-sm-12 h1{
+  font-style: normal;
+  color: #afb4ba;
+}
+
+h1.titulo{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+}
+
+h2{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
+
+h3{
+  left: 0;
+  color: white;
+  // padding-left: 150px;
+  // padding-bottom: 500px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  font-style: oblique;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+.rrss{
+  display: flex;
+  justify-content: center;
+}
+
 #fotos {
   background: linear-gradient(to bottom, #989fa7, #575c60);
   height: 100px;
