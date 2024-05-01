@@ -17,6 +17,9 @@
 .navbar-nav .nav-item .nav-link:hover {
    color: #ffc107; /* Cambia el color del texto al pasar el cursor */
 }
+.navbar-nav .nav-item .nav-link{
+   font-family: 'Barlow', sans-serif;
+}
 #logindentro{
    padding: 13px;
    padding-left: 20px;
@@ -24,7 +27,13 @@
 }
 #logindentro p{
    font-size: 25px;
+   font-family: 'Barlow', sans-serif;
 }
+.scrolled-color {
+   background-color: #b88639; /* Cambia el color de fondo del botón al hacer scroll */
+   color: #ffffff; /* Cambia el color del texto del botón al hacer scroll */
+   border-color: #b88639;
+ }
 .container {
    display: flex;
    align-items: center;
