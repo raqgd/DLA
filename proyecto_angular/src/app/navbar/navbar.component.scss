@@ -14,13 +14,16 @@
 .bg-custom{
    background-color: #020614;
 }
+.navbar-nav .nav-item .nav-link:hover {
+   color: #ffc107; /* Cambia el color del texto al pasar el cursor */
+}
 #logindentro{
-   padding: 17px;
+   padding: 13px;
    padding-left: 20px;
    padding-right: 20px;
 }
 #logindentro p{
-   font-size: 20px;
+   font-size: 25px;
 }
 .container {
    display: flex;
