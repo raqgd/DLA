@@ -75,12 +75,25 @@ h3, p{
     font-weight: bolder;
 }
 
+#info h5{
+font-size: 40px;
+}
+
+#info p {
+    font-size: larger;
+}
+
+#descripcion h5 {
+font-size: 26px;
+}
+
 h2{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
     color: white;
     display: flex;
     justify-content: center;
+    font-size: 50px;
 }
 
 #info h1{
@@ -92,6 +105,7 @@ h2{
 
 h5{
     font-family: 'Barlow Condensed', sans-serif;
+    font-size: large;
 }
 
 #contact {
