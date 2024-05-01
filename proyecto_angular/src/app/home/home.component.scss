@@ -26,10 +26,14 @@ h1{
     max-width: 50px;
     height: auto;
 }
+//Ya no hay p
+// .carousel-caption p {
+//     color:rgb(201, 224, 244);
+// }
 
 #equipos .equipos-container {
     display: flex;
-    flex-wrap: nowrap; /* Evitar que las imágenes se envuelvan en varias líneas */
+    flex-wrap: nowrap; // Evitar que las imágenes se envuelvan en varias líneas
     // overflow-x: auto;
     justify-content: space-between;
 }
