@@ -10,6 +10,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { LoginComponent } from './login/login.component';
 import { AdminInicioComponent } from './admin-inicio/admin-inicio.component';
+import { EquipoComponent } from './equipo/equipo.component';
 
 export const routes: Routes = [
     { path: 'Inicio', component: HomeComponent},
@@ -21,7 +22,8 @@ export const routes: Routes = [
     { path: 'Privacidad', component: PrivacidadComponent },
     { path: 'Tec', component: TecComponent },
     { path: 'Login', component: LoginComponent },
-    { path: 'Administrador', component: AdminInicioComponent}
+    { path: 'Administrador', component: AdminInicioComponent},
+    { path: 'equipo/:nombreEquipo', component: EquipoComponent }
 ];
 
 @NgModule({
