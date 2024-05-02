@@ -9,6 +9,14 @@ body {
     padding-top: 100px;
     background-color: #25252d;
 }
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn p{
+margin: 0px;
+}
 .menu{
     background-image: url('/assets/img/image-removebg-preview.png');
     width: 45%;
@@ -38,6 +46,11 @@ body {
 .die{ position: absolute; top: 52.5%; left: 75%; }
 .onc{ position: absolute; top: 78%; left: 45%; }
 
+.col-md-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .imagen{
     width: 100%;
@@ -73,9 +86,9 @@ body {
 }
 
 .item.lista{
-    background-color: #25252d;
-    margin-top: 10px;
-    margin-left: 60px;
+//     background-color: #25252d;
+    margin-top: 80px;
+//     margin-left: 60px;
 }
 
 .nombre{
