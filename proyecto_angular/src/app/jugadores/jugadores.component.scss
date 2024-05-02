@@ -46,6 +46,10 @@ margin: 0px;
 .die{ position: absolute; top: 52.5%; left: 75%; }
 .onc{ position: absolute; top: 78%; left: 45%; }
 
+.btn-close{
+    z-index: 200;
+}
+
 #btn1{ position: absolute; top: 12.5%; left: 37%;}
 #btn2{ position: absolute; top: 12.5%; left: 67%;}
 #btn3{ position: absolute; top: 32.5%; left: 21%;}
@@ -53,7 +57,7 @@ margin: 0px;
 #btn5{ position: absolute; top: 32.5%; left: 60%;}
 #btn6{ position: absolute; top: 32.5%; left: 82%;}
 #btn7{ position: absolute; top: 52.5%; left: 21%;}
-#btn8{ position: absolute; top: 52.5%; left: 43%;}
+#btn8{ position: absolute; top: 52.5%; left: 41%;}
 #btn9{ position: absolute; top: 52.5%; left: 60%;}
 #btn10{ position: absolute; top: 52.5%; left: 82%;}
 #btn11{ position: absolute; top: 78%; left: 50%;}
