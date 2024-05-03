@@ -55,13 +55,6 @@ export class JugadoresComponent {
   //   }
   // }
 
-    // abrirPopup() {
-    //   this.popupAbierto = true;
-    // }
-  
-    // cerrarPopup() {
-    //   this.popupAbierto = false;
-    // }
   // aplicarReglas2() {
   //   const elementosUno = this.el.nativeElement.querySelectorAll('.uno'); elementosUno.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '12.5%');this.renderer.setStyle(elemento, 'left', '30%');});
   // }
