@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router'; 
+import { MatDialogModule } from '@angular/material/dialog';
+import { PopUpComponent } from './pop-up/pop-up.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -28,7 +31,8 @@ import { EquipoComponent } from './equipo/equipo.component';
     NavbarComponent,
     LoginComponent,
     AdminInicioComponent,
-    EquipoComponent
+    EquipoComponent,
+    PopUpComponent
   ],
   imports: [
     AppRoutingModule,
@@ -36,7 +40,8 @@ import { EquipoComponent } from './equipo/equipo.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

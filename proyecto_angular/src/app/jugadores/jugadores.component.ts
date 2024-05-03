@@ -1,5 +1,8 @@
-import { Component, Renderer2, ElementRef  } from '@angular/core';
+import { Component, Renderer2, ElementRef, inject  } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
+import { PopUpComponent } from '../pop-up/pop-up.component';
 
 @Component({
   selector: 'app-jugadores',
@@ -9,8 +12,15 @@ import { CommonModule } from '@angular/common';
   styleUrl: './jugadores.component.scss'
 })
 export class JugadoresComponent {
-  estadoBoton: string = 'cerrar simulacion';
-  popupAbierto: boolean = false;
+  constructor(private dialogRef : MatDialog){}
+
+  openDialog(){
+    this.dialogRef.open(PopUpComponent);
+  }
+
+
+  // estadoBoton: string = 'cerrar simulacion';
+  // popupAbierto: boolean = false;
   // cambiarEstadoJugador(id: number) {
   //   const boton = this.jugadors.find(b => b.id === id);
   //   if (boton) {
@@ -32,22 +42,22 @@ export class JugadoresComponent {
      {id:11, class:'onc', icono:'Madrid', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false}
   ];
 
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
-  cambiarEstado() {
-    if (this.estadoBoton === 'simulacion') {
-      this.estadoBoton = 'cerrar simulacion';
-    } else {
-      this.estadoBoton = 'simulacion';
-    }
-  }
+  // constructor(private renderer: Renderer2, private el: ElementRef) {}
+  // cambiarEstado() {
+  //   if (this.estadoBoton === 'simulacion') {
+  //     this.estadoBoton = 'cerrar simulacion';
+  //   } else {
+  //     this.estadoBoton = 'simulacion';
+  //   }
+  // }
 
-    abrirPopup() {
-      this.popupAbierto = true;
-    }
+    // abrirPopup() {
+    //   this.popupAbierto = true;
+    // }
   
-    cerrarPopup() {
-      this.popupAbierto = false;
-    }
+    // cerrarPopup() {
+    //   this.popupAbierto = false;
+    // }
   // aplicarReglas2() {
   //   const elementosUno = this.el.nativeElement.querySelectorAll('.uno'); elementosUno.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '12.5%');this.renderer.setStyle(elemento, 'left', '30%');});
   // }
