@@ -157,7 +157,7 @@ p{
 }
 
 h5{
-    word-wrap: keep-all; /* Permite que las palabras se dividan si no caben en el contenedor */
+    word-wrap: keep-all; // Permite que las palabras se dividan si no caben en el contenedor
 }
 
 // h5, p {
@@ -284,28 +284,28 @@ img.hpe{
 }
 
 .row {
-    margin: none; /* Ajusta el margen izquierdo */
+    margin: none; // Ajusta el margen izquierdo
 }
 
 .col {
-    padding: none; /* Ajusta el relleno izquierdo */
+    padding: none; // Ajusta el relleno izquierdo
 }
 
 @media (max-width: 1030px ) {
     #imgSocios {
-      flex-direction: column; /* Cambiar la dirección del flexbox a columna */
-      align-items: center; /* Centrar los elementos en el eje horizontal */
+      flex-direction: column; //Cambiar la dirección del flexbox a columna
+      align-items: center; // Centrar los elementos en el eje horizontal
     }
 
     // #equipos {
-    //     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
-    //     justify-content: space-around; /* Distribuir los elementos uniformemente en el contenedor */
+    //     flex-wrap: wrap; // Permitir que los elementos se envuelvan en filas
+    //     justify-content: space-around; // Distribuir los elementos uniformemente en el contenedor
     //     margin-bottom: 30px;
     //   }
     //   #equipos img {
-    //     max-width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
-    //     margin-right: 10px; /* Agregar un espacio entre las imágenes */
-    //     margin-bottom: 10px; /* Agregar un espacio entre las filas */
+    //     max-width: 40px; // Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas)
+    //     margin-right: 10px; //Agregar un espacio entre las imágenes
+    //     margin-bottom: 10px; //Agregar un espacio entre las filas
     //     height: auto;
     //   }
 }
@@ -326,50 +326,50 @@ img.hpe{
 
 @media (max-width: 520px ) {
     #equipos .equipos-container {
-        flex-wrap: wrap; /* Evitar que las imágenes se envuelvan en varias líneas */
+        flex-wrap: wrap; // Evitar que las imágenes se envuelvan en varias líneas
     }
 }
 
 @media (max-width: 660px ) {
     // #imgSocios {
-    //   flex-direction: column; /* Cambiar la dirección del flexbox a columna */
-    //   align-items: center; /* Centrar los elementos en el eje horizontal */
+    //   flex-direction: column; // Cambiar la dirección del flexbox a columna
+    //   align-items: center; // Centrar los elementos en el eje horizontal 
     // }
 
     // #equipos {
-    //     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
-    //     justify-content: space-around; /* Distribuir los elementos uniformemente en el contenedor */
+    //     flex-wrap: wrap; // Permitir que los elementos se envuelvan en filas */
+    //     justify-content: space-around; // Distribuir los elementos uniformemente en el contenedor
     //     margin-bottom: 40px;
     //   }
     //   #equipos img {
-    //     width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
-    //     margin-right: 10px; /* Agregar un espacio entre las imágenes */
-    //     margin-bottom: 10px; /* Agregar un espacio entre las filas */
+    //     width: 40px; // Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas)
+    //     margin-right: 10px; // Agregar un espacio entre las imágenes
+    //     margin-bottom: 10px; // Agregar un espacio entre las filas
     //     height: auto;
     //   }
 }
 
 @media (max-width: 370px) {
     // #equipos {
-    //     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas */
-    //     justify-content: space-between; /* Distribuir los elementos uniformemente en el contenedor */
+    //     flex-wrap: wrap; // Permitir que los elementos se envuelvan en filas
+    //     justify-content: space-between; // Distribuir los elementos uniformemente en el contenedor
     //     margin-bottom: 150px;
     //   }
     //   #equipos img {
-    //     width: 40px; /* Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas) */
-    //     margin-right: 10px; /* Agregar un espacio entre las imágenes */
-    //     margin-bottom: 10px; /* Agregar un espacio entre las filas */
+    //     width: 40px; // Calcular el ancho de cada imagen en función del número de columnas (en este caso, 2 columnas)
+    //     margin-right: 10px; // Agregar un espacio entre las imágenes
+    //     margin-bottom: 10px; // Agregar un espacio entre las filas
     //     height: auto;
     //   }
 }
 
 // .carousel-item {
 //     display: flex;
-//     justify-content: center; /* Centra horizontalmente el contenido */
+//     justify-content: center; // Centra horizontalmente el contenido
 // }
 
 .carousel-item .d-block {
-    margin: 0 auto; /* Centra horizontalmente el elemento */
+    margin: 0 auto; // Centra horizontalmente el elemento
 }
 
 img {

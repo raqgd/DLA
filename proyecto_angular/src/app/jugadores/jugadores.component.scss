@@ -21,15 +21,15 @@ margin: 0px;
     background-image: url('/assets/img/image-removebg-preview.png');
     width: 45%;
     height: 50%;
-    position: relative; /* Para posicionar la caja absolutamente en relación con el contenedor */
-    padding-top: 50%; /* Establece el alto en función del ancho (aspect ratio 1:2) */
+    position: relative; // Para posicionar la caja absolutamente en relación con el contenedor
+    padding-top: 50%; // Establece el alto en función del ancho (aspect ratio 1:2)
     background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
 }
 .box {
     width: 10%;
-    height: auto; /* Para mantener la relación de aspecto */
+    height: auto; // Para mantener la relación de aspecto
     position: absolute;
 }
 
@@ -79,11 +79,11 @@ margin: 0px;
 .jugador{
     margin-bottom: 15px;
     display: flex;
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Hereda el color del texto de su contenedor */
+    text-decoration: none; // Quita el subrayado
+    color: inherit; // Hereda el color del texto de su contenedor 
 }
 .jugador:hover {
-    background-color: rgba(0, 0, 255, 0.1); /* Cambia el color de fondo al pasar el ratón por encima */
+    background-color: rgba(0, 0, 255, 0.1); // Cambia el color de fondo al pasar el ratón por encima
     cursor: pointer;
 }  
 .alineaciones{
@@ -118,13 +118,13 @@ p{
 
 @media (max-width: 1140px) {
     .menu {
-        height: auto; /* Desactiva la altura fija */
-        max-height: 500px; /* Establece una altura máxima */
+        height: auto; // la altura fija
+        max-height: 500px; //Establece una altura máxima
     }
 
     .lista{
-        height: auto; /* Desactiva la altura fija */
-        max-height: 500px; /* Establece una altura máxima */
+        height: auto; //Desactiva la altura fija
+        max-height: 500px; // Establece una altura máxima
     }
 
     p{
