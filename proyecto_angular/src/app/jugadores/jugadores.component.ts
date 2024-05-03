@@ -9,7 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './jugadores.component.scss'
 })
 export class JugadoresComponent {
-  mostrarBotonCierre: boolean = false;
+  estadoBoton: string = 'cerrar simulacion';
+  popupAbierto: boolean = false;
   // cambiarEstadoJugador(id: number) {
   //   const boton = this.jugadors.find(b => b.id === id);
   //   if (boton) {
@@ -32,35 +33,22 @@ export class JugadoresComponent {
   ];
 
   constructor(private renderer: Renderer2, private el: ElementRef) {}
-  agregarClose() {
-    this.mostrarBotonCierre = true;
-    const simulacionBtn = this.el.nativeElement.querySelector('#btn p');
-    if (simulacionBtn) {
-      simulacionBtn.textContent = 'CERRAR SIMULACIÓN';
+  cambiarEstado() {
+    if (this.estadoBoton === 'simulacion') {
+      this.estadoBoton = 'cerrar simulacion';
+    } else {
+      this.estadoBoton = 'simulacion';
     }
   }
+
+    abrirPopup() {
+      this.popupAbierto = true;
+    }
+  
+    cerrarPopup() {
+      this.popupAbierto = false;
+    }
   // aplicarReglas2() {
   //   const elementosUno = this.el.nativeElement.querySelectorAll('.uno'); elementosUno.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '12.5%');this.renderer.setStyle(elemento, 'left', '30%');});
-  //   const elementosDos = this.el.nativeElement.querySelectorAll('.dos'); elementosDos.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '12.5%');this.renderer.setStyle(elemento, 'left', '50%');});
-  //   const elementosTre = this.el.nativeElement.querySelectorAll('.tre'); elementosTre.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '12.5%');this.renderer.setStyle(elemento, 'left', '70%');});
-  //   const elementosCua = this.el.nativeElement.querySelectorAll('.cua'); elementosCua.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '32.5%');this.renderer.setStyle(elemento, 'left', '30%');});
-  //   const elementosCin = this.el.nativeElement.querySelectorAll('.cin'); elementosCin.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '32.5%');this.renderer.setStyle(elemento, 'left', '50%');});
-  //   const elementosSei = this.el.nativeElement.querySelectorAll('.sei'); elementosSei.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '32.5%');this.renderer.setStyle(elemento, 'left', '70%');});
-  //   const elementosSie = this.el.nativeElement.querySelectorAll('.sie'); elementosSie.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '52.5%');this.renderer.setStyle(elemento, 'left', '20%');});
-  //   const elementosOch = this.el.nativeElement.querySelectorAll('.och'); elementosOch.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '52.5%');this.renderer.setStyle(elemento, 'left', '40%');});
-  //   const elementosNue = this.el.nativeElement.querySelectorAll('.nue'); elementosNue.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '52.5%');this.renderer.setStyle(elemento, 'left', '60%');});
-  //   const elementosDie = this.el.nativeElement.querySelectorAll('.die'); elementosDie.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '52.5%');this.renderer.setStyle(elemento, 'left', '80%');});
-  // }
-  // aplicarReglas3() {
-  //   const elementosUno = this.el.nativeElement.querySelectorAll('.uno'); elementosUno.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '12.5%');this.renderer.setStyle(elemento, 'left', '30%');});
-  //   const elementosDos = this.el.nativeElement.querySelectorAll('.dos'); elementosDos.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '12.5%');this.renderer.setStyle(elemento, 'left', '50%');});
-  //   const elementosTre = this.el.nativeElement.querySelectorAll('.tre'); elementosTre.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '12.5%');this.renderer.setStyle(elemento, 'left', '70%');});
-  //   const elementosCua = this.el.nativeElement.querySelectorAll('.cua'); elementosCua.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '52.5%');this.renderer.setStyle(elemento, 'left', '30%');});
-  //   const elementosCin = this.el.nativeElement.querySelectorAll('.cin'); elementosCin.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '52.5%');this.renderer.setStyle(elemento, 'left', '50%');});
-  //   const elementosSei = this.el.nativeElement.querySelectorAll('.sei'); elementosSei.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '52.5%');this.renderer.setStyle(elemento, 'left', '70%');});
-  //   const elementosSie = this.el.nativeElement.querySelectorAll('.sie'); elementosSie.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '32.5%');this.renderer.setStyle(elemento, 'left', '20%');});
-  //   const elementosOch = this.el.nativeElement.querySelectorAll('.och'); elementosOch.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '32.5%');this.renderer.setStyle(elemento, 'left', '40%');});
-  //   const elementosNue = this.el.nativeElement.querySelectorAll('.nue'); elementosNue.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '32.5%');this.renderer.setStyle(elemento, 'left', '60%');});
-  //   const elementosDie = this.el.nativeElement.querySelectorAll('.die'); elementosDie.forEach((elemento: HTMLElement) => {this.renderer.setStyle(elemento, 'top', '32.5%');this.renderer.setStyle(elemento, 'left', '80%');});
   // }
 }

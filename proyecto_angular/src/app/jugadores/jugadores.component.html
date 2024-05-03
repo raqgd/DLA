@@ -1,53 +1,56 @@
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="item menu">
-                    <div class="col-12" *ngIf="jugadors.length === 0">
-                        <p>No hay jugadores para mostrar en el menú.</p>
-                    </div>
-                    <div *ngFor="let jugador of jugadors">
-                        <a>
-                            <div class="box {{jugador.class}}">
-                                <img src="../../assets/img/{{jugador.icono}}.png" class="imagen" >
-                            </div>
-                            <div *ngIf="mostrarBotonCierre" class="btn-cierre">
-                                <button type="button" id="btn1" class="btn-close btn-close-white" aria-label="Close"></button>
-                                <button type="button" id="btn2" class="btn-close btn-close-white" aria-label="Close"></button>
-                                <button type="button" id="btn3" class="btn-close btn-close-white" aria-label="Close"></button>
-                                <button type="button" id="btn4" class="btn-close btn-close-white" aria-label="Close"></button>
-                                <button type="button" id="btn5" class="btn-close btn-close-white" aria-label="Close"></button>
-                                <button type="button" id="btn6" class="btn-close btn-close-white" aria-label="Close"></button>
-                                <button type="button" id="btn7" class="btn-close btn-close-white" aria-label="Close"></button>
-                                <button type="button" id="btn8" class="btn-close btn-close-white" aria-label="Close"></button>
-                                <button type="button" id="btn9" class="btn-close btn-close-white" aria-label="Close"></button>
-                                <button type="button" id="btn10" class="btn-close btn-close-white" aria-label="Close"></button>
-                                <button type="button" id="btn11" class="btn-close btn-close-white" aria-label="Close"></button>
-                              </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="item lista">
-                    <div class="col-12" *ngIf="jugadors.length === 0">
-                        <p>No hay jugadores para mostrar en la lista.</p>
-                    </div>
-                    <div *ngFor="let jugador of jugadors">
-                        <div class="nombre">
-                            <a class="jugador">
-                                <img src="../../assets/img/{{jugador.icono}}.png" class="icono" >
-                                <p>{{jugador.nombre}}</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="item menu">
+          <div class="col-12" *ngIf="jugadors.length === 0">
+            <p>No hay jugadores para mostrar en el menú.</p>
+          </div>
+          <div *ngFor="let jugador of jugadors">
+            <a>
+              <div class="box {{jugador.class}}">
+                <img src="../../assets/img/{{jugador.icono}}.png" class="imagen">
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="col-md-6">
+        <div class="item lista">
+          <div class="col-12" *ngIf="jugadors.length === 0">
+            <p>No hay jugadores para mostrar en la lista.</p>
+          </div>
+          <div *ngFor="let jugador of jugadors">
+            <div class="nombre" *ngIf="estadoBoton === 'activado'" (click)="abrirPopup()">
+              <a class="jugador">
+                <img src="../../assets/img/{{jugador.icono}}.png" class="icono">
+                <p>{{jugador.nombre}}</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Pop-up -->
+        <div class="modal" tabindex="-1" role="dialog" [class.show]="popupAbierto">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Pop-up del jugador</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="cerrarPopup()">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Contenido del pop-up aquí.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- Cierre de col-md-6 -->
+    </div> <!-- Cierre de row -->
         <div class="row">
             <div class="col-12" id="btn">
-                <a (click)="agregarClose()" class="btn btn-info" data-bs-dismiss="offcanvas">
-                    <p>SIMULACIÓN</p>
+                <a (click)="cambiarEstado()" [class.activado]="estadoBoton === 'simulacion'" [class.desactivado]="estadoBoton === 'cerrar simulacion'" class="btn btn-info" data-bs-dismiss="offcanvas">
+                  {{ estadoBoton.toUpperCase() }}
                   </a>
             </div>
         </div>
@@ -88,4 +91,3 @@
                   </div>
             </div>
         </div>
-    </div>
