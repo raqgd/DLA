@@ -8,15 +8,12 @@
                     </div>
                     <div *ngFor="let jugador of jugadors">
                       <div class="nombre"></div>
-                        <a class="jugador">
-                            <div  (click)="openDialog()" class="box {{jugador.class}}">
-                              <img src="../../assets/img/{{jugador.icono}}.png" class="imagen" >
-                            </div>
-                            <!-- <div *ngIf="mostrarBotonCierre" class="btn-cierre">
-                                <button type="button" id="btn1" class="btn-close btn-close-white" aria-label="Close"></button>
-                              </div> -->
-                        </a>
-                    </div>
+                      <a class="jugador" (click)="openDialog(jugador)">
+                        <div class="box {{jugador.class}}">
+                          <img src="../../assets/img/{{jugador.icono}}.png" class="imagen">
+                        </div>
+                      </a>
+                    </div>                                   
                 </div>
             </div>
             <div class="col-md-6">

@@ -9,9 +9,9 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class PopUpComponent implements OnInit {
 
-  firstName;
-  constructor(@Inject(MAT_DIALOG_DATA) public data:any) {
-    this.firstName = data.name
+  jugador;
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+    this.jugador = data;
   }
 
   ngOnInit(): void {
