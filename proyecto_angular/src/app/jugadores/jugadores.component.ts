@@ -15,7 +15,11 @@ export class JugadoresComponent {
   constructor(private dialogRef : MatDialog){}
 
   openDialog(){
-    this.dialogRef.open(PopUpComponent);
+    this.dialogRef.open(PopUpComponent,{
+      data : {
+        name : 'Samuel'
+      }
+    });
   }
 
 
