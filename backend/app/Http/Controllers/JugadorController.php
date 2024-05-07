@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Jugadores;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller as BaseController;
 
-class Controller extends BaseController
+class JugadorController extends Controller
 {
-    public function get(Request $request){ 
+    public function getAll(Request $request){ 
         //$ingredient = Ingredient::find($request->id);
         //return json_encode($ingredient);
         return json_encode("HOLAS");
