@@ -1,0 +1,13 @@
+jugador: Jugador = new Jugador();
+
+constructor (private jugadorService: jugadorService) {}
+ngOnInit(): void{
+    this.jugadoresService.getJugador(1).suscribe({
+        next:(data) =>{
+            this.jugador=data
+        }
+        error:(error) =>{
+            console.error(error)
+        }
+    })
+}

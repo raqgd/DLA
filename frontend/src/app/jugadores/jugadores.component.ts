@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialog } from '@angular/material/dialog';
 import { PopUpComponent } from '../pop-up/pop-up.component';
+import { Equipos } from '../models/equipos';
+import { EquiposService } from '../services/equipos.service';
 
 @Component({
   selector: 'app-jugadores',
@@ -12,6 +14,19 @@ import { PopUpComponent } from '../pop-up/pop-up.component';
   styleUrl: './jugadores.component.scss'
 })
 export class JugadoresComponent {
+  equipo: Equipos = new Equipos();
+
+  constructor(private dialogRef: MatDialog, private equiposService: EquiposService) {}
+  ngOnInit(): void{
+    this.equiposService.getEquipo(1).subscribe({
+        next:(data) =>{
+            this.equipo=data
+        },
+        error:(error) =>{
+            console.error(error)
+        }
+    })
+}
   jugadors = [
     {id:1, class:'uno', icono:'Alaves', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
     {id:2, class:'dos', icono:'Barcelona', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
@@ -25,8 +40,6 @@ export class JugadoresComponent {
     {id:10, class:'die', icono:'Girona', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
     {id:11, class:'onc', icono:'Madrid', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false}
   ];
-
-  constructor(private dialogRef: MatDialog) {}
 
   openDialog(jugador:any) {
     this.dialogRef.open(PopUpComponent, {

@@ -3,17 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Jugador;
+use App\Models\Equipo;
 use Illuminate\Http\Request;
 
-class JugadorController extends Controller
+class EquipoController extends Controller
 {
     public function getAll(Request $request){
-        $jugador = Jugador::get();
+        $jugador = Equipo::get();
         return json_encode($jugador);
     }
     public function getSingle(Request $request, $id){
-        $jugador = Jugador::find($id);
+        $jugador = Equipo::find($id);
         return json_encode($jugador);
     }
 }
