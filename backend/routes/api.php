@@ -9,6 +9,7 @@ Route::get('/equipos/get/{id}', [EquipoController::class, 'getSingle']);
 Route::get('/equipos/create', [EquipoController::class, 'create']);
 Route::get('/equipos/delete/{id}', [EquipoController::class, 'delete']);
 Route::get('/equipos/deleteall', [EquipoController::class, 'deleteAll']);
+Route::get("/equipos/equipoExiste/{id}", [EquipoController::class, "equipoExists"]);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

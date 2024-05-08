@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('equipos', function (Blueprint $table) {
         $table->increments('id')->key();
         $table->string('name', 1000);
+        $table->string('nameCompacto', 1000);
         });
     }
 

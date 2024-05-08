@@ -20,6 +20,7 @@ export class JugadoresComponent {
   ngOnInit(): void{
     this.equiposService.getEquipo(1).subscribe({
         next:(data) =>{
+          console.log(data)
             this.equipo=data
         },
         error:(error) =>{
