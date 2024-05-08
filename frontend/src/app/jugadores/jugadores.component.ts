@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialog } from '@angular/material/dialog';
 import { PopUpComponent } from '../pop-up/pop-up.component';
-import { Equipos } from '../models/equipos';
-import { EquiposService } from '../services/equipos.service';
+import { Jugador } from '../models/jugador';
+import { JugadoresService } from '../services/jugadores.service';
 
 @Component({
   selector: 'app-jugadores',
@@ -14,33 +14,17 @@ import { EquiposService } from '../services/equipos.service';
   styleUrl: './jugadores.component.scss'
 })
 export class JugadoresComponent {
-  equipo: Equipos = new Equipos();
+  jugadores: Jugador[] = [];
 
-  constructor(private dialogRef: MatDialog, private equiposService: EquiposService) {}
+  constructor(private dialogRef: MatDialog, private jugadoresService: JugadoresService) {}
   ngOnInit(): void{
-    this.equiposService.getEquipo(1).subscribe({
-        next:(data) =>{
-          console.log(data)
-            this.equipo=data
-        },
-        error:(error) =>{
-            console.error(error)
-        }
-    })
-}
-  jugadors = [
-    {id:1, class:'uno', icono:'Alaves', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-    {id:2, class:'dos', icono:'Barcelona', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-    {id:3, class:'tre', icono:'Almeria', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-    {id:4, class:'cua', icono:'Atleti', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-    {id:5, class:'cin', icono:'Cadiz', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-    {id:6, class:'sei', icono:'Alaves', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-    {id:7, class:'sie', icono:'Betis', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-    {id:8, class:'och', icono:'Celta de Vigo', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-    {id:9, class:'nue', icono:'Barcelona', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-    {id:10, class:'die', icono:'Girona', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-    {id:11, class:'onc', icono:'Madrid', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false}
-  ];
+    // Funciones de los servicios
+    this.jugadoresService.GetAll().subscribe(jugadoresLeidos => {
+      // Guardamos los datos
+      this.jugadores = jugadoresLeidos;
+      console.log(this.jugadores)
+    });
+  }
 
   openDialog(jugador:any) {
     this.dialogRef.open(PopUpComponent, {

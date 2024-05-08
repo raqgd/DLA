@@ -10,9 +10,9 @@ export class Jugador {
     valorActual: number;
     valorFuturo: number;
     estado: string;
+    clas: string;
 
-    constructor(id: number=0
-        , equipo: string = ''
+    constructor(id: number=0, equipo: string = '', clas: string = ''
         , name: string = ''
         , posicion: string = ''
         , altura: string = ''
@@ -33,6 +33,7 @@ export class Jugador {
         this.estado = estado;
         this.edad = edad;
         this.idequipo = idequipo;
+        this.clas = clas;
         this.valorActual = valorActual;
         this.valorFuturo = valorFuturo;
     } 

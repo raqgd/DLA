@@ -3,14 +3,14 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="item menu">
-                    <div class="col-12" *ngIf="jugadors.length === 0">
+                    <div class="col-12" *ngIf="jugadores.length === 0">
                         <p>No hay jugadores para mostrar en el menú.</p>
                     </div>
-                    <div *ngFor="let jugador of jugadors">
+                    <div *ngFor="let jugador of jugadores">
                       <div class="nombre"></div>
                       <a class="jugador" (click)="openDialog(jugador)">
-                        <div class="box {{jugador.class}}">
-                          <img src="../../assets/img/{{jugador.icono}}.png" class="imagen">
+                        <div class="box {{jugador.clas}}">
+                          <img src="../../assets/img/{{jugador.equipo}}.png" class="imagen">
                         </div>
                       </a>
                     </div>                                   
@@ -18,14 +18,14 @@
             </div>
             <div class="col-md-6">
                 <div class="item lista">
-                    <div class="col-12" *ngIf="jugadors.length === 0">
+                    <div class="col-12" *ngIf="jugadores.length === 0">
                         <p>No hay jugadores para mostrar en la lista.</p>
                     </div>
-                    <div *ngFor="let jugador of jugadors">
+                    <div *ngFor="let jugador of jugadores">
                         <div class="nombre">
                             <a class="jugador">
-                                <img src="../../assets/img/{{jugador.icono}}.png" class="icono" >
-                                <p>{{jugador.nombre}}{{equipo.name}}</p>
+                                <img src="../../assets/img/{{jugador.equipo}}.png" class="icono" >
+                                <p>{{jugador.name}}</p>
                             </a>
                         </div>
                     </div>
