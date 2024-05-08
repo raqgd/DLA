@@ -1,20 +1,20 @@
 <body>
         <div class="menu">
             <ul>
-                <div class="col-12" *ngIf="jugadors.length === 0">
+                <div class="col-12" *ngIf="jugadores.length === 0">
                     <p>No hay jugadores para mostrar.</p>
                   </div>
-                <li *ngFor="let jugador of jugadors">
+                <li *ngFor="let jugador of jugadores">
                     <a>
                         <div class="player_row">
                             <div class="izquierda">
-                                <img src="../../assets/img/{{jugador.icono}}.png" alt="Imagen" class="imagen">
-                                <img src="../../assets/img/{{jugador.icono}}.png" alt="Imagen" class="imagen">
-                                <img src="../../assets/img/{{jugador.icono}}.png" alt="Imagen" class="imagen">
+                                <img src="../../assets/img/{{jugador.equipo}}.png" alt="Imagen" class="imagen">
+                                <img src="../../assets/img/{{jugador.equipo}}.png" alt="Imagen" class="imagen">
+                                <img src="../../assets/img/{{jugador.equipo}}.png" alt="Imagen" class="imagen">
                             </div>
                             <img src="../../assets/img/{{jugador.equipo}}.png" alt="Imagen" class="imagen">
                             <div class="nombre">
-                                <p>{{jugador.nombre}}</p>
+                                <p>{{jugador.name}}</p>
                                 <p>Valor actual: {{jugador.valorActual}} | Valor Futuro: {{jugador.valorFuturo}}</p>
                                 <div class="valor">
                                     <div *ngFor="let valor of valores">
@@ -25,9 +25,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="boton" [ngStyle]="{'background-color': jugadorComprado ? '#00913F' : '#77DD77'}" (click)="cambiarEstadoJugador(jugador.id)">
-                                    {{ jugador.estado ? 'Comprado' : 'Comprar' }}
-                                </button>
+                                <button class="boton">Comprar</button>
                             </div>
                         </div>
                     </a>

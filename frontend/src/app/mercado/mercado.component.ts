@@ -1,5 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { Jugador } from '../models/jugador';
+import { JugadoresService } from '../services/jugadores.service';
 
 @Component({
   selector: 'app-mercado',
@@ -12,21 +15,31 @@ export class MercadoComponent {
 
   jugadorComprado: boolean = false;
 
+  /* Eliminada funcionalidad temporalmente
   cambiarEstadoJugador(id: number) {
-    const boton = this.jugadors.find(b => b.id === id);
+    const boton = this.jugadores.find(b => b.id === id);
     if (boton) {
       this.jugadorComprado = !this.jugadorComprado;
       boton.estado = !boton.estado;
     }
-  }
 
-  jugadors =[
-     {id:1, icono:'Alaves', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-     {id:2, icono:'Alaves', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-     {id:3, icono:'Alaves', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-     {id:4, icono:'Alaves', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-     {id:5, icono:'Alaves', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false},
-     {id:6, icono:'Alaves', equipo:'Almeria', nombre:"Nombre Apellido Apellido", valorActual:'400000', valorFuturo:'500000', puntos:'8', estado: false}
-  ];
+    ##<button class="boton" [ngStyle]="{'background-color': jugadorComprado ? '#00913F' : '#77DD77'}" (click)="cambiarEstadoJugador(jugador.id)">
+                                ##    {{ jugador.estado ? 'Comprado' : 'Comprar' }}
+                                ##</button>
+  }*/
+
+  //Arrays
+  jugadores: Jugador[] = [];
+
+  // Llamamos a los servicios
+  constructor(private jugadoresService: JugadoresService) {}
+  ngOnInit(): void{
+    // Funciones de los servicios
+    this.jugadoresService.GetAll().subscribe(jugadoresLeidos => {
+      // Guardamos los datos
+      this.jugadores = jugadoresLeidos;
+      console.log(this.jugadores)
+    });
+  }
   valores: number[] = [3, 5, 8, 2, 10, 13];
 }
