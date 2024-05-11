@@ -23,6 +23,7 @@ return new class extends Migration
         $table->integer('valorActual');
         $table->integer('valorFuturo');
         $table->string('estado', 1000);
+        $table->string('clas', 1000);
         });
     }
 
