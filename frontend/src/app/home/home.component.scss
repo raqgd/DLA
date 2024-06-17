@@ -372,6 +372,14 @@ img.hpe{
     margin: 0 auto; // Centra horizontalmente el elemento
 }
 
+.carousel-item .d-block img {
+    max-width: 100%; /* La imagen no puede ser más ancha que el contenedor */
+    max-height: 100%; /* La imagen no puede ser más alta que el contenedor */
+    width: auto; /* La imagen se ajustará automáticamente al ancho máximo */
+    height: auto; /* La imagen se ajustará automáticamente a la altura máxima */
+  }  
+  
+
 img {
     transition: transform 0.3s ease;
 }

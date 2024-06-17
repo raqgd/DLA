@@ -13,6 +13,7 @@ import { AdminInicioComponent } from './admin-inicio/admin-inicio.component';
 import { EquipoComponent } from './equipo/equipo.component';
 
 export const routes: Routes = [
+    { path: '', redirectTo: '/Inicio', pathMatch: 'full' },  // Ruta por defecto
     { path: 'Inicio', component: HomeComponent},
     { path: 'Jugadores', component: JugadoresComponent },
     { path: 'Mercado', component: MercadoComponent },

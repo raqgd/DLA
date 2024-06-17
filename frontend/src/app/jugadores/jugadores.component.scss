@@ -27,10 +27,23 @@ margin: 0px;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.mat-dialog-container {
+    background-color: #070404; /* Cambiar el color de fondo del diálogo */
+  }
+
+  .mat-mdc-dialog-surface {
+    background-color: #070404;
+  }
+
 .box {
     width: 10%;
     height: auto; // Para mantener la relación de aspecto
     position: absolute;
+}
+
+.mat-mdc-dialog-surface, .mdc-dialog__surface {
+    background-color: tu-color-aquí;
 }
 
 //Posicion de los iconos dentro de la imagen
@@ -49,18 +62,6 @@ margin: 0px;
 .btn-close{
     z-index: 200;
 }
-
-// #btn1{ position: absolute; top: 12.5%; left: 37%;}
-// #btn2{ position: absolute; top: 12.5%; left: 67%;}
-// #btn3{ position: absolute; top: 32.5%; left: 21%;}
-// #btn4{ position: absolute; top: 32.5%; left: 43%;}
-// #btn5{ position: absolute; top: 32.5%; left: 60%;}
-// #btn6{ position: absolute; top: 32.5%; left: 82%;}
-// #btn7{ position: absolute; top: 52.5%; left: 21%;}
-// #btn8{ position: absolute; top: 52.5%; left: 41%;}
-// #btn9{ position: absolute; top: 52.5%; left: 60%;}
-// #btn10{ position: absolute; top: 52.5%; left: 82%;}
-// #btn11{ position: absolute; top: 78%; left: 50%;}
 
 .col-md-6{
     display: flex;
