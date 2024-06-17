@@ -38,7 +38,8 @@ h1.titulo{
   color: white;
   display: flex;
   justify-content: center;
-  font-weight: 300;
+  font-weight: 270;
+
 }
 
 h2{
@@ -111,10 +112,11 @@ h3{
   padding-left: 2vw;
   padding-right:2vw;
 }
-#ImgInicio{
-  padding-right: 2vw;
-  
+
+img .row-inicial{
+
 }
+
 .tituloColab{
   padding-top: 10vh;
   margin-bottom: 2vh;
@@ -128,10 +130,11 @@ h3{
 }
 .titulo{
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 60px;
+  font-size: 70px;
+  line-height: 1.25;
   text-align: center;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
   background-image:  url('/assets/img/humo.png');
   background-size: cover;
   background-position: center;
@@ -168,6 +171,7 @@ h3{
   padding-top: 2vh;
   text-align: left;
 }
+
 
 #info {
   background-color: #25252d;
