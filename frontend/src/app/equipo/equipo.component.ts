@@ -15,3 +15,5 @@ export class EquipoComponent {
   constructor(private route: ActivatedRoute) { }
 
 }
+
+
