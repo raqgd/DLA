@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { environment } from '../../environment/environment';
 
 @Component({
   selector: 'app-navbar',
@@ -13,6 +14,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
+
+  // color1: string = environment.color1;
+  // color2: string = environment.color2;
+  // color2semit: string = environment.color2semit;
+  // color3: string = environment.color3;
 
   scrolled: boolean = false;
 

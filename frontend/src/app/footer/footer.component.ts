@@ -12,8 +12,8 @@ import { environment } from '../../environment/environment.js';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  color1 = environment.color1;
-  color2 = environment.color2;
-  color2semit = environment.color2semit;
-  color3 = environment.color3;
+  // color1 = environment.color1;
+  // color2 = environment.color2;
+  // color2semit = environment.color2semit;
+  // color3 = environment.color3;
 }

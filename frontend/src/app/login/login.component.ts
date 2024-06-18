@@ -1,8 +1,7 @@
-import { Component, OnInit  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-login',
-  standalone: true,
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
@@ -11,20 +10,20 @@ export class LoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // No need to use document.getElementById in Angular, use ViewChild or ElementRef for DOM manipulation
+  }
+
+  toggleSignIn(): void {
     const container = document.getElementById('container');
-    const registerBtn = document.getElementById('register');
-    const loginBtn = document.getElementById('login');
-
-    if (container && registerBtn && loginBtn) {
-      registerBtn.addEventListener('click', () => {
-        container.classList.add("active");
-      });
-
-      loginBtn.addEventListener('click', () => {
+    if (container) {
         container.classList.remove("active");
-      });
-    } else {
-      console.error("One or more elements not found.");
     }
-}
+  }
+  
+  toggleSignUp(): void {
+    const container = document.getElementById('container');
+    if (container) {
+        container.classList.add("active");
+    }
+  }
 }
