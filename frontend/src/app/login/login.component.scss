@@ -162,7 +162,7 @@ body{
 }
 
 .toggle{
-    background-image: linear-gradient(to right,rgb(20, 22, 38, 0.5), rgba(0, 0, 0, 0.65)), url(../../assets/img/fondodlamejor.png);
+    background-image: linear-gradient(to right,rgb(20, 22, 38, 0.9), rgba(0, 0, 0, 0.2)), url(../../assets/img/fondodlamejor.png);
     height: 100%;
     background-size: cover; 
     background-position: center; 
@@ -202,7 +202,7 @@ body{
 
 
 .toggle-left{
-    background-image: linear-gradient(to left, rgb(20, 22, 38), rgba(0, 0, 0, 0.4)), url(../../assets/img/jugadorizquierda.jpg);
+    background-image: linear-gradient(to left, rgb(20, 22, 38, .9), rgba(0, 0, 0, 0.4)), url(../../assets/img/jugadorizquierda.jpg);
     transform: translateX(-200%);
 }
 
@@ -211,7 +211,7 @@ body{
 }
 
 .toggle-right{
-    background-image: linear-gradient(to left, rgba(22, 27, 49, 0.6), rgba(7, 7, 13, 0.7)), url(../../assets/img/Resim.jpg);
+    background-image: linear-gradient(to right,rgb(20, 22, 38, .7), rgba(7, 7, 13, 0.5)), url(../../assets/img/Resim.jpg);
     right: 0;
     transform: translateX(0);
 }
@@ -267,7 +267,7 @@ body{
 }
 
 .container button{
-    background-color: #512da8;
+    background-color: #020322;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
