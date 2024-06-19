@@ -11,9 +11,15 @@ import { environment } from '../../environment/environment';
     CommonModule
   ],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss'], // Corrige `styleUrl` a `styleUrls`
+  styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
+
+  // color1: string = environment.color1;
+  // color2: string = environment.color2;
+  // color2semit: string = environment.color2semit;
+  // color3: string = environment.color3;
+
   scrolled: boolean = false;
 
   @HostListener('window:scroll', [])
@@ -24,5 +30,5 @@ export class NavbarComponent {
     } else if (this.scrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
       this.scrolled = false;
     }
-  }
+}
 }

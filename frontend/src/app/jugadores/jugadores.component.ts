@@ -8,6 +8,8 @@ import { JugadoresService } from '../services/jugadores.service';
 
 @Component({
   selector: 'app-jugadores',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './jugadores.component.html',
   styleUrl: './jugadores.component.scss'
 })

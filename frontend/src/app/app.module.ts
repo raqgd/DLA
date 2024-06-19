@@ -15,10 +15,9 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { AppRoutingModule } from './app.routes';  // Asegúrate de que esta importación sea correcta
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LoginComponent } from './login/login.component';
+import {LoginComponent} from './login/login.component';
 import { AdminInicioComponent } from './admin-inicio/admin-inicio.component';
 import { EquipoComponent } from './equipo/equipo.component';
-import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,20 +27,30 @@ import { CommonModule } from '@angular/common';
     MercadoComponent,
     NosotrosComponent,
     FooterComponent,
+    NavbarComponent,
     LoginComponent,
     AdminInicioComponent,
     EquipoComponent,
     NavbarComponent,  // Asegúrate de que NavbarComponent esté declarado aquí
   ],
   imports: [
+<<<<<<< HEAD
+=======
+    AppRoutingModule,
+    RouterModule.forRoot(routes),
+>>>>>>> parent of 0f72375 (Committing changes before Angular update)
     BrowserModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([]),  // Asegúrate de que RouterModule.forRoot esté correctamente configurado
     AppRoutingModule,
     BrowserAnimationsModule,
+<<<<<<< HEAD
     MatDialogModule,
     CommonModule  // Asegúrate de que CommonModule esté importado aquí si es necesario
+=======
+    MatDialogModule
+>>>>>>> parent of 0f72375 (Committing changes before Angular update)
   ],
   providers: [],
   bootstrap: [AppComponent]
