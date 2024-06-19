@@ -16,9 +16,10 @@ import { AppRoutingModule } from './app.routes';
 import { routes } from './app.routes'; 
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import {LoginComponent} from './login/login.component';
+import { LoginComponent } from './login/login.component';
 import { AdminInicioComponent } from './admin-inicio/admin-inicio.component';
 import { EquipoComponent } from './equipo/equipo.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,20 +29,23 @@ import { EquipoComponent } from './equipo/equipo.component';
     MercadoComponent,
     NosotrosComponent,
     FooterComponent,
-    NavbarComponent,
     LoginComponent,
     AdminInicioComponent,
     EquipoComponent,
     PopUpComponent
   ],
   imports: [
+    NavbarComponent,
     AppRoutingModule,
+    RouterModule,
     RouterModule.forRoot(routes),
     BrowserModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule, 
+    CommonModule,
+    FooterComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

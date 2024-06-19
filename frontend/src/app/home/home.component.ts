@@ -7,8 +7,6 @@ import { EquiposService } from '../services/equipos.service';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [RouterModule, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

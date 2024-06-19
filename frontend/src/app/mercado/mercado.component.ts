@@ -6,8 +6,6 @@ import { JugadoresService } from '../services/jugadores.service';
 
 @Component({
   selector: 'app-mercado',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './mercado.component.html',
   styleUrl: './mercado.component.scss'
 })

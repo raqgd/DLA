@@ -4,10 +4,6 @@ import { environment } from '../../environment/environment.js';
 
 @Component({
   selector: 'app-footer',
-  standalone: true,
-  imports: [
-    RouterModule
-  ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
