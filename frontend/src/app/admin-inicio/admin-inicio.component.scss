@@ -12,6 +12,15 @@ body {
    
     
 }
+.custom-dropdown-toggle {
+    background-color: #161d26;
+    color: #FFFFFF;
+    border-color: #161d26;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+}
+
 .btn{
     margin-left: 10px;
     margin-top: 1vh;
@@ -33,10 +42,11 @@ body {
     
 }
 .separator {
-    border-bottom: 1px solid #ccc; // Añade un borde inferior de 1px sólido de color gris
+    border-bottom: 1px solid #A9A9A9 ; // Añade un borde inferior de 1px sólido de color gris
     margin-top: 10px;
     margin-bottom: 7px; // Ajusta el espacio entre los elementos
     list-style: none; 
+    
   }
 .col-3 {
     display: flex;
@@ -66,4 +76,8 @@ h1{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 6px 20px rgba(0, 0, 0, 0.5);
     padding: 20px;
     color: white;
+}
+.card-header{
+    border-bottom: 1px solid #FFFFFF;
+    text-align: center;
 }

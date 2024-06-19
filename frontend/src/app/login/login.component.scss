@@ -6,8 +6,9 @@
 }
 
 body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-color: #131a21;
+    //background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    padding-top: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,6 +41,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
     padding: 0 40px;
     height: 100%;
 }
@@ -47,7 +49,8 @@ body{
 .container input{
     background-color: #eee;
     border: none;
-    margin: 8px 0;
+    //margin: 8px 0;
+    margin-top: 20px;
     padding: 10px 15px;
     font-size: 13px;
     border-radius: 8px;
@@ -55,7 +58,13 @@ body{
     outline: none;
 }
 
+.container .sign-up button{
+
+    margin-top: 20px;
+   
+}
 .form-container{
+    
     position: absolute;
     top: 0;
     height: 100%;
