@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center; 
     padding-top: 100px;
-    background-color: #25252d;
+    background-color: #131a21;
 }
 #btn{
     display: flex;
@@ -131,4 +131,8 @@ p{
     p{
         font-size: 10px;
     }
+}
+
+.card {
+    background-color: #1c2632 !important;
 }

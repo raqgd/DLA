@@ -4,7 +4,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;  
     padding-top: 150px;
-    background-color: #25252d;
+    background-color: #131a21;
 }
 .list-group-item{
     height: 7vh;
@@ -26,7 +26,7 @@ body {
     justify-content: center;
 }
 .list-group-item-custom {
-    background-color: #212529;
+    background-color: #1c2632;
     color:white;
     border: #212529;
     
@@ -58,4 +58,12 @@ h1{
     color: white;
     margin-left: 300px ;
     
+}
+
+.card{
+    background-color: #1c2632 !important;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 6px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
 }
