@@ -14,6 +14,7 @@ import { EquipoComponent } from './equipo/equipo.component';
 import { ExamenComponent } from './examen/examen.component';
 
 export const routes: Routes = [
+    { path: '', redirectTo: '/Inicio', pathMatch: 'full' },  // Ruta por defecto
     { path: 'Inicio', component: HomeComponent},
     { path: 'Jugadores', component: JugadoresComponent },
     { path: 'Mercado', component: MercadoComponent },
@@ -23,9 +24,8 @@ export const routes: Routes = [
     { path: 'Privacidad', component: PrivacidadComponent },
     { path: 'Tec', component: TecComponent },
     { path: 'Login', component: LoginComponent },
-    { path: 'Administrador', component: AdminInicioComponent},
-    { path: 'equipo/:nombreEquipo', component: EquipoComponent },
-    { path: 'Examen', component: ExamenComponent }
+    { path: 'Administrador', component: AdminInicioComponent },
+    { path: 'equipo/:nombreEquipo', component: EquipoComponent }
 ];
 
 @NgModule({

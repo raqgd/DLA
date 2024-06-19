@@ -13,33 +13,28 @@ import { JugadoresService } from '../services/jugadores.service';
 })
 export class MercadoComponent {
 
-  jugadorComprado: boolean = false;
+  puntuacion: number = 33;
 
-  /* Eliminada funcionalidad temporalmente
-  cambiarEstadoJugador(id: number) {
-    const boton = this.jugadores.find(b => b.id === id);
-    if (boton) {
-      this.jugadorComprado = !this.jugadorComprado;
-      boton.estado = !boton.estado;
+  getColor(): string {
+    if (this.puntuacion < 50) {
+      return '#f00'; 
+    } else if (this.puntuacion >= 50 && this.puntuacion < 70) {
+      return '#ff0'; 
+    } else if (this.puntuacion >= 70 && this.puntuacion < 90) {
+      return '#0f0'; 
+    } else {
+      return '#00f'; 
     }
-
-    ##<button class="boton" [ngStyle]="{'background-color': jugadorComprado ? '#00913F' : '#77DD77'}" (click)="cambiarEstadoJugador(jugador.id)">
-                                ##    {{ jugador.estado ? 'Comprado' : 'Comprar' }}
-                                ##</button>
-  }*/
-
-  //Arrays
-  jugadores: Jugador[] = [];
-
-  // Llamamos a los servicios
-  constructor(private jugadoresService: JugadoresService) {}
-  ngOnInit(): void{
-    // Funciones de los servicios
-    this.jugadoresService.GetAll().subscribe(jugadoresLeidos => {
-      // Guardamos los datos
-      this.jugadores = jugadoresLeidos;
-      console.log(this.jugadores)
-    });
   }
-  valores: number[] = [3, 5, 8, 2, 10, 13];
+
+  closeModel() {
+    throw new Error('Method not implemented.');
+    }
+    openModel() {
+      const modelDiv = document.getElementById('passModal');
+      if(modelDiv!=null){
+        modelDiv.style.display='block';
+      }
+     
+    }
 }

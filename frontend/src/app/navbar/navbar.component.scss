@@ -1,4 +1,4 @@
-@import url(../../styles.scss);
+// @import url(../../styles.scss);
 .navbar {
    position: fixed;  //Para que esté dentro de la vista
    width: 100%;
@@ -9,29 +9,27 @@
    
 }
 .custom-text-color {
-   color: white;
+   color: #fff;
  }
 .bg-custom{
-   background-color: #020614;
+   background-color: #000;
 }
 .navbar-nav .nav-item .nav-link:hover {
-   color: #ffc107; // Cambia el color del texto al pasar el cursor
+   color: #b88639; // Cambia el color del texto al pasar el cursor
 }
 .navbar-nav .nav-item .nav-link{
    font-family: 'Barlow', sans-serif;
 }
 #logindentro{
-   padding: 13px;
-   padding-left: 20px;
-   padding-right: 20px;
+   
 }
 #logindentro p{
-   font-size: 25px;
+   margin-top: 1vh;
    font-family: 'Barlow', sans-serif;
 }
 .scrolled-color {
-   background-color: #b88639; // Cambia el color de fondo del botón al hacer scroll
-   color: #ffffff; // Cambia el color del texto del botón al hacer scroll 
+   background-color: #b88639;
+   color: #fff;
    border-color: #b88639;
  }
 .container {
@@ -39,18 +37,12 @@
    align-items: center;
 }
 .nav-link:hover {
-   color: #fff; //Color de texto para el elemento activo
+   color: #fff;
  }
-// Estilos para el elemento de navegación activo 
-// .nav-link {
-//    position: relative; // Posición relativa para el elemento de navegación 
-//    color: #ffc107; // Color de texto para el elemento activo 
-//  }
 
-// Estilos para el elemento de navegación activo 
+
 .nav-item.active .nav-link {
-   position: relative; // Posición relativa para el elemento de navegación 
-   // color: #ffc107; // Color de texto para el elemento activo 
+   position: relative;
  }
 
  .nav-item.active .nav-link::after {
@@ -60,8 +52,8 @@
    left: 0;
    width: 0; // Ancho inicial del indicador 
    height: 2px; // Altura del indicador 
-   background-color: #ffc107; // Color del indicador 
-   transition: width 0.3s ease; // Transición suave para el ancho 
+   background-color: #b88639;
+   transition: width 0.3s ease; 
  }
 
   //Aplicar el ancho completo y la posición cuando el enlace está activo
@@ -71,16 +63,10 @@
  }
 
 .nav-link:hover {
-   color: #fff; // Color de texto para el elemento activo
+   color: #b88639; // Color de texto para el elemento activo
  }
 
-// Estilos para el elemento de navegación activo 
-// .nav-link {
-//    position: relative; // Posición relativa para el elemento de navegación 
-//    color: #ffc107; // Color de texto para el elemento activo 
-//  }
- 
-// Estilos para el elemento de navegación activo 
+
 .nav-item.active .nav-link {
    position: relative; // Posición relativa para el elemento de navegación 
    // color: #ffc107; // Color de texto para el elemento activo 
@@ -93,7 +79,7 @@
    left: 0;
    width: 0; // Ancho inicial del indicador 
    height: 2px; // Altura del indicador 
-   background-color: #ffc107; // Color del indicador 
+   background-color: #b88639; // Color del indicador 
    transition: width 0.3s ease; // Transición suave para el ancho 
  }
 
@@ -111,21 +97,10 @@
    }
 
    .offcanvas-body{
-      // background-color: black;
       display: flex;
       justify-content: center;
       
    }
-   .offcanvas-header{
-      // background-color: black;
-   }
-
-   // .loginbutton{
-   //    position: relative;
-   //    display: flex;
-   //    justify-content: center;
-   //    margin-top: 30px;
-   // }
 
    .navbar{
       display: flex;
@@ -137,3 +112,9 @@
 
     }
 }
+
+ .login-button:hover {
+   background-color: #b88639;
+   color: #b88639;
+   border-color: #b88639;
+ }

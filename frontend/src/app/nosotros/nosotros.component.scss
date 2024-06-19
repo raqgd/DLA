@@ -38,7 +38,8 @@ h1.titulo{
   color: white;
   display: flex;
   justify-content: center;
-  font-weight: 300;
+  font-weight: 270;
+
 }
 
 h2{
@@ -74,6 +75,15 @@ h3{
   height: 100px;
 }
 
+#textoFotos{
+  background:#25252d;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: xxx-large;
+  color: white;
+  padding-top: 3vh;
+  
+}
+
 .col-sm-12{
   background-color: #25252d;
 }
@@ -83,14 +93,17 @@ h3{
   justify-content:space-evenly;
 
 }
-
+.col-sm-12 h1{
+  margin-top: 3vh;
+}
 .col-sm-12 p{
   color: white;
 }
 
 .col-sm-3{
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+ 
 }
 
 .componentes-grid{
@@ -99,15 +112,29 @@ justify-content: center;
   padding-left: 2vw;
   padding-right:2vw;
 }
+
+img .row-inicial{
+
+}
+
+.tituloColab{
+  padding-top: 10vh;
+  margin-bottom: 2vh;
+}
 #rrss{
-  margin:0px;
+  
   background-color: #BD9A63;
+}
+.cuerpo_rrss{
+  padding-top: 5vh;
 }
 .titulo{
   font-family: 'Barlow Condensed', sans-serif;
+  font-size: 70px;
+  line-height: 1.25;
   text-align: center;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
   background-image:  url('/assets/img/humo.png');
   background-size: cover;
   background-position: center;
@@ -130,6 +157,7 @@ justify-content: center;
 }
 #textMision{
   margin-right: 1vw;
+  margin-top: 5vh;
   font-size: x-large;
 }
 
@@ -143,6 +171,7 @@ justify-content: center;
   padding-top: 2vh;
   text-align: left;
 }
+
 
 #info {
   background-color: #25252d;
