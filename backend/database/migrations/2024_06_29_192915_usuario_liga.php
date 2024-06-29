@@ -4,14 +4,12 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsuarioLigaTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('usuario_liga', function (Blueprint $table) {
             $table->integer('usuario_id')->unsigned();
@@ -19,20 +17,17 @@ class CreateUsuarioLigaTable extends Migration
 
             $table->primary(['usuario_id', 'liga_id']);
 
-            $table->foreign('usuario_id')->references('usuario_id')->on('usuario')->onDelete('no action')->onUpdate('no action');
-            $table->foreign('liga_id')->references('liga_id')->on('liga')->onDelete('no action')->onUpdate('no action');
+            $table->foreign('usuario_id')->references('usuario_id')->on('usuarios');
+            $table->foreign('liga_id')->references('liga_id')->on('ligas');
 
-            $table->index('liga_id', 'FK_usuario_liga_liga');
         });
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('usuario_liga');
     }
-}
+};

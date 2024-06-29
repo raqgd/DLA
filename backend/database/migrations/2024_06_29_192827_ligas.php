@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pruebas', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('ligas', function (Blueprint $table) {
+            $table->integer('liga_id')->primary()->unsigned();
+            $table->string('nombre', 200);
+
+            // Assuming liga_id is not auto-incrementing since it's not specified
         });
     }
 
@@ -22,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pruebas');
+        Schema::dropIfExists('ligas');
     }
 };
