@@ -16,6 +16,13 @@ export class MercadoComponent {
 
   name = 'Angular';
   jsonData1 = [
+    { label: 'Clasificación promedio', value: 'ClasificacionProm' },
+    { label: 'Goles', value: 'Goles' },
+    { label: 'Asistencias', value: 'Asistencias' },
+    { label: 'Tiros a puerta', value: 'Tiros' }
+];
+
+  jsonData2 = [
     { label: 'Jornada 48', value: 'Jornada48' },
     { label: 'Jornada 47', value: 'Jornada47' },
     { label: 'Jornada 46', value: 'Jornada46' },
@@ -64,16 +71,11 @@ export class MercadoComponent {
     { label: 'Jornada 3', value: 'Jornada3' },
     { label: 'Jornada 2', value: 'Jornada2' },
     { label: 'Jornada 1', value: 'Jornada1' }
-];
-
-  jsonData2 = [
-    { label: 'Jornada 38', value: 'Jornada38' },
-    { label: 'Jornada 37', value: 'Jornada37' },
   ];
 
   jsonData3 = [
-    { label: 'Jornada 28', value: 'Jornada28' },
-    { label: 'Jornada 27', value: 'Jornada27' },
+    { label: 'Clasificación promedio', value: 'ClasificacionProm' },
+    { label: 'Goles', value: 'Goles' }
   ];
 
   selectedValue1: string = '';
