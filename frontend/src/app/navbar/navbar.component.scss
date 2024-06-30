@@ -14,15 +14,13 @@
 .bg-custom{
    background-color: #000;
 }
-.navbar-nav .nav-item .nav-link:hover {
-   color: #b88639; // Cambia el color del texto al pasar el cursor
-}
+// .navbar-nav .nav-item .nav-link:hover {
+//    color: #b88639; // Cambia el color del texto al pasar el cursor
+// }
 .navbar-nav .nav-item .nav-link{
    font-family: 'Barlow', sans-serif;
 }
-#logindentro{
-   
-}
+
 #logindentro p{
    margin-top: 1vh;
    font-family: 'Barlow', sans-serif;
@@ -54,10 +52,6 @@
    height: 2px; // Altura del indicador 
    background-color: #b88639;
    transition: width 0.3s ease; 
- }
-
-  //Aplicar el ancho completo y la posición cuando el enlace está activo
-  .nav-item.active .nav-link::after {
    width: 100%;
    left: 0;
  }
@@ -72,23 +66,6 @@
    // color: #ffc107; // Color de texto para el elemento activo 
  }
  
- .nav-item.active .nav-link::after {
-   content: ''; // Pseudo-elemento para el indicador 
-   position: absolute;
-   bottom: -2px; // Posición inicial del indicador 
-   left: 0;
-   width: 0; // Ancho inicial del indicador 
-   height: 2px; // Altura del indicador 
-   background-color: #b88639; // Color del indicador 
-   transition: width 0.3s ease; // Transición suave para el ancho 
- }
-
-  // Aplicar el ancho completo y la posición cuando el enlace está activo
-  .nav-item.active .nav-link::after {
-   width: 100%;
-   left: 0;
- }
-
 @media(max-width:991px){
    .sidebar{
       background-color: rgba(255,255,255,0.15);
@@ -115,6 +92,6 @@
 
  .login-button:hover {
    background-color: #b88639;
-   color: #b88639;
+   color: #fff;
    border-color: #b88639;
  }
