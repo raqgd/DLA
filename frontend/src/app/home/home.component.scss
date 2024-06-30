@@ -5,7 +5,7 @@ body {
     width: 100%;
     height: auto;
     padding-top: 125px;
-    background-color: black ;
+    background-color: $negro ;
 }
 .section{
     height: auto;
@@ -13,7 +13,7 @@ body {
     margin-bottom: 0;
 }
 h1{
-    color: white;
+    color: $blanco;
 }
 #equipos{
     padding-top: 10px;
@@ -95,7 +95,7 @@ font-size: 26px;
 h2{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
-    color: white;
+    color: $blanco;
     display: flex;
     justify-content: center;
     font-size: 50px;
@@ -150,7 +150,7 @@ p{
     border-color: transparent;
 }
 .card-title{
-    color: white;
+    color: $blanco;
 }
 
 h5{
@@ -168,7 +168,7 @@ h5{
     background-position: center;
     background-repeat: no-repeat;  
     margin-bottom: 0;
-    color: white;
+    color: $blanco;
     padding-top: 6vh;
     padding-bottom: 6vh;
 }
@@ -215,7 +215,7 @@ h5{
 #contact {
     background: linear-gradient(to bottom, #161c21, #000203);
     margin-top: 0; // Elimina el margen superior para evitar la línea blanca
-    background-color: #25252d;
+    background-color: $azul;
     height:70vh;
 }
 
@@ -227,12 +227,12 @@ p #contact{
     margin-left: 5vw;
 }
 .color-izquierda {
-    background-color: blue; /* Color para la mitad izquierda */
+    background-color: $azulfosf; /* Color para la mitad izquierda */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   
 .color-derecha {
-    background-color: red; /* Color para la mitad derecha */
+    background-color: $rojo; /* Color para la mitad derecha */
     clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
 }
 .carousel-item img {

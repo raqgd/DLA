@@ -13,7 +13,7 @@ body {
 
 h1{
   left: 0;
-  color: #25252d;
+  color: $azul;
   // padding-left: 150px;
   // padding-bottom: 500px;
   font-family: 'Barlow Condensed', sans-serif;
@@ -31,13 +31,13 @@ h1{
 
 .col-sm-12 h1{
   font-style: normal;
-  color: #afb4ba;
+  color: $grisclaro;
 }
 
 h1.titulo{
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: bold;
-  color: white;
+  color: $blanco;
   display: flex;
   justify-content: center;
   font-weight: 270;
@@ -47,7 +47,7 @@ h1.titulo{
 h2{
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: bold;
-  color: white;
+  color: $blanco;
   display: flex;
   justify-content: center;
   font-weight: 500;
@@ -55,7 +55,7 @@ h2{
 
 h3{
   left: 0;
-  color: white;
+  color: $blanco;
   // padding-left: 150px;
   // padding-bottom: 500px;
   font-family: 'Barlow Condensed', sans-serif;
@@ -81,13 +81,13 @@ h3{
   background:#25252d;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: xxx-large;
-  color: white;
+  color: $blanco;
   padding-top: 3vh;
   
 }
 
 .col-sm-12{
-  background-color: #25252d;
+  background-color: $azul;
 }
 
 .row-inicial{
@@ -99,7 +99,7 @@ h3{
   margin-top: 3vh;
 }
 .col-sm-12 p{
-  color: white;
+  color: $blanco;
 }
 
 .col-sm-3{
@@ -125,7 +125,7 @@ img .row-inicial{
 }
 #rrss{
   
-  background-color: #BD9A63;
+  background-color: $dorado;
 }
 .cuerpo_rrss{
   padding-top: 5vh;
@@ -147,8 +147,8 @@ img .row-inicial{
   text-align: center;
 }
 .mision{
-  background-color:#25252d;
-  color: white;
+  background-color:$azul;
+  color: $blanco;
   margin: 0px;
   padding-left: 2vw;
   padding-top: 10vh;
@@ -164,8 +164,8 @@ img .row-inicial{
 }
 
 #intro{
-  background-color:#25252d;
-  color: white;
+  background-color:$azul;
+  color: $blanco;
 
   
 }
@@ -176,7 +176,7 @@ img .row-inicial{
 
 
 #info {
-  background-color: #25252d;
+  background-color: $azul;
   margin: 0px;
   padding-left:1vw;
   padding-bottom: 3vh;

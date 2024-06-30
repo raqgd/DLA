@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center; 
     padding-top: 100px;
-    background-color: #131a21;
+    background-color: $body;
 }
 #btn{
     display: flex;
@@ -31,11 +31,11 @@ margin: 0px;
 }
 
 .mat-dialog-container {
-    background-color: #070404; /* Cambiar el color de fondo del diálogo */
+    background-color: $negro;
   }
 
   .mat-mdc-dialog-surface {
-    background-color: #070404;
+    background-color: $negro;
   }
 
 .box {
@@ -44,9 +44,9 @@ margin: 0px;
     position: absolute;
 }
 
-.mat-mdc-dialog-surface, .mdc-dialog__surface {
-    background-color: tu-color-aquí;
-}
+// .mat-mdc-dialog-surface, .mdc-dialog__surface {
+//     background-color: tu-color-aquí;
+// }
 
 //Posicion de los iconos dentro de la imagen
 .uno{ position: absolute; top: 12.5%; left: 30%; }
@@ -98,7 +98,7 @@ margin: 0px;
     align-items: center;
 }
 .alineaciones button {
-    background-color: #2e2e36;
+    background-color: $grisazulado;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -112,11 +112,11 @@ margin: 0px;
 
 .nombre{
     border-radius: 10px;
-    background-color: #2e2e36;
+    background-color: $grisazulado;
 }
 
 p{
-    color:white;
+    color: $blanco;
 }
 
 @media (max-width: 1140px) {
@@ -136,5 +136,5 @@ p{
 }
 
 .card {
-    background-color: #1c2632 !important;
+    background-color: $tarjeta !important;
 }

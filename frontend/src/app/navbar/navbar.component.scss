@@ -10,10 +10,10 @@
    
 }
 .custom-text-color {
-   color: #fff;
+   color: $blanco;
  }
 .bg-custom{
-   background-color: #000;
+   background-color: $negro;
 }
 // .navbar-nav .nav-item .nav-link:hover {
 //    color: #b88639; // Cambia el color del texto al pasar el cursor
@@ -27,16 +27,16 @@
    font-family: 'Barlow', sans-serif;
 }
 .scrolled-color {
-   background-color: #b88639;
-   color: #fff;
-   border-color: #b88639;
+   background-color: $dorado;
+   color: $blanco;
+   border-color: $dorado;
  }
 .container {
    display: flex;
    align-items: center;
 }
 .nav-link:hover {
-   color: #fff;
+   color: $blanco;
  }
 
 
@@ -51,14 +51,14 @@
    left: 0;
    width: 0; // Ancho inicial del indicador 
    height: 2px; // Altura del indicador 
-   background-color: #b88639;
+   background-color: $dorado;
    transition: width 0.3s ease; 
    width: 100%;
    left: 0;
  }
 
 .nav-link:hover {
-   color: #b88639; // Color de texto para el elemento activo
+   color: $dorado; // Color de texto para el elemento activo
  }
 
 
@@ -92,7 +92,7 @@
 }
 
  .login-button:hover {
-   background-color: #b88639;
-   color: #fff;
-   border-color: #b88639;
+   background-color: $dorado;
+   color: $blanco;
+   border-color: $dorado;
  }

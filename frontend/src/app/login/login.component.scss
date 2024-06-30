@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #131a21;
+    background-color: $body;
     //background: linear-gradient(to right, #e2e2e2, #c9d6ff);
     padding-top: 10vh;
     display: flex;
@@ -31,14 +31,14 @@ body{
 }
 
 .container a{
-    color: #333;
+    color: $gris;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
 .container form{
-    background-color: #fff;
+    background-color: $blanco;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +49,7 @@ body{
 }
 
 .container input{
-    background-color: #eee;
+    background-color: $blanco;
     border: none;
     //margin: 8px 0;
     margin-top: 20px;
@@ -119,7 +119,7 @@ body{
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    color: #fff;
+    color: $blanco;
     position: relative;
     left: -100%;
     height: 100%;
@@ -178,7 +178,7 @@ body{
 }
 
 .container{
-    background-color: #fff;
+    background-color: $blanco;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
@@ -190,8 +190,8 @@ body{
 }
 
 .container button{
-    background-color: #020322;
-    color: #fff;
+    background-color: $azulosc;
+    color: $blanco;
     font-size: 12px;
     padding: 10px 45px;
     border: 1px solid transparent;
@@ -210,13 +210,13 @@ body{
 
 .container button.hidden{
     background-color: transparent;
-    border-color: #fff;
+    border-color: $blanco;
     transition: 0.5s;
 }
 
 .container button.hidden:hover {
-    background-color: #b88639;
-    border-color: #b88639;
+    background-color: $dorado;
+    border-color: $dorado;
 }
 
 .toggle-container{

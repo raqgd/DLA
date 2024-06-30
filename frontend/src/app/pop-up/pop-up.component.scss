@@ -11,15 +11,16 @@ body {
     // back
 }
 .mat-dialog-container {
-    background-color: #070404; /* Cambiar el color de fondo del diálogo */
+    // background-color: #070404; 
+    background-color: $negro;
   }
   
 .infoJugador {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente negro */
-    padding: 20px; /* Espacio interior */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.5); //pasar a variable global
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h2{
-    color: #25252d;
+    color: $azul;
 }

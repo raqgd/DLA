@@ -6,25 +6,25 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 150px;
-    background-color: #131a21;
+    background-color: $body;
 }
 
 .card {
-    background-color: #1c2632;
+    background-color: $tarjeta;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 6px 20px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    color: white;
+    color: $blanco;
 }
 
 .card-header {
-    border-bottom: 0.2px solid #fff;
+    border-bottom: 0.2px solid $blanco;
 }
 
 .custom-dropdown-toggle {
-    background-color: #161d26;
-    color: #FFFFFF;
-    border-color: #161d26;
+    background-color: $toggle;
+    color: $blanco;
+    border-color: $toggle;
     border-radius: 8px;
     width: 100px;
     height: 45px;
@@ -33,21 +33,21 @@ body {
 h4 {
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 550;
-    color: white;
+    color: $blanco;
     font-size: large;
 }
 
 p {
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 500;
-    color: white;
+    color: $blanco;
 }
 
 .list-group-item {
     height: auto;
     padding: 10px;
-    background-color: #212529;
-    color: white;
+    // background-color: #212529;
+    color: $blanco;
     border: none;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -85,12 +85,12 @@ p {
 
 .player-details span {
     font-family: "Noto Sans", sans-serif;
-    color: white;
+    color: $blanco;
 }
 
 .player-details .position {
     font-size: smaller;
-    color: #bbb;
+    // color: #bbb;
 }
 
 .rating {
@@ -101,40 +101,40 @@ p {
 
 .rating span {
     font-size: large;
-    color: #ffc107;
+    color: $amarillo;
     margin-right: 5px;
 }
 
 .rating div {
     width: 50px;
     height: 10px;
-    background-color: #ffc107;
+    background-color: $amarillo;
     border-radius: 5px;
 }
 
 .list-group-item-custom {
-    background-color: #1c2632;
-    color: white;
+    background-color: $tarjeta;
+    color: $blanco;
     border: none;
     margin-bottom: 10px;
     border-radius: 8px;
 }
 
-.list-group-item-custom:hover {
-    background-color: #343a40;
-}
+// .list-group-item-custom:hover {
+//     background-color: #343a40;
+// }
 
 .rating-square {
     width: 25px; /* Ancho del cuadrado */
     height: 25px; /* Altura del cuadrado */
-    border: 2px solid #333; /* Borde del cuadrado */
+    border: 2px solid $gris; /* Borde del cuadrado */
     position: relative;
 }
 
 .fill {
     height: 100%;
     width: 0%;
-    background-color: #f00; /* Color inicial del relleno */
+    background-color: $rojo; /* Color inicial del relleno */
 }
 
 .logo{

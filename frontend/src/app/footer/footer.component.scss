@@ -1,8 +1,8 @@
 @import '../app.component';
 
 footer {
-    color: white; 
-    background-image: linear-gradient(#020322d5, #020322d5), url('../../../src/assets/img/fondof2.jpg');
+    color: $blanco; 
+    background-image: linear-gradient($azulosc_semit, $azulosc_semit), url('../../../src/assets/img/fondof2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Raleway', sans-serif;
@@ -23,23 +23,23 @@ footer {
 }
 
 .links ul li a.text-body {
-    color: white !important;
+    color: $blanco !important;
     text-decoration:none;
     transition: .4s;
 }
 
 .links ul li a.text-body:hover {
-    color: #b88639 !important;
+    color: $dorado !important;
     text-decoration:none;
 }
 
 // Estilo para hacer que los iconos de Font Awesome sean blancos
 .btn-floating .fab {
-    color: white;
+    color: $blanco;
     transition: .4s;
 }
 
 // Estilo para hacer que los iconos cambien de color con hover
 .btn-floating:hover .fab {
-    color: var(--color3);
+    // color: var(--color3);
 }
