@@ -21,6 +21,15 @@ body {
     border-bottom: 0.2px solid $blanco;
 }
 
+.custom-select {
+    background-color: $toggle;
+    color: $blanco;
+    border-color: $toggle;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+}
+
 .custom-dropdown-toggle {
     background-color: $toggle;
     color: $blanco;

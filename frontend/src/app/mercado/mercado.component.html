@@ -17,9 +17,14 @@
                 <div class="card custom-bg-color mb-3" style="max-width: 30rem;">
                     <div class="card-header">
                         <h4>Mejores jugadores</h4>
-                        <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Acciones
-                        </button>
+                        <div class="btn-group">
+                            <div class="container">
+                                <select (change)="onSelect($event)" class="custom-select">
+                                  <option *ngFor="let data of jsonData" [value]="data.value">{{data.label}}</option>
+                                </select>
+                                <p *ngIf="selectedValue">Selected Value: {{selectedValue}}</p>
+                            </div>                    
+                        </div>                        
                     </div>
                     <div class="card-body">
                         <ul class="list-group">
@@ -45,12 +50,13 @@
                                             33
                                         </div>
                                     </div>
+
                                 </div>
                             </li>
-                            <!-- Repite para más elementos -->
                         </ul>
                     </div>
                 </div>
+                
             </div>
             <div class="col-4">
                 <div class="card custom-bg-color mb-3" style="max-width: 30rem;">
@@ -61,9 +67,12 @@
                                 <!-- Columna de la jornada -->
                                 <div class="col-md-6">
                                     <div class="grid-item">
-                                        <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Jornada 38
-                                        </button>
+                                        <div class="container">
+                                            <select (change)="onSelect($event)" class="custom-select">
+                                              <option *ngFor="let data of jsonData" [value]="data.value">{{data.label}}</option>
+                                            </select>
+                                            <p *ngIf="selectedValue">Selected Value: {{selectedValue}}</p>
+                                        </div>  
                                     </div>
                                 </div>
                                 <!-- Columna de las fechas -->
@@ -187,9 +196,12 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="grid-item">
-                                    <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Tarjetas
-                                    </button>
+                                    <div class="container">
+                                        <select (change)="onSelect($event)" class="custom-select">
+                                          <option *ngFor="let data of jsonData" [value]="data.value">{{data.label}}</option>
+                                        </select>
+                                        <p *ngIf="selectedValue">Selected Value: {{selectedValue}}</p>
+                                    </div>  
                                 </div>
                             </div>
                         </div>
