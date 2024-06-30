@@ -59,7 +59,7 @@
                               </button>
                               <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar contraseña</a></li>
-                                <li><a class="dropdown-item"> Cambiar permisos</a></li>
+                                <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal"> Cambiar permisos</a></li>
                               </ul>
                               </div>
                         <li class="separator"></li>
@@ -72,7 +72,6 @@
                             </button>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
                             </ul>
                           </div>
                         </li>
@@ -99,7 +98,7 @@
                               Acciones
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
+                              <li><a class="dropdown-item" routerLink="/pop-up-admin">Cambiar contraseña</a></li>
                               <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
                             </ul>
                           </div> 
@@ -197,20 +196,3 @@
     </div>
 </body>
 
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close"(click)="closeModel()" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        Modal body..
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
