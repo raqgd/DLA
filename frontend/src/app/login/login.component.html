@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Modern Login Page | AsmrProg</title>
-</head> -->
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> -->
+</head>
+
 <body>
-<div class="container" id="container">
-    <div class="form-container sign-up">
-        <form>
-            <h1>Crea una cuenta</h1>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo">
-            <input type="password" placeholder="Contraseña">
-            <button>Registrarse</button>
-        </form>
-    </div>
-    <div class="form-container sign-in">
-        <form>
-            <h1>Accede a tu cuenta</h1>
-            <input type="email" placeholder="Correo">
-            <input type="password" placeholder="Contraseña">
-            <a href="#">¿Has olvidado tu contraseña?</a>
-            <button>Iniciar Sesión</button>
-        </form>
-    </div>
-    <div class="toggle-container">
-        <div class="toggle">
-            <div class="toggle-panel toggle-left">
-                <h1>¡Bienvenido/a de nuevo!</h1>
-                <p>¿Ya tienes cuenta? <br> Retoma tu progreso hacia la victoria</p>
-                <button class="hidden" id="login" (click)="toggleSignIn()">Sign In</button>
-            </div>
-            <div class="toggle-panel toggle-right">
-                <h1>¡Bienvenido/a!</h1>
-                <p>¿Aún no estás registrado? <br> Comienza a potenciar tu juego </p>
-                <button class="hidden" id="register" (click)="toggleSignUp()">Regístrate</button>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="signUpForm">
+                <h1>Crea una cuenta</h1>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="text" placeholder="Fecha de nacimiento (dd/mm/aaaa)" class="form-control" id="datepicker" required>
+                <input type="text" placeholder="Género" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form id="signInForm">
+                <h1>Accede a tu cuenta</h1>
+                <input type="email" placeholder="Correo" required>
+                <input type="password" placeholder="Contraseña" required>
+                <a href="#">¿Has olvidado tu contraseña?</a>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>¡Bienvenido/a de nuevo!</h1>
+                    <p>¿Ya tienes cuenta? <br> Retoma tu progreso hacia la victoria</p>
+                    <button class="hidden" id="login" (click)="toggleSignIn()">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>¡Bienvenido/a!</h1>
+                    <p>¿Aún no estás registrado? <br> Comienza a potenciar tu juego</p>
+                    <button class="hidden" id="register" (click)="toggleSignUp()">Regístrate</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>
-<!--aplica las modificaciones aqui -->
