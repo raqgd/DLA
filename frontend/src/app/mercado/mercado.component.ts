@@ -23,16 +23,6 @@ export class MercadoComponent {
 ];
 
   jsonData2 = [
-    { label: 'Jornada 48', value: 'Jornada48' },
-    { label: 'Jornada 47', value: 'Jornada47' },
-    { label: 'Jornada 46', value: 'Jornada46' },
-    { label: 'Jornada 45', value: 'Jornada45' },
-    { label: 'Jornada 44', value: 'Jornada44' },
-    { label: 'Jornada 43', value: 'Jornada43' },
-    { label: 'Jornada 42', value: 'Jornada42' },
-    { label: 'Jornada 41', value: 'Jornada41' },
-    { label: 'Jornada 40', value: 'Jornada40' },
-    { label: 'Jornada 39', value: 'Jornada39' },
     { label: 'Jornada 38', value: 'Jornada38' },
     { label: 'Jornada 37', value: 'Jornada37' },
     { label: 'Jornada 36', value: 'Jornada36' },
