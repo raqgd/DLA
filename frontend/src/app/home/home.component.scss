@@ -134,7 +134,7 @@ p{
 
 //sección de introducción
 #info{
-    background: linear-gradient(to bottom, #161c21, #000203);
+    background: linear-gradient(to bottom, $azulgrisaceo, $negro);
     display: block;
     
     padding-top: 2vh;
@@ -213,7 +213,7 @@ h5{
 
 //sección de contact
 #contact {
-    background: linear-gradient(to bottom, #161c21, #000203);
+    background: linear-gradient(to bottom, $azulgrisaceo, $negro);
     margin-top: 0; // Elimina el margen superior para evitar la línea blanca
     background-color: $azul;
     height:70vh;

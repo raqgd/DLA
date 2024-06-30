@@ -73,12 +73,12 @@ h3{
 }
 
 #fotos {
-  background: linear-gradient(to bottom, #989fa7, #575c60);
+  // background: linear-gradient(to bottom, #989fa7, #575c60);
   height: 100px;
 }
 
 #textoFotos{
-  background:#25252d;
+  background:$azul;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: xxx-large;
   color: $blanco;
@@ -109,7 +109,7 @@ h3{
 }
 
 .componentes-grid{
-  background: linear-gradient(to bottom, #989fa7, #575c60);
+  // background: linear-gradient(to bottom, #989fa7, #575c60);
   padding-top: 3vh;
   padding-left: 2vw;
   padding-right:2vw;
@@ -185,12 +185,12 @@ img .row-inicial{
 }
 
 .mb-4{
-  background-color: #BD9A63;
+  background-color: $dorado;
   margin:0px;
 }
 
 h2{
-  color: white;
+  color: $blanco;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: medium;
 }

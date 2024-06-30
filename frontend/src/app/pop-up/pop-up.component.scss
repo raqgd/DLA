@@ -16,7 +16,7 @@ body {
   }
   
 .infoJugador {
-    background-color: rgba(0, 0, 0, 0.5); //pasar a variable global
+    background-color: $negrosemit; //pasar a variable global
     padding: 20px;
     border-radius: 10px;
 }

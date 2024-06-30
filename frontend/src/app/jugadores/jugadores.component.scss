@@ -86,7 +86,7 @@ margin: 0px;
     color: inherit; // Hereda el color del texto de su contenedor 
 }
 .jugador:hover {
-    background-color: rgba(0, 0, 255, 0.1); // Cambia el color de fondo al pasar el ratón por encima
+    background-color: $azulosc_semit; // Cambia el color de fondo al pasar el ratón por encima
     cursor: pointer;
 }  
 .alineaciones{

@@ -12,7 +12,7 @@ body {
 .card {
     background-color: $tarjeta;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 6px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px $negrosemit, 0 6px 20px $negrosemit;
     padding: 20px;
     color: $blanco;
 }
