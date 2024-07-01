@@ -13,19 +13,36 @@
         <div class="form-container sign-up">
             <form id="signUpForm">
                 <h1>Crea una cuenta</h1>
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo" required>
-                <input type="password" placeholder="Contraseña" required>
-                <input type="text" placeholder="Fecha de nacimiento (dd/mm/aaaa)" class="form-control" id="datepicker" required>
-                <input type="text" placeholder="Género" required>
+                <input class="inputlogin" type="text" placeholder="Nombre" required>
+                <input class="inputlogin" type="email" placeholder="Correo" required>
+                <input class="inputlogin" type="password" placeholder="Contraseña" required>
+                <mat-form-field>
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                <!-- <input type="text" placeholder="Género" required> -->
+                <div class="genero">
+                    <h2> Género </h2>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Femenino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Masculino</label>
+                    </div>
+                </div>                
                 <button type="submit">Registrarse</button>
             </form>
         </div>
         <div class="form-container sign-in">
             <form id="signInForm">
                 <h1>Accede a tu cuenta</h1>
-                <input type="email" placeholder="Correo" required>
-                <input type="password" placeholder="Contraseña" required>
+                <input class="inputlogin"type="email" placeholder="Correo" required>
+                <input class="inputlogin" type="password" placeholder="Contraseña" required>
                 <a href="#">¿Has olvidado tu contraseña?</a>
                 <button type="submit">Iniciar Sesión</button>
             </form>
