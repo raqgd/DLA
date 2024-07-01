@@ -1,225 +1,121 @@
 <body>
-    <div class="titulo">
-        <h1>Funciones del administrador</h1>
-        
-    </div>
-  
-    <div class="container">
-        <div class="pt-3 row">
-            <div class="col-4">
-                <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
-                    <div class="card-header">
+  <div class="titulo">
+      <h1>Funciones del administrador</h1>
+  </div>
+
+  <div class="container">
+      <div class="pt-3 row">
+          <div class="col-4">
+              <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+                  <div class="card-header">
                       <h2>Crecimiento de los usuarios</h2>
-                      <div class="btn-group">
-                        <div class="container">
-                            <!-- <select (change)="onSelect($event, 1)" class="custom-select">
-                              <option *ngFor="let data of jsonData1" [value]="data.value">{{data.label}}</option>
-                            </select> -->
-                            <!-- <p *ngIf="selectedValue1">Selected Value: {{selectedValue1}}</p> -->
-                        </div>                    
-                    </div>   
-                    </div>
-                    <div class="card-body">
+                  </div>
+                  <div class="card-body">
                       <h5 class="card-title"></h5>
                       <p class="card-text" id="graficos">
-                        <img src="../../assets/img/grafico_barras.png" alt="" width="400" >
+                          <img src="../../assets/img/grafico_barras.png" alt="" width="400">
                       </p>
-                    </div>
                   </div>
-            </div>
-            <div class="col-4">
-                <div class="card text-white bg-dark mb-3" style="max-width: 30rem">
-                    <div class="card-header"><h2>Edad usuarios</h2> </div>
-                    <div class="card-body">
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="card text-white bg-dark mb-3" style="max-width: 30rem">
+                  <div class="card-header"><h2>Edad usuarios</h2></div>
+                  <div class="card-body">
                       <h5 class="card-title">Dark card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
                   </div>
-            </div>
-            <div class="col-4">
-                <div class="card text-white bg-dark mb-3" style="width: 30rem;">
-                    <div class="card-header"><h2>Género usuarios</h2></div>
-                    <div class="card-body">
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="card text-white bg-dark mb-3" style="width: 30rem;">
+                  <div class="card-header"><h2>Género usuarios</h2></div>
+                  <div class="card-body">
                       <h5 class="card-title">Dark card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
                   </div>
-            </div>
-        </div>
-        <div class="pt-3 row">
-            <div class="col-12">
-                <div class="card text-white bg-dark mb-3" style="width: 60rem;">
-                    <div class="card-header text-start">
+              </div>
+          </div>
+      </div>
+      <div class="pt-3 row">
+          <div class="col-12">
+              <div class="card text-white bg-dark mb-3" style="width: 60rem;">
+                  <div class="card-header text-start">
                       <div class="d-flex justify-content-between align-items-center">
-                        <h1>Gestión de los usuarios</h1>
-                        <div class="input-group custom-input-group">
-                          <input type="text" class="form-control custom-input"  placeholder="Buscar usuario..." aria-label="Text input with segmented dropdown button">
-                          <button type="button" class="btn btn-outline-secondary custom-btn">Buscar</button>
-                        </div>
+                          <h1>Gestión de los usuarios</h1>
+                          
                       </div>
-                    </div>
-                    <div class="card-body">
-                      <ul class="list-group">
-                        <li class="list-group-item list-group-item-custom ">
-                            <p class="user-name" style="display: inline-block;">Usuario 1</p>
-                            <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                            <div class="btn-group " style="float: right;">
-                              <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                                Acciones
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar datos</a></li>
-                              </ul>
-                              </div>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 2</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 3</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div> 
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 4</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div> 
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 5</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div> 
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 6</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div> 
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 7</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div> 
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 8</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><button class="dropdown-item" (click)="openModel()" id="passModal">Cambiar contraseña</button></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 9</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div> 
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 10</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        
-                      </ul>
-                    </div>
                   </div>
-            </div>
-        </div>
-    </div>
-</body>
-
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close"(click)="closeModel()" data-bs-dismiss="modal"></button>
+                  <div class="card-body">
+                      <ul class="list-group">
+                          <li class="list-group-item list-group-item-custom">
+                              <div class="d-flex justify-content-between">
+                                <div>Usuario</div>
+                                <div>Correo</div>
+                                <div class="input-group custom-input-group">
+                                  <input type="text" class="form-control custom-input" placeholder="Buscar usuario..." aria-label="Text input with segmented dropdown button">
+                                  <button type="button" class="btn btn-outline-secondary custom-btn" style="display: flex; justify-content: center; align-items: center;">
+                                    <img src="../../assets/img/buscar.png" alt="Buscar" width="20" height="20">
+                                </button>
+                                
+                              </div>
+                              </div>
+                          </li>
+                          <li class="separator"></li>
+                          <li class="list-group-item list-group-item-custom">
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div>Nombre</div>
+                                  <div>nombreejemplo.com</div>
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-danger">Eliminar</button>
+                                      <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Acciones
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar datos</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="separator"></li>
+                          <li class="list-group-item list-group-item-custom">
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div>Usuario 3</div>
+                                  <div>usuario3ejemplo.com</div>
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-danger">Eliminar</button>
+                                      <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Acciones
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
+                                          <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </li>
+                          <!-- Add more user items similarly -->
+                      </ul>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="modal-body">
-        Modal body..
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
   </div>
-</div>
+
+  <div class="modal" id="myModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title">Modal Heading</h4>
+                  <button type="button" class="btn-close" (click)="closeModel()" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                  Modal body..
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
