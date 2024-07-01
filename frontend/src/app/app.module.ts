@@ -34,23 +34,15 @@ import { EquipoComponent } from './equipo/equipo.component';
     NavbarComponent,  // Asegúrate de que NavbarComponent esté declarado aquí
   ],
   imports: [
-<<<<<<< HEAD
-=======
     AppRoutingModule,
     RouterModule.forRoot(routes),
->>>>>>> parent of 0f72375 (Committing changes before Angular update)
     BrowserModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([]),  // Asegúrate de que RouterModule.forRoot esté correctamente configurado
     AppRoutingModule,
     BrowserAnimationsModule,
-<<<<<<< HEAD
-    MatDialogModule,
-    CommonModule  // Asegúrate de que CommonModule esté importado aquí si es necesario
-=======
     MatDialogModule
->>>>>>> parent of 0f72375 (Committing changes before Angular update)
   ],
   providers: [],
   bootstrap: [AppComponent]

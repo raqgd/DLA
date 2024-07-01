@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 interface Usuario {
   nombre: string;
@@ -10,20 +10,28 @@ interface Usuario {
   templateUrl: './admin-inicio.component.html',
   styleUrls: ['./admin-inicio.component.scss']
 })
-export class AdminInicioComponent implements OnInit, AfterViewInit {
+export class AdminInicioComponent implements OnInit {
   usuarios: Usuario[] = [
     { nombre: "Usuario 1", correo: "usuario1@example.com" },
     { nombre: "Usuario 2", correo: "usuario2@example.com" },
     { nombre: "Usuario 3", correo: "usuario3@example.com" }
   ];
 
+  usuariosFiltrados: Usuario[] = [];
+  searchText: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
-    // Initialization logic here
+    this.usuariosFiltrados = this.usuarios;
   }
 
-  ngAfterViewInit(): void {
-    // View initialization logic here
-  }  
+  onSearchTextChanged(): void {
+    if (this.searchText) {
+      this.usuariosFiltrados = this.usuarios.filter(usuario => 
+        usuario.nombre.toLowerCase().includes(this.searchText.toLowerCase()));
+    } else {
+      this.usuariosFiltrados = this.usuarios;
+    }
+  }
 }

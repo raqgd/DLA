@@ -47,57 +47,39 @@
                       </div>
                   </div>
                   <div class="card-body">
-                      <ul class="list-group">
-                          <li class="list-group-item list-group-item-custom">
-                              <div class="d-flex justify-content-between">
-                                <div>Usuario</div>
-                                <div>Correo</div>
-                                <div class="input-group custom-input-group">
-                                  <input type="text" class="form-control custom-input" placeholder="Buscar usuario..." aria-label="Text input with segmented dropdown button">
-                                  <button type="button" class="btn btn-outline-secondary custom-btn" style="display: flex; justify-content: center; align-items: center;">
-                                    <img src="../../assets/img/buscar.png" alt="Buscar" width="20" height="20">
-                                </button>
-                                
-                              </div>
-                              </div>
-                          </li>
-                          <li class="separator"></li>
-                          <li class="list-group-item list-group-item-custom">
-                            <div *ngFor="let usuario of usuarios" class="d-flex justify-content-between align-items-center">
-                                <div>{{ usuario.nombre }}</div>
-                                <div>{{ usuario.correo }}</div>
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-danger">Eliminar</button>
-                                  <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Acciones
-                                  </button>
-                                  <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar datos</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                              
-                              
-                          </li>
-                          <li class="separator"></li>
-                          <li class="list-group-item list-group-item-custom">
-                            <div *ngFor="let usuario of usuarios" class="d-flex justify-content-between align-items-center">
-                                <div>{{ usuario.nombre }}</div>
-                                <div>{{ usuario.correo }}</div>
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-danger">Eliminar</button>
-                                  <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Acciones
-                                  </button>
-                                  <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar datos</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                          </li>
-                          <!-- Add more user items similarly -->
-                      </ul>
-                  </div>
+                    <ul class="list-group">
+                      <li class="list-group-item list-group-item-custom">
+                        <div class="d-flex justify-content-between">
+                          <div>Usuario</div>
+                          <div>Correo</div>
+                          <div class="input-group custom-input-group">
+                            <input type="text" class="form-control custom-input" placeholder="Buscar usuario..." aria-label="Text input with segmented dropdown button">
+                            <button type="button" class="btn btn-outline-secondary custom-btn">
+                              <img src="../../assets/img/buscar.png" alt="Buscar" width="20" height="20">
+                            </button>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="separator"></li>
+                      <!-- Iteración sobre cada usuario -->
+                      <li *ngFor="let usuario of usuarios" class="list-group-item list-group-item-custom">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>{{ usuario.nombre }}</div>
+                          <div>{{ usuario.correo }}</div>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Acciones
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar datos</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="separator"></li>
+                    </ul>
+                  </div>                  
               </div>
           </div>
       </div>
