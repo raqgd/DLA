@@ -57,7 +57,12 @@ h3, p{
 
 //sección de introducción
 #introduccion{
-    background-image: url('/assets/img/fondofutbol.webp');
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.3)
+    ),
+    url('/assets/img/fondofutbol.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  
@@ -65,19 +70,53 @@ h3, p{
     justify-content: center;
     align-items: center; 
     padding-bottom: 5vh;
-    height: 700px;
+    height: 600px;
+}
+
+#introduccion2{
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.3)
+    ),
+    url('/assets/img/fondofutbol.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 5vh;
+    height: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #introduccion h1{
-    position: absolute;
-    left: 0;
-    padding-left: 150px;
-    padding-bottom: 500px;
+    // position: absolute;
+    // left: 0;
+    // padding-left: 150px;
+    // padding-bottom: 500px;
+    // margin-top: 200px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 500;
-    font-size: 80px;
+    font-size: 80px; //hacer mas pequeño para vista movil
     font-style: oblique;
     font-weight: bolder;
+}
+
+#introduccion2 h1{
+    // position: absolute;
+    // left: 0;
+    // padding-left: 150px;
+    // padding-bottom: 500px;
+    // margin-top: 200px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 80px; //hacer mas pequeño para vista movil
+    font-style: oblique;
+    font-weight: bolder;
+    margin-top: 75px;
 }
 
 #info h5{
@@ -114,7 +153,7 @@ h5{
 }
 
 #contact {
-    height: 430px;
+    height: 100px;
 }
 
 #contact h2{
@@ -163,7 +202,7 @@ h5{
 
 //sección de descripción
 #descripcion{
-    background-image:  url('/assets/img/humo.png');
+    // background-image:  url('/assets/img/humo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  
@@ -213,18 +252,18 @@ h5{
 
 //sección de contact
 #contact {
-    background: linear-gradient(to bottom, $azulgrisaceo, $negro);
+    // background: linear-gradient(to bottom, $azulgrisaceo, $negro);
     margin-top: 0; // Elimina el margen superior para evitar la línea blanca
-    background-color: $azul;
+    // background-color: $azul;
     height:70vh;
 }
 
 #contact .img {
-    height: auto;
+    height: 10px;
 }
 
 p #contact{
-    margin-left: 5vw;
+    // margin-left: 5vw;
 }
 .color-izquierda {
     background-color: $azulfosf; /* Color para la mitad izquierda */
@@ -237,7 +276,7 @@ p #contact{
 }
 .carousel-item img {
     display: block;
-    margin-right:55vw ;
+    // margin-right:55vw ;
 }
 // .carousel-item {
    
@@ -383,4 +422,42 @@ img {
 
 img:hover{
     transform: scale(1.2);
+}
+
+#carouselExampleCaptions {
+    margin-bottom: 50px; /* Añadir margen inferior para separar del siguiente contenido */
+}
+
+#contact {
+    height: auto; /* Ajustar la altura para que se adapte al contenido */
+    padding-bottom: 50px; /* Añadir espacio adicional en la parte inferior */
+}
+
+/* Evitar superposición de elementos del carousel */
+.carousel-item {
+    height: auto;
+    margin-bottom: 50px; /* Añadir margen inferior */
+}
+
+#imgSocios {
+    background-image: url('/assets/img/fondofoco.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px; /* Añadir espacio superior */
+    padding-bottom: 30px; /* Añadir espacio inferior */
+    height: auto;
+}
+
+/* Ajustes adicionales para dispositivos móviles */
+@media (max-width: 1030px) {
+    #imgSocios {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px; /* Añadir espacio superior */
+        padding-bottom: 30px; /* Añadir espacio inferior */
+    }
 }
