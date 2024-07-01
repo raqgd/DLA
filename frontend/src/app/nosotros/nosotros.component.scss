@@ -286,3 +286,19 @@ h2{
   width: 300px; /* Ajusta el tamaño según tus necesidades */
   max-width: 100%; /* Asegura que la imagen no sea más grande que su contenedor */
 }
+
+.card-img-top {
+  
+  width: 100%;
+  height: auto; /* Para mantener la proporción de la imagen */
+}
+
+.card-body {
+  background-color: white; /* Ajusta el color de fondo deseado */
+  /* Otros estilos para card-body */
+}
+
+.card {
+  background-color: transparent;
+  border: none; /* Opcional: elimina el borde si lo deseas */
+}
