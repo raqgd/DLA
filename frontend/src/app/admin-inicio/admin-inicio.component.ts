@@ -1,35 +1,29 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
 
+interface Usuario {
+  nombre: string;
+  correo: string;
+}
 
 @Component({
   selector: 'app-admin-inicio',
-  standalone: true,
-  imports: [],
   templateUrl: './admin-inicio.component.html',
-  styleUrl: './admin-inicio.component.scss'
+  styleUrls: ['./admin-inicio.component.scss']
 })
 export class AdminInicioComponent implements OnInit, AfterViewInit {
-  constructor(){
+  usuarios: Usuario[] = [
+    { nombre: "Usuario 1", correo: "usuario1@example.com" },
+    { nombre: "Usuario 2", correo: "usuario2@example.com" },
+    { nombre: "Usuario 3", correo: "usuario3@example.com" }
+  ];
 
-  }
-  closeModel() {
-  throw new Error('Method not implemented.');
-  }
-  openModel() {
-    const modelDiv = document.getElementById('passModal');
-    if(modelDiv!=null){
-      modelDiv.style.display='block';
-    }
-   
-  }
+  constructor() { }
+
   ngOnInit(): void {
-    // Implementación de ngOnInit
-    // Este método se llama después de que Angular haya inicializado los datos del componente
+    // Initialization logic here
   }
 
   ngAfterViewInit(): void {
-    // Implementación de ngAfterViewInit
-    // Este método se llama después de que Angular haya inicializado la vista del componente
+    // View initialization logic here
   }  
-
 }

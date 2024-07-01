@@ -63,35 +63,36 @@
                           </li>
                           <li class="separator"></li>
                           <li class="list-group-item list-group-item-custom">
-                              <div class="d-flex justify-content-between align-items-center">
-                                  <div>Nombre</div>
-                                  <div>nombreejemplo.com</div>
-                                  <div class="btn-group">
-                                      <button type="button" class="btn btn-danger">Eliminar</button>
-                                      <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                          Acciones
-                                      </button>
-                                      <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar datos</a></li>
-                                      </ul>
-                                  </div>
+                            <div *ngFor="let usuario of usuarios" class="d-flex justify-content-between align-items-center">
+                                <div>{{ usuario.nombre }}</div>
+                                <div>{{ usuario.correo }}</div>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-danger">Eliminar</button>
+                                  <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Acciones
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar datos</a></li>
+                                  </ul>
+                                </div>
                               </div>
+                              
+                              
                           </li>
                           <li class="separator"></li>
                           <li class="list-group-item list-group-item-custom">
-                              <div class="d-flex justify-content-between align-items-center">
-                                  <div>Usuario 3</div>
-                                  <div>usuario3ejemplo.com</div>
-                                  <div class="btn-group">
-                                      <button type="button" class="btn btn-danger">Eliminar</button>
-                                      <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                          Acciones
-                                      </button>
-                                      <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                                          <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                                      </ul>
-                                  </div>
+                            <div *ngFor="let usuario of usuarios" class="d-flex justify-content-between align-items-center">
+                                <div>{{ usuario.nombre }}</div>
+                                <div>{{ usuario.correo }}</div>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-danger">Eliminar</button>
+                                  <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Acciones
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar datos</a></li>
+                                  </ul>
+                                </div>
                               </div>
                           </li>
                           <!-- Add more user items similarly -->
@@ -102,7 +103,7 @@
       </div>
   </div>
 
-  <div class="modal" id="myModal">
+  <!-- <div class="modal" id="myModal">
       <div class="modal-dialog">
           <div class="modal-content">
               <div class="modal-header">
@@ -117,5 +118,5 @@
               </div>
           </div>
       </div>
-  </div>
+  </div> -->
 </body>
