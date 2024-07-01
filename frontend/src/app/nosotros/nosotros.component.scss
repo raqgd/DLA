@@ -4,6 +4,7 @@ body {
   width: 100%;
   height: auto;
   padding-top: 125px;
+  background-color: $grisclaro;
 }
 
 .btn-rrss {
@@ -137,7 +138,7 @@ img .row-inicial{
   text-align: center;
   padding-top: 3vh;
   padding-bottom: 3vh;
-  background-image:  url('/assets/img/programming');
+  background-image:  url('../../assets/img/programming-background-with-person-working-with-codes-computer-scaled.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;  
@@ -244,3 +245,44 @@ h2{
 //     align-items: center;
 //     justify-content: center;
 //   }
+
+#titulo {
+  height: 50vh;
+  background: #fff;
+  background-image: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.4), 
+            rgba(255, 255, 255, 0.5)
+        ),
+        url("../../assets/img/programming-background-with-person-working-with-codes-computer-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2%;
+  width: auto;
+  height: 200px;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.tituloColab h1 {
+  text-align: center;
+}
+
+.logo1 {
+  padding-top: 3.5%;
+  text-align: center;
+  margin-bottom: 20px; /* Ajusta el espaciado según tus necesidades */
+}
+
+.centered-logo {
+  width: 300px; /* Ajusta el tamaño según tus necesidades */
+  max-width: 100%; /* Asegura que la imagen no sea más grande que su contenedor */
+}

@@ -138,3 +138,29 @@ p{
 .card {
     background-color: $tarjeta !important;
 }
+
+#titulo {
+    height: 50vh;
+    background: #fff;
+    background-image: 
+          linear-gradient(
+              rgba(255, 255, 255, 0.4), 
+              rgba(255, 255, 255, 0.5)
+          ),
+          url("../../assets/img/programming-background-with-person-working-with-codes-computer-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 2%;
+    width: auto;
+    height: 200px;
+  }
+  
+  .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+  }
