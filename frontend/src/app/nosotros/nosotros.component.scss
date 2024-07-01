@@ -4,7 +4,7 @@ body {
   width: 100%;
   height: auto;
   padding-top: 125px;
-  background-color: $grisclaro;
+  background-color: $body;
 }
 
 .btn-rrss {
@@ -14,7 +14,7 @@ body {
 
 h1{
   left: 0;
-  color: $azul;
+  color: $blanco;
   // padding-left: 150px;
   // padding-bottom: 500px;
   font-family: 'Barlow Condensed', sans-serif;
@@ -301,4 +301,8 @@ h2{
 .card {
   background-color: transparent;
   border: none; /* Opcional: elimina el borde si lo deseas */
+}
+
+p{
+  color: $blanco;
 }
