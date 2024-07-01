@@ -7,6 +7,8 @@ interface Usuario {
 
 @Component({
   selector: 'app-admin-inicio',
+  standalone: true,
+  imports: [],
   templateUrl: './admin-inicio.component.html',
   styleUrls: ['./admin-inicio.component.scss']
 })

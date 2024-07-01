@@ -1,7 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { environment } from '../../environment/environment';
 
 @Component({
   selector: 'app-navbar',

@@ -22,6 +22,16 @@ Route::get("/jugadores/get/{id}/peso",[JugadorController::class, "getPeso"]);
 Route::get("/jugadores/get/{id}/prediccion",[JugadorController::class, "getPrediccion"]);
 Route::get("/jugadores/get/{id}/estado",[JugadorController::class, "getEmotionalEstado"]);
 
+// Crear una nueva lesión
+Route::post('/lesiones/create', [LesionesController::class, 'newLesion']);
+
+// Crear una nueva lesión de un jugador
+Route::post('/lesionjugador/create', [LesionJugadorController::class, 'newLesionJugador']);
+// Obtener lesiones de un jugador
+Route::get('/lesionjugador/get/{id}', [LesionJugadorController::class, 'getLesionesJugador']);
+
+
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

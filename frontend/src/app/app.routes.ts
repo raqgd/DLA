@@ -11,6 +11,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { LoginComponent } from './login/login.component';
 import { AdminInicioComponent } from './admin-inicio/admin-inicio.component';
 import { EquipoComponent } from './equipo/equipo.component';
+import { ExamenComponent } from './examen/examen.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/Inicio', pathMatch: 'full' },  // Ruta por defecto

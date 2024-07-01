@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('equipos', function (Blueprint $table) {
-        $table->increments('id')->key();
-        $table->string('name', 1000);
-        $table->string('nameCompacto', 1000);
+        Schema::create('ligas', function (Blueprint $table) {
+            $table->integer('liga_id')->primary()->unsigned();
+            $table->string('nombre', 200);
+
+            // Assuming liga_id is not auto-incrementing since it's not specified
         });
     }
 
@@ -23,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('equipos');
+        Schema::dropIfExists('ligas');
     }
 };
