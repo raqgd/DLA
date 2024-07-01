@@ -31,6 +31,5 @@ export class AdminInicioComponent implements OnInit, AfterViewInit {
     // Implementación de ngAfterViewInit
     // Este método se llama después de que Angular haya inicializado la vista del componente
   }  
-  
-    
+
 }

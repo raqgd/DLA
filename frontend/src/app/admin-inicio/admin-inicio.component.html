@@ -8,7 +8,17 @@
         <div class="pt-3 row">
             <div class="col-4">
                 <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
-                    <div class="card-header"><h2>Crecimiento de los usuarios</h2></div>
+                    <div class="card-header">
+                      <h2>Crecimiento de los usuarios</h2>
+                      <div class="btn-group">
+                        <div class="container">
+                            <!-- <select (change)="onSelect($event, 1)" class="custom-select">
+                              <option *ngFor="let data of jsonData1" [value]="data.value">{{data.label}}</option>
+                            </select> -->
+                            <!-- <p *ngIf="selectedValue1">Selected Value: {{selectedValue1}}</p> -->
+                        </div>                    
+                    </div>   
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title"></h5>
                       <p class="card-text" id="graficos">
@@ -19,7 +29,7 @@
             </div>
             <div class="col-4">
                 <div class="card text-white bg-dark mb-3" style="max-width: 30rem">
-                    <div class="card-header"><h2>Estadísticas usuarios</h2> </div>
+                    <div class="card-header"><h2>Edad usuarios</h2> </div>
                     <div class="card-body">
                       <h5 class="card-title">Dark card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -28,7 +38,7 @@
             </div>
             <div class="col-4">
                 <div class="card text-white bg-dark mb-3" style="width: 30rem;">
-                    <div class="card-header"><h2>Header</h2></div>
+                    <div class="card-header"><h2>Género usuarios</h2></div>
                     <div class="card-body">
                       <h5 class="card-title">Dark card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -58,8 +68,7 @@
                                 Acciones
                               </button>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar contraseña</a></li>
-                                <li><a class="dropdown-item"> Cambiar permisos</a></li>
+                                <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar datos</a></li>
                               </ul>
                               </div>
                         <li class="separator"></li>
