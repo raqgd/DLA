@@ -164,13 +164,13 @@ p {
               rgba(255, 255, 255, 0.4), 
               rgba(255, 255, 255, 0.5)
           ),
-          url("../../assets/img/programming-background-with-person-working-with-codes-computer-scaled.jpg");
+          url("../../assets/img/premio.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 2%;
     width: auto;
-    height: 200px;
+    height: 250px;
   }
   
   .showcase-container {
@@ -194,3 +194,37 @@ p {
     display: flex;
     justify-content: center;
   }
+
+  
+#introduccion{
+    background-image: 
+    linear-gradient(
+        $dorado, 
+        $dorado
+    ),
+    url('/assets/img/fondofutbol.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    // padding-bottom: 5vh;
+    // height: 600px;
+}
+
+#introduccion h1{
+    // position: absolute;
+    // left: 0;
+    // padding-left: 150px;
+    // padding-bottom: 500px;
+    // margin-top: 200px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 80px; //hacer mas pequeño para vista movil
+    font-style: oblique;
+    font-weight: bolder;
+    // margin-top: 40px;
+    color:$blanco;
+}
+
