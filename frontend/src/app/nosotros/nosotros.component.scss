@@ -12,6 +12,8 @@ body {
   padding: 20px 25px; //Ajusta el relleno del botón 
 }
 
+
+
 h1{
   left: 0;
   color: $blanco;
@@ -38,7 +40,7 @@ h1{
 h1.titulo{
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: bold;
-  color: $blanco;
+  color: $azul;
   display: flex;
   justify-content: center;
   font-weight: 270;
@@ -73,6 +75,20 @@ h3{
   justify-content: center;
 }
 
+.cuerpo_rrss h2{
+  font-size: x-large;
+}
+
+.card .card-body{
+  background-color: $body;
+  
+}
+.card-title{
+  color: #fff;
+  font-size:xx-large;
+  margin-top: 2vh;
+  font-family: 'Barlow Condensed', sans-serif;;
+}
 #fotos {
   // background: linear-gradient(to bottom, #989fa7, #575c60);
   height: 100px;
@@ -193,7 +209,7 @@ img .row-inicial{
 h2{
   color: $blanco;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: medium;
+  font-size:large;
 }
 
 // @media screen and (max-width: 900px) {
@@ -247,7 +263,7 @@ h2{
 //   }
 
 #titulo {
-  height: 50vh;
+  //height: 50vh;
   background: #fff;
   background-image: 
         linear-gradient(
@@ -258,8 +274,7 @@ h2{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 2%;
-  width: auto;
+  width: 100%;
   height: 250px;
 }
 
@@ -270,6 +285,7 @@ h2{
   justify-content: center;
   height: 100%;
   font-size: 1.6rem;
+  
 }
 
 .tituloColab h1 {
