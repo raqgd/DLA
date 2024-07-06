@@ -1,7 +1,7 @@
 <body>
     <div class="col-2 bg-dark  sidebar">
-        <div class="sidebar-header">
-          <h2>Nombre del Usuario</h2>
+        <div *ngFor="let admin of Administradores" class="sidebar-header">
+          <h2>{{nombre.admin}}</h2>
         </div>
         <div class="sidebar-footer">
             <a routerLink="['/Login']" class="btn btn-danger btn-block">Cerrar sesión</a>

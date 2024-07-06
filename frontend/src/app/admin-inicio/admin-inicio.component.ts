@@ -5,6 +5,10 @@ interface Usuario {
   nombre: string;
   correo: string;
 }
+interface Administradores {
+  nombre: string;
+ 
+}
 
 @Component({
   selector: 'app-admin-inicio',
@@ -18,6 +22,9 @@ export class AdminInicioComponent implements OnInit {
     { nombre: "Usuario 1", correo: "usuario1@example.com" },
     { nombre: "Usuario 2", correo: "usuario2@example.com" },
     { nombre: "Usuario 3", correo: "usuario3@example.com" }
+  ];
+  admin: Administradores[] = [
+    {nombre: "admin 1"}
   ];
 
   usuariosFiltrados: Usuario[] = [];
