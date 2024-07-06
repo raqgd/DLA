@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EquipoController;
 use App\Http\Controllers\JugadorController;
+use App\Http\Controllers\UsuariosController;
+
 
 Route::get('/equipos/getall', [EquipoController::class, 'getAll']);
 Route::get('/equipos/get/{id}', [EquipoController::class, 'getSingle']);
@@ -22,6 +24,27 @@ Route::get("/jugadores/get/{id}/peso",[JugadorController::class, "getPeso"]);
 Route::get("/jugadores/get/{id}/prediccion",[JugadorController::class, "getPrediccion"]);
 Route::get("/jugadores/get/{id}/estado",[JugadorController::class, "getEmotionalEstado"]);
 
+<<<<<<< Updated upstream
+=======
+// Crear una nueva lesión
+Route::post('/lesiones/create', [LesionesController::class, 'newLesion']);
+
+// Crear una nueva lesión de un jugador
+Route::post('/lesionjugador/create', [LesionJugadorController::class, 'newLesionJugador']);
+// Obtener lesiones de un jugador
+Route::get('/lesionjugador/get/{id}', [LesionJugadorController::class, 'getLesionesJugador']);
+
+//login
+Route::post('/register', [UserController::class, 'register']);
+Route::post('/login', [UserController::class, 'authenticate']);
+//Route::post("users/create", [UserController::class, "create"]);
+//Route::get("users/get/{email}/{password}", [UserController::class, "get"]);
+//Route::get("users/getAll", [UserController::class, "getAll"]);
+//Route::get("users/userExists/{email}", [UserController::class, "userExists"]);
+//Route::delete("users/delete/{id}", [UserController::class, "deleteUser"]);
+
+
+>>>>>>> Stashed changes
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

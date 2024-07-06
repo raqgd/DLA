@@ -1,7 +1,17 @@
 <body>
+<<<<<<< Updated upstream
     <div class="titulo">
         <h1>Funciones del administrador</h1>
         
+=======
+    <div class="col-2 bg-dark  sidebar">
+        <div *ngFor="let admin of admins" class="sidebar-header">
+          <h2>Buenas, {{admin.nombre}}!</h2>
+        </div>
+        <div class="sidebar-footer">
+            <a routerLink="['/Login']" class="btn btn-danger btn-block">Cerrar sesión</a>
+        </div>
+>>>>>>> Stashed changes
     </div>
   
     <div class="container">

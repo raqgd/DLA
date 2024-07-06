@@ -1,25 +1,52 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private isLoggedIn: boolean = false;
+  private apiUrl = 'http://localhost'; // Cambia esto por la URL de tu API
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  login() {
-    // Lógica de inicio de sesión
-    this.isLoggedIn = true;
+  login(email: string, password: string): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/login`, { email, password })
+      .pipe(
+        map(response => {
+          if (response.token) {
+            localStorage.setItem('token', response.token);
+          }
+          return response;
+        })
+      );
   }
 
-  logout() {
-    // Lógica de cierre de sesión
-    this.isLoggedIn = false;
+  register(user: any, email: string, usuario: string, password: string, password_confirmation: string): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/register`, user)
+      .pipe(
+        map(response => {
+          if (response.token) {
+            localStorage.setItem('token', response.token);
+          }
+          return response;
+        })
+      );
   }
 
-  isLoggedInUser(): boolean {
-    // Devuelve el estado de inicio de sesión del usuario
-    return this.isLoggedIn;
+  getAuthenticatedUser(): Observable<any> {
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+
+    return this.http.get<any>(`${this.apiUrl}/user`, { headers });
+  }
+
+  logout(): void {
+    localStorage.removeItem('token');
+  }
+
+  isLoggedIn(): boolean {
+    return !!localStorage.getItem('token');
   }
 }
