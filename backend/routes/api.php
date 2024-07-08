@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EquipoController;
 use App\Http\Controllers\JugadorController;
+use App\Http\Controllers\UsuariosController;
+
 
 Route::get('/equipos/getall', [EquipoController::class, 'getAll']);
 Route::get('/equipos/get/{id}', [EquipoController::class, 'getSingle']);
@@ -30,6 +32,14 @@ Route::post('/lesionjugador/create', [LesionJugadorController::class, 'newLesion
 // Obtener lesiones de un jugador
 Route::get('/lesionjugador/get/{id}', [LesionJugadorController::class, 'getLesionesJugador']);
 
+//login
+Route::post('/register', [UserController::class, 'register']);
+Route::post('/login', [UserController::class, 'authenticate']);
+//Route::post("users/create", [UserController::class, "create"]);
+//Route::get("users/get/{email}/{password}", [UserController::class, "get"]);
+//Route::get("users/getAll", [UserController::class, "getAll"]);
+//Route::get("users/userExists/{email}", [UserController::class, "userExists"]);
+//Route::delete("users/delete/{id}", [UserController::class, "deleteUser"]);
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

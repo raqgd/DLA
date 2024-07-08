@@ -1,26 +1,17 @@
 <body>
+<<<<<<< Updated upstream
+    <div class="titulo">
+        <h1>Funciones del administrador</h1>
+        
+=======
     <div class="col-2 bg-dark  sidebar">
         <div *ngFor="let admin of admins" class="sidebar-header">
-          <h2>{{admin.nombre}}</h2>
+          <h2>Buenas, {{admin.nombre}}!</h2>
         </div>
         <div class="sidebar-footer">
             <a routerLink="['/Login']" class="btn btn-danger btn-block">Cerrar sesión</a>
         </div>
-    </div>
-
-  <div class="titulo">
-      <h1>Funciones del administrador</h1>
-  </div>
-  
-
-  <!--<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-      <button type="button" class="btn-close btn-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body custom-body">
-      <p>Try scrolling the rest of the page to see this option in action.</p>
-      <button class="btn btn-danger" type="button" data-bs-dismiss="offcanvas" aria-label="Close">Cerrar menú</button>
+>>>>>>> Stashed changes
     </div>
   </div>-->
 
@@ -66,18 +57,32 @@
                           <h1>Gestión de los usuarios</h1>
                           
                       </div>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
-                      <li class="list-group-item list-group-item-custom">
-                        <div class="d-flex justify-content-between">
-                          <div class="nombre_columna">Usuario</div>
-                          <div class="nombre_columna">Correo</div>
-                          <div class="input-group custom-input-group">
-                            <input type="text" class="form-control custom-input" placeholder="Buscar usuario..." aria-label="Text input with segmented dropdown button">
-                            <button type="button" class="btn btn-outline-secondary custom-btn">
-                              <img src="../../assets/img/buscar.png" alt="Buscar" width="20" height="20">
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item list-group-item-custom ">
+                            <p class="user-name" style="display: inline-block;">Usuario 1</p>
+                            <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
+                            <div class="btn-group " style="float: right;">
+                              <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
+                                Acciones
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar contraseña</a></li>
+                                <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal"> Cambiar permisos</a></li>
+                              </ul>
+                              </div>
+                        <li class="separator"></li>
+                        <li class="list-group-item list-group-item-custom ">
+                          <h6 class="user-name" style="display: inline-block;">Usuario 2</h6>
+                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
+                          <div class="btn-group" style="float: right;">
+                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
+                              Acciones
                             </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar contraseña</a></li>
+                            </ul>
                           </div>
                         </div>
                       </li>
@@ -93,7 +98,64 @@
                               Acciones
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar datos</a></li>
+                              <li><a class="dropdown-item" routerLink="/pop-up-admin">Cambiar contraseña</a></li>
+                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
+                            </ul>
+                          </div> 
+                        </li>
+                        <li class="separator"></li>
+                        <li class="list-group-item list-group-item-custom ">
+                          <h6 class="user-name" style="display: inline-block;">Usuario 5</h6>
+                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
+                          <div class="btn-group" style="float: right;">
+                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
+                              Acciones
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
+                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
+                            </ul>
+                          </div> 
+                        </li>
+                        <li class="separator"></li>
+                        <li class="list-group-item list-group-item-custom ">
+                          <h6 class="user-name" style="display: inline-block;">Usuario 6</h6>
+                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
+                          <div class="btn-group" style="float: right;">
+                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
+                              Acciones
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
+                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
+                            </ul>
+                          </div> 
+                        </li>
+                        <li class="separator"></li>
+                        <li class="list-group-item list-group-item-custom ">
+                          <h6 class="user-name" style="display: inline-block;">Usuario 7</h6>
+                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
+                          <div class="btn-group" style="float: right;">
+                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
+                              Acciones
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
+                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
+                            </ul>
+                          </div> 
+                        </li>
+                        <li class="separator"></li>
+                        <li class="list-group-item list-group-item-custom ">
+                          <h6 class="user-name" style="display: inline-block;">Usuario 8</h6>
+                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
+                          <div class="btn-group" style="float: right;">
+                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
+                              Acciones
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><button class="dropdown-item" (click)="openModel()" id="passModal">Cambiar contraseña</button></li>
+                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
                             </ul>
                           </div>
                         </div>
@@ -106,21 +168,3 @@
       </div>
   </div>
 
-  <!-- <div class="modal" id="myModal">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title">Modal Heading</h4>
-                  <button type="button" class="btn-close" (click)="closeModel()" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                  Modal body..
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-          </div>
-      </div>
-  </div> -->
- 
-</body>
