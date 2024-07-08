@@ -33,8 +33,8 @@ Route::post('/lesionjugador/create', [LesionJugadorController::class, 'newLesion
 Route::get('/lesionjugador/get/{id}', [LesionJugadorController::class, 'getLesionesJugador']);
 
 //login
-Route::post('/register', [UserController::class, 'register']);
-Route::post('/login', [UserController::class, 'authenticate']);
+//Route::post('/register', [UserController::class, 'register']);
+Route::post('auth/login', [AuthController::class, 'login']);
 //Route::post("users/create", [UserController::class, "create"]);
 //Route::get("users/get/{email}/{password}", [UserController::class, "get"]);
 //Route::get("users/getAll", [UserController::class, "getAll"]);
