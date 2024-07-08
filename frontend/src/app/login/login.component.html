@@ -9,38 +9,6 @@
 </head>
 
 <body>
-<<<<<<< Updated upstream
-<div class="container" id="container">
-    <div class="form-container sign-up">
-        <form>
-            <h1>Crea una cuenta</h1>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo">
-            <input type="password" placeholder="Contraseña">
-            <button>Registrarse</button>
-        </form>
-    </div>
-    <div class="form-container sign-in">
-        <form>
-            <h1>Accede a tu cuenta</h1>
-            <input type="email" placeholder="Correo">
-            <input type="password" placeholder="Contraseña">
-            <a href="#">¿Has olvidado tu contraseña?</a>
-            <button>Iniciar Sesión</button>
-        </form>
-    </div>
-    <div class="toggle-container">
-        <div class="toggle">
-            <div class="toggle-panel toggle-left">
-                <h1>¡Bienvenido/a de nuevo!</h1>
-                <p>¿Ya tienes cuenta? <br> Retoma tu progreso hacia la victoria</p>
-                <button class="hidden" id="login" (click)="toggleSignIn()">Sign In</button>
-            </div>
-            <div class="toggle-panel toggle-right">
-                <h1>¡Bienvenido/a!</h1>
-                <p>¿Aún no estás registrado? <br> Comienza a potenciar tu juego </p>
-                <button class="hidden" id="register" (click)="toggleSignUp()">Regístrate</button>
-=======
     <div class="container" id="container">
         <div class="form-container sign-up" *ngIf="isRegistering">
             <form id="signUpForm" (ngSubmit)="register()">
@@ -93,11 +61,10 @@
                     <p>¿Aún no estás registrado? <br> Comienza a potenciar tu juego</p>
                     <button class="hidden" id="register" (click)="toggleSignUp()">Regístrate</button>
                 </div>
->>>>>>> Stashed changes
             </div>
         </div>
     </div>
-</div>
+
 </body>
 
 </html>
