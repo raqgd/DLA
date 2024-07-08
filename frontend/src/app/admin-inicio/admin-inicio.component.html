@@ -61,8 +61,7 @@
                                 Acciones
                               </button>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar contraseña</a></li>
-                                <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal"> Cambiar permisos</a></li>
+                                <li><button class="dropdown-item" (click)="openModel()" id="passModal">Cambiar contraseña</button></li>
                               </ul>
                               </div>
                         <li class="separator"></li>
@@ -74,85 +73,10 @@
                               Acciones
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar contraseña</a></li>
+                              <li><button class="dropdown-item" (click)="openModel()" id="passModal">Cambiar contraseña</button></li>
                             </ul>
                           </div>
                         
-                      <li class="separator"></li>
-                      <!-- Iteración sobre cada usuario -->
-                      <li *ngFor="let usuario of usuarios" class="list-group-item list-group-item-custom">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div>{{ usuario.nombre }} </div>
-                          <div>{{ usuario.correo }}</div>
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-danger">Eliminar</button>
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" routerLink="/pop-up-admin">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div> 
-                       
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 5</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div> 
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 6</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div> 
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 7</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Cambiar contraseña</a></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div> 
-                        </li>
-                        <li class="separator"></li>
-                        <li class="list-group-item list-group-item-custom ">
-                          <h6 class="user-name" style="display: inline-block;">Usuario 8</h6>
-                          <button type="button" class="btn btn-danger" style="float: right; display: inline-block;">Eliminar</button>
-                          <div class="btn-group" style="float: right;">
-                            <button type="button" class="btn dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="display: inline-block;">
-                              Acciones
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><button class="dropdown-item" (click)="openModel()" id="passModal">Cambiar contraseña</button></li>
-                              <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="separator"></li>
                     </ul>
                   </div>                  
               </div>

@@ -23,7 +23,7 @@ export class AdminInicioComponent implements OnInit {
     { nombre: "Usuario 3", correo: "usuario3@example.com" }
   ];
   admins: Administrador[] = [
-    {nombre: "admin 1"}
+    { nombre: "admin 1" }
   ];
 
   usuariosFiltrados: Usuario[] = [];
@@ -37,10 +37,15 @@ export class AdminInicioComponent implements OnInit {
 
   onSearchTextChanged(): void {
     if (this.searchText) {
-      this.usuariosFiltrados = this.usuarios.filter(usuario => 
+      this.usuariosFiltrados = this.usuarios.filter(usuario =>
         usuario.nombre.toLowerCase().includes(this.searchText.toLowerCase()));
     } else {
       this.usuariosFiltrados = this.usuarios;
     }
+  }
+
+  openModel(): void {
+    // Logic to open the modal goes here
+    console.log("Modal opened");
   }
 }
