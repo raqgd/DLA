@@ -1,9 +1,4 @@
 <body>
-<<<<<<< Updated upstream
-    <div class="titulo">
-        <h1>Funciones del administrador</h1>
-        
-=======
     <div class="col-2 bg-dark  sidebar">
         <div *ngFor="let admin of admins" class="sidebar-header">
           <h2>Buenas, {{admin.nombre}}!</h2>
@@ -11,9 +6,7 @@
         <div class="sidebar-footer">
             <a routerLink="['/Login']" class="btn btn-danger btn-block">Cerrar sesión</a>
         </div>
->>>>>>> Stashed changes
     </div>
-  </div>-->
 
   <div class="container">
       <div class="pt-3 row">
@@ -84,8 +77,7 @@
                               <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Cambiar contraseña</a></li>
                             </ul>
                           </div>
-                        </div>
-                      </li>
+                        
                       <li class="separator"></li>
                       <!-- Iteración sobre cada usuario -->
                       <li *ngFor="let usuario of usuarios" class="list-group-item list-group-item-custom">
@@ -102,7 +94,7 @@
                               <li><a class="dropdown-item" href="#">Cambiar permisos</a></li>
                             </ul>
                           </div> 
-                        </li>
+                       
                         <li class="separator"></li>
                         <li class="list-group-item list-group-item-custom ">
                           <h6 class="user-name" style="display: inline-block;">Usuario 5</h6>

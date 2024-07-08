@@ -7,6 +7,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import { AuthService } from '../services/auth.service'; // Ajusta la ruta según tu estructura de proyecto
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
@@ -15,7 +19,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss'],
   standalone: true,
   providers: [provideNativeDateAdapter()],
-  imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule],
+  imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, CommonModule, FormsModule, ReactiveFormsModule, HttpClientModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LoginComponent implements OnInit {
@@ -71,25 +75,6 @@ export class LoginComponent implements OnInit {
       container.classList.remove("active");
     }
   }
-
-  toggleSignUp(): void {
-    const container = document.getElementById('container');
-    if (container) {
-      container.classList.add("active");
-    }
-  }
-
-  getSelectedValue(option: any): void {
-    console.log(`Option ${option.label} is ${option.checked ? 'checked' : 'unchecked'}`);
-  }
-}
-
-toggleSignIn(): void {
-const container = document.getElementById('container');
-if (container) {
-container.classList.remove("active");
-}
-}
 
   toggleSignUp(): void {
     const container = document.getElementById('container');
