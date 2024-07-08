@@ -1,6 +1,4 @@
-<<<<<<< Updated upstream
-import { Component, OnInit } from '@angular/core';
-=======
+
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import {ChangeDetectionStrategy} from '@angular/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -10,8 +8,6 @@ import {provideNativeDateAdapter} from '@angular/material/core';
 import { AuthService } from '../services/auth.service'; // Ajusta la ruta según tu estructura de proyecto
 import { Router } from '@angular/router';
 
-
->>>>>>> Stashed changes
 
 @Component({
   selector: 'app-login',
@@ -31,12 +27,6 @@ export class LoginComponent implements OnInit {
   isRegistering: boolean = false;
   error: string | null = null;
 
-<<<<<<< Updated upstream
-constructor() { }
-
-ngOnInit(): void {
-// No need to use document.getElementById in Angular, use ViewChild or ElementRef for DOM manipulation
-=======
   constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit(): void {
@@ -92,7 +82,6 @@ ngOnInit(): void {
   getSelectedValue(option: any): void {
     console.log(`Option ${option.label} is ${option.checked ? 'checked' : 'unchecked'}`);
   }
->>>>>>> Stashed changes
 }
 
 toggleSignIn(): void {
