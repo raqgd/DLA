@@ -8,6 +8,9 @@ body {
     padding-top: 150px;
     background-color: $body;
 }
+<<<<<<< Updated upstream
+.list-group-item{
+=======
 
 .container-fluid {
     height: 100%;
@@ -38,8 +41,11 @@ body {
     bottom: 20px;
     width: 100%;
     padding: 0 20px;
+    margin-bottom: 5vh;
+    margin-left: 1vw;
   }
 .list-group-item {
+>>>>>>> Stashed changes
     height: 7vh;
     padding: 0; /* Elimina el relleno predeterminado de la lista */
 }
